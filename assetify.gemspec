@@ -22,7 +22,9 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^bin/}).map { |file| File.basename file }
   spec.test_files    = spec.files.grep(%r{^(features|spec|test)/})
 
-  spec.add_dependency 'sass', '~> 3.2.10'
+  spec.add_dependency 'sass',      '~> 3.2.10'
+
+  spec.add_dependency 'sprockets', '~> 2.10.0'
 
   spec.add_development_dependency 'bundler', '~> 1.3.5'
 

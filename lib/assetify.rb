@@ -1,0 +1,3 @@
+module Assetify
+  # Your code goes here...
+end

@@ -1,5 +1,3 @@
-require 'assetify/version'
-
 module Assetify
   require 'assetify/paths'
 

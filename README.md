@@ -1,4 +1,4 @@
-[ASSETIFY](https://github.com/mkempe/assetify "Assetify")
+[ASSETIFY](https://github.com/nrolla/assetify "Assetify")
 =========================================================
 
 “All your assets are belong to us.”

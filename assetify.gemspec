@@ -1,6 +1,6 @@
 #!/usr/bin/env gem build
 
-lib = File.expand_path('../lib', __FILE__)
+lib = File.expand_path '../lib', __FILE__
 $:.unshift lib unless $:.include? lib
 
 require 'assetify/version'

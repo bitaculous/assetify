@@ -3,6 +3,16 @@
 
 “All your assets are belong to us.”
 
+Credits
+-------
+
+Assetify uses the following libraries:
+
+* [jQuery](http://jquery.com "jQuery")
+* [Modernizr](http://modernizr.com "Modernizr")
+* [yepnope](http://yepnopejs.com "yepnope")
+* [normalize.css](http://git.io/normalize "normalize.css")
+
 Code Status
 -----------
 

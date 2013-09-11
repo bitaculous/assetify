@@ -3,6 +3,19 @@
 
 “All your assets are belong to us.”
 
+Installation
+------------
+
+1. Add assetify to your Gemfile:
+
+```
+group :assets do
+  gem 'assetify', github: 'nrolla/assetify'
+end
+```
+
+2. Run `bundle install`.
+
 Credits
 -------
 

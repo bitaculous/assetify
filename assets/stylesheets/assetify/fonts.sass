@@ -8,6 +8,8 @@
 
 $base-font-family: unquote('Arial, Helvetica, sans-serif') !default
 $base-font-size: 100% !default
+$base-font-style: normal !default
+$base-font-weight: normal !default
 $base-color: #000 !default
 $base-line-height: 1.25 !default
 
@@ -22,12 +24,14 @@ $base-line-height: 1.25 !default
  * @mixin font normalization
  */
 
-@mixin font-normalization($font-family: $base-font-family, $font-size: $base-font-size, $color: $base-color, $line-height: $base-line-height)
+@mixin font-normalization($font-family: $base-font-family, $font-size: $base-font-size, $font-style: $base-font-style, $font-weight: $base-font-weight, $color: $base-color, $line-height: $base-line-height)
   body
     color: $color
     font-family: $font-family
     font-size: $font-size
     *font-size: small
+    font-style: $font-style
+    font-weight: $font-weight
     line-height: $line-height // Hack retained to preserve specificity
 
 /**

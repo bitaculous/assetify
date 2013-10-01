@@ -9,11 +9,11 @@ Gem::Specification.new do |spec|
   spec.name          = 'assetify'
   spec.summary       = '“All your assets are belong to us.”'
   spec.authors       = 'Maik Kempe'
-  spec.email         = 'mkempe@nrolla.com'
-  spec.homepage      = 'https://github.com/nrolla/assetify'
+  spec.email         = 'dev@bitaculous.com'
+  spec.homepage      = 'https://github.com/bitaculous/assetify'
   spec.version       = Assetify::VERSION
   spec.platform      = Gem::Platform::RUBY
-  spec.date          = '2013-09-10'
+  spec.date          = '2013-10-01'
   spec.licenses      = 'MIT'
 
   spec.require_paths = ['lib']
@@ -22,7 +22,7 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^bin/}).map { |file| File.basename file }
   spec.test_files    = spec.files.grep(%r{^(features|spec|test)/})
 
-  spec.add_dependency 'sass',      '~> 3.2.10'
+  spec.add_dependency 'sass',      '~> 3.2.11'
 
   spec.add_dependency 'sprockets', '~> 2.10.0'
 

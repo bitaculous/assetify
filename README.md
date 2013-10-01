@@ -1,5 +1,5 @@
-[ASSETIFY](https://github.com/nrolla/assetify "Assetify")
-=========================================================
+[ASSETIFY](https://github.com/bitaculous/assetify "Assetify")
+=============================================================
 
 “All your assets are belong to us.”
 
@@ -10,7 +10,7 @@ Installation
 
     ```
     group :assets do
-      gem 'assetify', github: 'nrolla/assetify'
+      gem 'assetify', github: 'bitaculous/assetify'
     end
     ```
 
@@ -29,8 +29,8 @@ Assetify uses the following libraries:
 Code Status
 -----------
 
-[<img src="https://secure.travis-ci.org/nrolla/assetify.png" title="Travis CI Status" alt="Travis CI Status" />](http://travis-ci.org/nrolla/assetify)
-[<img src="https://gemnasium.com/nrolla/assetify.png?travis" title="Gemnasium Status" alt="Gemnasium Status" />](https://gemnasium.com/nrolla/assetify)
+[<img src="https://secure.travis-ci.org/bitaculous/assetify.png" title="Travis CI Status" alt="Travis CI Status" />](http://travis-ci.org/bitaculous/assetify)
+[<img src="https://gemnasium.com/bitaculous/assetify.png?travis" title="Gemnasium Status" alt="Gemnasium Status" />](https://gemnasium.com/bitaculous/assetify)
 
 License
 -------

@@ -3,7 +3,7 @@ require 'spec_helper'
 describe Assetify::Integration::Sprockets do
   let(:load_paths) { Sprockets.paths }
 
-  it 'it expands the load path' do
+  it 'expands the load path' do
     expect(load_paths).to include Assetify.fonts
     expect(load_paths).to include Assetify.images
     expect(load_paths).to include Assetify.javascripts

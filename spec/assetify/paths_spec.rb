@@ -13,43 +13,43 @@ describe Assetify::Paths do
   let(:vendor_javascripts) { File.expand_path 'javascripts', vendor_assets }
   let(:vendor_stylesheets) { File.expand_path 'stylesheets', vendor_assets }
 
-  it 'it returns “assets” path' do
+  it 'returns “assets” path' do
     expect(Assetify.assets).to eql assets
   end
 
-  it 'it returns “fonts” path' do
+  it 'returns “fonts” path' do
     expect(Assetify.fonts).to eql fonts
   end
 
-  it 'it returns “images” path' do
+  it 'returns “images” path' do
     expect(Assetify.images).to eql images
   end
 
-  it 'it returns “javascripts” path' do
+  it 'returns “javascripts” path' do
     expect(Assetify.javascripts).to eql javascripts
   end
 
-  it 'it returns “stylesheets” path' do
+  it 'returns “stylesheets” path' do
     expect(Assetify.stylesheets).to eql stylesheets
   end
 
-  it 'it returns “vendor assets” path' do
+  it 'returns “vendor assets” path' do
     expect(Assetify.vendor_assets).to eql vendor_assets
   end
 
-  it 'it returns “vendor fonts” path' do
+  it 'returns “vendor fonts” path' do
     expect(Assetify.vendor_fonts).to eql vendor_fonts
   end
 
-  it 'it returns “vendor images” path' do
+  it 'returns “vendor images” path' do
     expect(Assetify.vendor_images).to eql vendor_images
   end
 
-  it 'it returns “vendor javascripts” path' do
+  it 'returns “vendor javascripts” path' do
     expect(Assetify.vendor_javascripts).to eql vendor_javascripts
   end
 
-  it 'it returns “vendor stylesheets” path' do
+  it 'returns “vendor stylesheets” path' do
     expect(Assetify.vendor_stylesheets).to eql vendor_stylesheets
   end
 end

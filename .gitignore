@@ -13,9 +13,6 @@
 # Ignore ruby version configuration
 .ruby-version
 
-# Ignore rvm configuration
-.rvmrc
-
 # Ignore “Gemfile.lock”
 Gemfile.lock
 

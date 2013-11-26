@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 group :default do
   gem 'sass', '>= 3.2.12'
 
-  gem 'sprockets', '~> 2.10.0'
+  gem 'sprockets', '~> 2.10.1'
 end
 
 group :development do

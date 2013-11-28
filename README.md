@@ -25,6 +25,7 @@ Assetify uses the following libraries:
 * [Modernizr](http://modernizr.com "Modernizr")
 * [yepnope](http://yepnopejs.com "yepnope")
 * [normalize.css](http://git.io/normalize "normalize.css")
+* [reset.css](http://meyerweb.com/eric/tools/css/reset "reset.css")
 
 Code Status
 -----------

@@ -1,19 +1,14 @@
-/**
- * helpers.sass
- *
- * @package assetify
- * @media screen
- * @version 1.0
- */
+// helpers.sass
+//
+// @package assetify
+// @media screen
+// @version 1.0
 
 $base-font-measurement: 16 !default
 
-/**
- * @mixin helpers
- *
- * Non-semantic helper classes.
- */
-
+// @mixin helpers
+//
+// Non-semantic helper classes.
 @mixin helpers
   .invisible
     @include invisible
@@ -30,37 +25,28 @@ $base-font-measurement: 16 !default
   .clearfix
     @include micro-clearfix
 
-/**
- * @mixin invisible
- *
- * Hide visually and from screenreaders, but maintain layout.
- */
-
+// @mixin invisible
+//
+// Hide visually and from screenreaders, but maintain layout.
 @mixin invisible
   visibility: hidden
 
-/**
- * @mixin hidden
- *
- * Hide for both screenreaders and browsers.
- *
- * @see http://css-discuss.incutio.com/wiki/screenreader_visibility
- */
-
+// @mixin hidden
+//
+// Hide for both screenreaders and browsers.
+//
+// @see http://css-discuss.incutio.com/wiki/screenreader_visibility
 @mixin hidden
   display: none
 
   @include invisible
 
-/**
- * @mixin visually hidden
- *
- * Hide only visually, but have it available for screenreaders by Jon Neal.
- *
- * @see http://www.webaim.org/techniques/css/invisiblecontent
- * @see http://adaptivethemes.com/using-css-clip-as-an-accessible-method-of-hiding-content
- */
-
+// @mixin visually hidden
+//
+// Hide only visually, but have it available for screenreaders by Jon Neal.
+//
+// @see http://www.webaim.org/techniques/css/invisiblecontent
+// @see http://adaptivethemes.com/using-css-clip-as-an-accessible-method-of-hiding-content
 @mixin visually-hidden
   border: 0
   clip: rect(0 0 0 0)
@@ -71,20 +57,13 @@ $base-font-measurement: 16 !default
   position: absolute
   width: 1px
 
-/**
- * @mixin text hidden
- */
-
+// @mixin text hidden
 @mixin text-hidden
   text-indent: pem(-10000)
 
-  /**
-   * Extends the “visually-hidden” class to allow the element to be focusable when
-   * navigated to via the keyboard.
-   *
-   * @see http://drupal.org/node/897638
-   */
-
+  // Extends the “visually-hidden” class to allow the element to be focusable when navigated to via the keyboard.
+  //
+  // @see http://drupal.org/node/897638
   &.focusable:active,
   &.focusable:focus
     clip: auto
@@ -94,25 +73,18 @@ $base-font-measurement: 16 !default
     position: static
     width: auto
 
-/**
- * @mixin micro clearfix
- *
- * Micro clearfix provides an easy way to contain floats without adding additional
- * markup.
- *
- * @see http://nicolasgallagher.com/micro-clearfix-hack
- */
-
+// @mixin micro clearfix
+//
+// Micro clearfix provides an easy way to contain floats without adding additional markup.
+//
+// @see http://nicolasgallagher.com/micro-clearfix-hack
 @mixin micro-clearfix
-  /**
-   * 1. The space content is one way to avoid an Opera bug when the contenteditable
-   *    attribute is included anywhere else in the document. Otherwise it causes space
-   *    to appear at the top and bottom of elements that are clearfixed.
-   * 2. The use of “table” rather than “block” is only necessary if using “:before” to
-   *    contain the top-margins of child elements.
-   * 3. Trigger hasLayout and contain floats, for IE 6/7 only.
-   */
-
+  // 1. The space content is one way to avoid an Opera bug when the contenteditable
+  //    attribute is included anywhere else in the document. Otherwise it causes space
+  //    to appear at the top and bottom of elements that are clearfixed.
+  // 2. The use of “table” rather than “block” is only necessary if using “:before” to
+  //    contain the top-margins of child elements.
+  // 3. Trigger hasLayout and contain floats, for IE 6/7 only.
   &:before,
   &:after
     content: ' ' // 1
@@ -123,48 +95,42 @@ $base-font-measurement: 16 !default
 
   *zoom: 1 // 3
 
-/**
- * @function pem
- *
- * Convert px to em units.
- *
- * For a relational value of 12px write “pem(12)” where the parent defaults
- * to $base-font-measurement respectively 16px. If the parent is another value
- * say 24px write “pem(12, 24)”.
- *
- * Example:
- *
- * margin-right: pem(12);
- * margin-right: pem(12, 24);
- *
- * @see http://mrdanadams.com/2012/pixel-ems-css-conversion-sass-mixin
- */
-
+// @function pem
+//
+// Convert px to em units.
+//
+// For a relational value of 12px write “pem(12)” where the parent defaults
+// to $base-font-measurement respectively 16px. If the parent is another value
+// say 24px write “pem(12, 24)”.
+//
+// Example:
+//
+// margin-right: pem(12)
+// margin-right: pem(12, 24)
+//
+// @see http://mrdanadams.com/2012/pixel-ems-css-conversion-sass-mixin
 @function pem($value, $base: $base-font-measurement)
   @return ($value / $base) * 1em
 
-/**
- * @mixin convert
- *
- * Used to convert px to em units for multiple properties, values or both.
- * $base is an optional parameter that allows making measurements relative
- * to the parent font size rather than the current. It also accepts a list
- * of lists (instead a list of values) for properties that accept multiple
- * lists of values. Only numbers get converted; everything else is passed
- * through.
- *
- * Example:
- *
- * @include convert(line-height, 30);
- * @include convert(line-height, 30, 16);
- * @include convert(width height, 125);
- * @include convert(padding, 0 25, 16);
- * @include convert(text-shadow, (#0D6E28 1 1) (#777 0 0 2), 16);
- * @include convert(box-shadow, (inset 0 0 0 1 #2A9022) (inset 0 0 3 #459966), 16);
- *
- * @see http://mrdanadams.com/2012/pixel-ems-css-conversion-sass-mixin
- */
-
+// @mixin convert
+//
+// Used to convert px to em units for multiple properties, values or both.
+// $base is an optional parameter that allows making measurements relative
+// to the parent font size rather than the current. It also accepts a list
+// of lists (instead a list of values) for properties that accept multiple
+// lists of values. Only numbers get converted; everything else is passed
+// through.
+//
+// Example:
+//
+// @include convert(line-height, 30)
+// @include convert(line-height, 30, 16)
+// @include convert(width height, 125)
+// @include convert(padding, 0 25, 16)
+// @include convert(text-shadow, (#0D6E28 1 1) (#777 0 0 2), 16)
+// @include convert(box-shadow, (inset 0 0 0 1 #2A9022) (inset 0 0 3 #459966), 16)
+//
+// @see http://mrdanadams.com/2012/pixel-ems-css-conversion-sass-mixin
 @mixin convert($properties, $sizes, $base: $base-font-measurement)
   $values: ()
 
@@ -189,10 +155,7 @@ $base-font-measurement: 16 !default
   @each $property in $properties
     #{$property}: $value
 
-/**
- * @mixin smash in the middle
- */
-
+// @mixin smash in the middle
 @mixin smash-in-the-middle($height)
   height: $height
   left: 0
@@ -202,10 +165,7 @@ $base-font-measurement: 16 !default
   top: 50%
   width: 100%
 
-/**
- * @mixin smack in the middle
- */
-
+// @mixin smack in the middle
 @mixin smack-in-the-middle($height, $width)
   height: $height
   left: 50%

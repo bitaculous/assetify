@@ -1,10 +1,8 @@
-/**
- * fonts.sass
- *
- * @package assetify
- * @media screen
- * @version 1.0
- */
+// fonts.sass
+//
+// @package assetify
+// @media screen
+// @version 1.0
 
 $base-font-family: unquote('Arial, Helvetica, sans-serif') !default
 $base-font-size: 100% !default
@@ -13,16 +11,8 @@ $base-font-weight: normal !default
 $base-color: #000 !default
 $base-line-height: 1.25 !default
 
-/**
- * @mixin fonts
- */
-
 @mixin fonts
   @include font-normalization
-
-/**
- * @mixin font normalization
- */
 
 @mixin font-normalization($font-family: $base-font-family, $font-size: $base-font-size, $font-style: $base-font-style, $font-weight: $base-font-weight, $color: $base-color, $line-height: $base-line-height)
   body
@@ -33,10 +23,6 @@ $base-line-height: 1.25 !default
     font-style: $font-style
     font-weight: $font-weight
     line-height: $line-height // Hack retained to preserve specificity
-
-/**
- * @mixin font size
- */
 
 @mixin font-size($size, $base-font-size: $base-font-size)
   font-size: ceil(percentage($size / $base-font-size))

@@ -4,17 +4,17 @@
 // @media screen
 // @version 1.0
 
-$base-font-family: unquote('Arial, Helvetica, sans-serif') !default
-$base-font-size: 100% !default
-$base-font-style: normal !default
-$base-font-weight: normal !default
-$base-color: #000 !default
-$base-line-height: 1.25 !default
+$default-font-family: unquote('Arial, Helvetica, sans-serif') !default
+$default-font-size: 100% !default
+$default-font-style: normal !default
+$default-font-weight: normal !default
+$default-color: #000 !default
+$default-line-height: 1.25 !default
 
 @mixin fonts
   @include font-normalization
 
-@mixin font-normalization($font-family: $base-font-family, $font-size: $base-font-size, $font-style: $base-font-style, $font-weight: $base-font-weight, $color: $base-color, $line-height: $base-line-height)
+@mixin font-normalization($font-family: $default-font-family, $font-size: $default-font-size, $font-style: $default-font-style, $font-weight: $default-font-weight, $color: $default-color, $line-height: $default-line-height)
   body
     color: $color
     font-family: $font-family
@@ -24,5 +24,5 @@ $base-line-height: 1.25 !default
     font-weight: $font-weight
     line-height: $line-height // Hack retained to preserve specificity
 
-@mixin font-size($size, $base-font-size: $base-font-size)
-  font-size: ceil(percentage($size / $base-font-size))
+@mixin font-size($size, $default-font-size: $default-font-size)
+  font-size: ceil(percentage($size / $default-font-size))

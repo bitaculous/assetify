@@ -1,0 +1,61 @@
+// pem.sass
+//
+// @package assetify/helpers
+// @media screen
+// @version 1.0
+
+// @mixin pem
+//
+// Convert px to em units for multiple properties, values or both.
+//
+// $base is an optional parameter that allows making measurements relative to the parent font size
+// rather than the current. It also accepts a list of lists (instead a list of values) for properties
+// that accept multiple lists of values. Only numbers get converted; everything else is passed through.
+//
+// Examples:
+//
+// @include pem(line-height, 30)
+// @include pem(line-height, 30, 16)
+// @include pem(width height, 125)
+// @include pem(padding, 0 25, 16)
+// @include pem(text-shadow, (#0D6E28 1 1) (#777 0 0 2), 16)
+// @include pem(box-shadow, (inset 0 0 0 1 #2A9022) (inset 0 0 3 #459966), 16)
+//
+// @see http://mrdanadams.com/2012/pixel-ems-css-conversion-sass-mixin
+@mixin pem($properties, $sizes, $baseline: $default-baseline)
+  $values: ()
+  $sublists: false
+
+  @each $size in $sizes
+    // Unwrap lists for values that have multiple list of values such as text-shadow
+    @if type-of($size) == list
+      $sublists: true
+      $vv: ()
+
+      @each $ss in $size
+        $vv: append($vv, if(type-of($ss) == number, ($ss / $baseline) * 1em, $ss))
+
+      $values: append($values, join((), $vv))
+    @else
+      $values: append($values, if(type-of($size) == number, ($size / $baseline) * 1em, $size))
+
+  $value: join((), $values, if($sublists, comma, space))
+
+  @each $property in $properties
+    #{$property}: $value
+
+// @function pem
+//
+// Convert px to em units.
+//
+// For a relational value of 12px use `pem(12)` where the baseline defaults to $default-baseline,
+// respectively 16px. If the baseline is another value, say 24px then use `pem(12, 24)`.
+//
+// Examples:
+//
+// margin-right: pem(12)
+// margin-right: pem(12, 24)
+//
+// @see http://mrdanadams.com/2012/pixel-ems-css-conversion-sass-mixin
+@function pem($value, $baseline: $default-baseline)
+  @return ($value / $baseline) * 1em

@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = 'https://github.com/bitaculous/assetify'
   spec.version       = Assetify::VERSION
   spec.platform      = Gem::Platform::RUBY
-  spec.date          = '2013-12-12'
+  spec.date          = '2013-12-19'
   spec.licenses      = 'MIT'
 
   spec.require_paths = ['lib']

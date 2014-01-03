@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = 'https://github.com/bitaculous/assetify'
   spec.version       = Assetify::VERSION
   spec.platform      = Gem::Platform::RUBY
-  spec.date          = '2013-12-19'
+  spec.date          = '2014-01-03'
   spec.licenses      = 'MIT'
 
   spec.require_paths = ['lib']
@@ -26,9 +26,9 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'sprockets', '~> 2.10.1'
 
-  spec.add_development_dependency 'bundler', '~> 1.3.5'
+  spec.add_development_dependency 'bundler', '~> 1.5.1'
 
-  spec.add_development_dependency 'rake', '~> 10.1.0'
+  spec.add_development_dependency 'rake', '~> 10.1.1'
 
   spec.add_development_dependency 'rspec', '~> 2.14.1'
 

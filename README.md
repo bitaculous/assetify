@@ -36,8 +36,4 @@ Code Status
 License
 -------
 
-MIT License
-
-“Assetify” is released under the MIT license.
-
-See “COPYING”.
+“Assetify” is released under the MIT License, see “LICENSE”.

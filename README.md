@@ -1,7 +1,7 @@
 [ASSETIFY](https://github.com/bitaculous/assetify "Assetify")
 =============================================================
 
-“All your assets are belong to us.”
+**“All your assets are belong to us.”**
 
 Installation
 ------------

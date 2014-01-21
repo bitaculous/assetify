@@ -1,5 +1,5 @@
-[ASSETIFY](https://github.com/bitaculous/assetify "Assetify")
-=============================================================
+[ASSETIFY](http://bitaculous.github.io/assetify "Assetify")
+===========================================================
 
 **“All your assets are belong to us.”**
 
@@ -36,4 +36,4 @@ Code Status
 License
 -------
 
-“Assetify” is released under the MIT License, see “LICENSE”.
+Assetify is released under the MIT License.

@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.summary       = '“All your assets are belong to us.”'
   spec.authors       = 'Maik Kempe'
   spec.email         = 'mkempe@bitaculous.com'
-  spec.homepage      = 'https://github.com/bitaculous/assetify'
+  spec.homepage      = 'http://bitaculous.github.io/assetify'
   spec.version       = Assetify::VERSION
   spec.platform      = Gem::Platform::RUBY
   spec.licenses      = 'MIT'

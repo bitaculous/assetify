@@ -9,19 +9,15 @@
 // @version 2.0
 
 @mixin reset
-  html, body, div, span, applet, object, iframe,
-  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-  a, abbr, acronym, address, big, cite, code,
-  del, dfn, em, img, ins, kbd, q, s, samp,
-  small, strike, strong, sub, sup, tt, var,
-  b, u, i, center,
-  dl, dt, dd, ol, ul, li,
-  fieldset, form, label, legend,
-  table, caption, tbody, tfoot, thead, tr, th, td,
-  article, aside, canvas, details, embed,
-  figure, figcaption, footer, header, hgroup,
-  nav, output, ruby, section, summary,
-  time, mark, audio, video
+  html, body,
+  main, header, footer, nav, aside, section, article, h1, h2, h3, h4, h5, h6, address,
+  div, p, hr, pre, blockquote, ol, ul, li, dl, dt, dd, figure, figcaption,
+  a, em, strong, small, s, cite, q, dfn, abbr, data, time, code, var, samp, kbd, sub, i, b, u, mark, ruby, rt, rp, bdi, bdo, span, br, wbr,
+  ins, del,
+  img, iframe, embed, object, param, video, audio, source, track, canvas, map, area, svg, math,
+  table, caption, colgroup, col, tbody, thead, tfoot, th, tr, td,
+  form, fieldset, legend, label, input, button, select, datalist, optgroup, option, textarea, keygen, output, progress, meter,
+  details, summary, menuitem, menu
     border: 0
     font-size: 100%
     font: inherit
@@ -30,20 +26,33 @@
     vertical-align: baseline
 
   // HTML5 display-role reset for older browsers
-  article, aside, details, figcaption, figure, footer,
-  header, hgroup, main, nav, section, summary
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  main,
+  nav,
+  section,
+  summary
     display: block
 
   body
     line-height: 1
 
-  ol, ul
+  ol,
+  ul
     list-style: none
 
-  blockquote, q
+  blockquote,
+  q
     quotes: none
 
-  blockquote, q
+  blockquote,
+  q
     &:before,
     &:after
       content: ''

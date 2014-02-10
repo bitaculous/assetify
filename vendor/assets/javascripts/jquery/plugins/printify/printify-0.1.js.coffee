@@ -3,8 +3,8 @@
     defaults: { }
 
     constructor: (element, options) ->
-      @options = $.extend { }, @defaults, options
       @element = $ element
+      @options = $.extend { }, @defaults, options
 
       setup.call @
 

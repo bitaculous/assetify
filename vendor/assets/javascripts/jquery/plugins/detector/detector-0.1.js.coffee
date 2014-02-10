@@ -10,8 +10,8 @@
     }
 
     constructor: (element, options) ->
-      @options = $.extend { }, @defaults, options
       @element = $ element
+      @options = $.extend { }, @defaults, options
 
       detectMobile.call @ if @options.detectMobile
 

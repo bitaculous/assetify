@@ -1,5 +1,5 @@
 (($, window, document) ->
-  class Printify
+  class Formify
     defaults: { }
 
     constructor: (element, options) ->
@@ -11,20 +11,25 @@
       return
 
     setup = ->
-      @element.click -> # Hook into click
-        do window.print
+      submit = @element.find 'a.submit'
+
+      submit.click -> # Hook into click
+        submit = $ this
+        form   = submit.closest 'form'
+
+        do form.submit
 
         false
 
       return
 
-  $.fn.extend printify: (options, args...) ->
+  $.fn.extend formify: (options, args...) ->
     @each ->
       element = $ @
-      data    = element.data 'printify'
+      data    = element.data 'formify'
 
       if data
         data[options].apply data, args if data[options]
       else
-        element.data 'printify', (data = new Printify @, options)
+        element.data 'formify', (data = new Formify @, options)
 ) jQuery, window, document

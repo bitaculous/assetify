@@ -1,28 +1,8 @@
+#= require ./class
+
+#= require_self
+
 (($, window, document) ->
-  class Formify
-    defaults: { }
-
-    constructor: (element, options) ->
-      @element = $ element
-      @options = $.extend { }, @defaults, options
-
-      setup.call @
-
-      return
-
-    setup = ->
-      submit = @element.find 'a.submit'
-
-      submit.click -> # Hook into click
-        submit = $ this
-        form   = submit.closest 'form'
-
-        do form.submit
-
-        false
-
-      return
-
   $.fn.extend formify: (options, args...) ->
     @each ->
       element = $ @

@@ -1,23 +1,8 @@
+#= require ./class
+
+#= require_self
+
 (($, window, document) ->
-  class Printify
-    defaults: { }
-
-    constructor: (element, options) ->
-      @element = $ element
-      @options = $.extend { }, @defaults, options
-
-      setup.call @
-
-      return
-
-    setup = ->
-      @element.click -> # Hook into click
-        do window.print
-
-        false
-
-      return
-
   $.fn.extend printify: (options, args...) ->
     @each ->
       element = $ @

@@ -1,5 +1,3 @@
-#= require_self
-
 (($, window, document) ->
   class Printify
     defaults: { }

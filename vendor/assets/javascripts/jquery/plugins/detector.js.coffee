@@ -1,3 +1,5 @@
 # This is the manifest for “detector.js”.
 
-#= require ./detector/detector-0.1
+#= require ./browser
+#= require ./detector/detector
+#= require ./detector/plugin

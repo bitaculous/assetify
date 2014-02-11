@@ -1,8 +1,7 @@
 class @Detector
-  defaults: {
+  defaults:
     detectMobile: true
     detectOS: true
-  }
 
   constructor: (element, options) ->
     @element = $ element

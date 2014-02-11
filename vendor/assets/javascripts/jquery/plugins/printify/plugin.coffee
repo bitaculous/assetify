@@ -1,7 +1,3 @@
-#= require ./class
-
-#= require_self
-
 (($, window, document) ->
   $.fn.extend printify: (options, args...) ->
     @each ->

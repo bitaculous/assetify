@@ -1,9 +1,3 @@
-#= require ../browser
-
-#= require ./class
-
-#= require_self
-
 (($, window, document) ->
   $.fn.extend detector: (options, args...) ->
     @each ->

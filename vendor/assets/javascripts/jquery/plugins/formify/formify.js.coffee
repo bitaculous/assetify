@@ -1,5 +1,9 @@
 class @Formify
+  # === Defaults ===
+
   defaults: { }
+
+  # === Public ===
 
   constructor: (element, options) ->
     @element = $ element
@@ -8,6 +12,8 @@ class @Formify
     setup.call @
 
     return
+
+  # === Private ===
 
   setup = ->
     submit = @element.find 'a.submit'

@@ -1,7 +1,11 @@
 class @Detector
+  # === Defaults ===
+
   defaults:
     detectMobile: true
     detectOS: true
+
+  # === Public ===
 
   constructor: (element, options) ->
     @element = $ element
@@ -12,6 +16,8 @@ class @Detector
     detectOS.call @ if @options.detectOS
 
     return
+
+  # === Private ===
 
   detectMobile = ->
     if $.browser.mobile

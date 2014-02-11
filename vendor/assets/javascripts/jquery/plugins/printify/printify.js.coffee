@@ -1,5 +1,9 @@
 class @Printify
+  # === Defaults ===
+
   defaults: { }
+
+  # === Public ===
 
   constructor: (element, options) ->
     @element = $ element
@@ -8,6 +12,8 @@ class @Printify
     setup.call @
 
     return
+
+  # === Private ===
 
   setup = ->
     @element.click -> # Hook into click

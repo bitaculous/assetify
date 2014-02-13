@@ -1,3 +1,7 @@
+# This is the manifest for “plugin.js”.
+
+#= require_self
+
 (($, window, document) ->
   $.fn.extend detector: (options, args...) ->
     @each ->

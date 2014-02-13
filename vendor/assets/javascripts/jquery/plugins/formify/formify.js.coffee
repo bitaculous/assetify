@@ -1,3 +1,7 @@
+# This is the manifest for “formify.js”.
+
+#= require_self
+
 class @Formify
   # === Defaults ===
 
@@ -5,24 +9,21 @@ class @Formify
 
   # === Public ===
 
-  constructor: (element, options) ->
-    @element = $ element
+  constructor: (form, options) ->
+    @form    = $ form
     @options = $.extend { }, @defaults, options
 
-    setup.call @
+    initialize.call @
 
     return
 
   # === Private ===
 
-  setup = ->
-    submit = @element.find 'a.submit'
+  initialize = ->
+    submit = @form.find 'a.submit'
 
-    submit.click -> # Hook into click
-      submit = $ this
-      form   = submit.closest 'form'
-
-      do form.submit
+    submit.click => # Hook into click
+      do @form.submit
 
       false
 

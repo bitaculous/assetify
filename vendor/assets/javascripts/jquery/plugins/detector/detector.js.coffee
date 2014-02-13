@@ -1,3 +1,7 @@
+# This is the manifest for “detector.js”.
+
+#= require_self
+
 class @Detector
   # === Defaults ===
 
@@ -11,13 +15,18 @@ class @Detector
     @element = $ element
     @options = $.extend { }, @defaults, options
 
+    initialize.call @
+
+    return
+
+  # === Private ===
+
+  initialize = ->
     detectMobile.call @ if @options.detectMobile
 
     detectOS.call @ if @options.detectOS
 
     return
-
-  # === Private ===
 
   detectMobile = ->
     if $.browser.mobile

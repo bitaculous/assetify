@@ -1,3 +1,7 @@
+# This is the manifest for “printify.js”.
+
+#= require_self
+
 class @Printify
   # === Defaults ===
 
@@ -9,13 +13,13 @@ class @Printify
     @element = $ element
     @options = $.extend { }, @defaults, options
 
-    setup.call @
+    initialize.call @
 
     return
 
   # === Private ===
 
-  setup = ->
+  initialize = ->
     @element.click -> # Hook into click
       do window.print
 

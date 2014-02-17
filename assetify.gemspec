@@ -15,11 +15,10 @@ Gem::Specification.new do |spec|
   spec.platform      = Gem::Platform::RUBY
   spec.licenses      = 'MIT'
 
-  spec.require_paths = ['lib']
+  spec.files         = `git ls-files`.split($\)
 
-  spec.files         = `git ls-files`.split($/)
-  spec.executables   = spec.files.grep(%r{^bin/}).map { |file| File.basename file }
-  spec.test_files    = spec.files.grep(%r{^(features|spec|test)/})
+  spec.executables   = spec.files.grep(/^bin/).map { |file| File.basename file }
+  spec.test_files    = spec.files.grep(/^(features|spec|test)/)
 
   spec.required_ruby_version = '>= 2.0.0'
 

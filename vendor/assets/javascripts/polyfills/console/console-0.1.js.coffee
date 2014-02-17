@@ -1,41 +1,40 @@
-(-> # Avoid `console` errors in browsers that lack a console
-  method = undefined
+# Avoid `console` errors in browsers that lack a console
+method = undefined
 
-  noop = ->
-    return
+noop = ->
+  return
 
-  methods = [
-    'assert'
-    'clear'
-    'count'
-    'debug'
-    'dir'
-    'dirxml'
-    'error'
-    'exception'
-    'group'
-    'groupCollapsed'
-    'groupEnd'
-    'info'
-    'log'
-    'markTimeline'
-    'profile'
-    'profileEnd'
-    'table'
-    'time'
-    'timeEnd'
-    'timeStamp'
-    'trace'
-    'warn'
-  ]
+methods = [
+  'assert'
+  'clear'
+  'count'
+  'debug'
+  'dir'
+  'dirxml'
+  'error'
+  'exception'
+  'group'
+  'groupCollapsed'
+  'groupEnd'
+  'info'
+  'log'
+  'markTimeline'
+  'profile'
+  'profileEnd'
+  'table'
+  'time'
+  'timeEnd'
+  'timeStamp'
+  'trace'
+  'warn'
+]
 
-  length = methods.length
+length = methods.length
 
-  console = (window.console = window.console or {})
+console = (window.console = window.console or {})
 
-  while length--
-    method = methods[length]
+while length--
+  method = methods[length]
 
-    # Only stub undefined methods
-    console[method] = noop  unless console[method]
-)()
+  # Only stub undefined methods
+  console[method] = noop  unless console[method]

@@ -9,7 +9,7 @@ group :default do
 end
 
 group :development do
-  gem 'bundler', '~> 1.5.1'
+  gem 'bundler', '~> 1.5.3'
 
   gem 'rake', '~> 10.1.1'
 end

@@ -21,11 +21,16 @@ Credits
 
 Assetify uses the following libraries:
 
+### CSS
+
+* [normalize.css](http://necolas.github.io/normalize.css "normalize.css")
+* [reset.css](http://meyerweb.com/eric/tools/css/reset "reset.css")
+
+### JavaScript
+
 * [jQuery](http://jquery.com "jQuery")
 * [Modernizr](http://modernizr.com "Modernizr")
 * [yepnope](http://yepnopejs.com "yepnope")
-* [normalize.css](http://necolas.github.io/normalize.css "normalize.css")
-* [reset.css](http://meyerweb.com/eric/tools/css/reset "reset.css")
 
 Code Status
 -----------

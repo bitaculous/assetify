@@ -23,7 +23,7 @@ Gem::Specification.new do |spec|
 
   spec.required_rubygems_version = Gem::Requirement.new '>= 2.0.0'
 
-  spec.add_dependency 'sass', '>= 3.2.15'
+  spec.add_dependency 'sass', '~> 3.2'
 
   spec.add_dependency 'sprockets', '~> 2.12.0'
 

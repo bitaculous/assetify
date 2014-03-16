@@ -21,8 +21,6 @@ Credits
 
 Assetify uses the following libraries:
 
-* [Foundation](http://foundation.zurb.com "Foundation")
-
 ### CSS
 
 * [normalize.css](http://necolas.github.io/normalize.css "normalize.css")

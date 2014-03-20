@@ -23,6 +23,3 @@ $default-line-height: 1.25 !default
     font-style: $font-style
     font-weight: $font-weight
     line-height: $line-height // Hack retained to preserve specificity
-
-@mixin font-size($size, $default-font-size: $default-font-size)
-  font-size: ceil(percentage($size / $default-font-size))

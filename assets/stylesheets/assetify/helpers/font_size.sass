@@ -1,0 +1,8 @@
+// font_size.sass
+//
+// @package assetify/helpers
+// @media screen
+// @version 1.0
+
+@mixin font-size($size, $default-font-size: $default-font-size)
+  font-size: ceil(percentage($size / $default-font-size))

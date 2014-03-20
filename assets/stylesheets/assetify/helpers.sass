@@ -15,8 +15,6 @@ $default-baseline: 16px !default
 @import assetify/helpers/smack_in_the_middle
 @import assetify/helpers/smash_in_the_middle
 
-// @mixin helpers
-//
 // Non-semantic helper classes.
 @mixin helpers
   .invisible
@@ -34,14 +32,10 @@ $default-baseline: 16px !default
   .clearfix
     @include micro-clearfix
 
-// @mixin invisible
-//
 // Hide visually and from screenreaders, but maintain layout.
 @mixin invisible
   visibility: hidden
 
-// @mixin hidden
-//
 // Hide for both screenreaders and browsers.
 //
 // @see http://css-discuss.incutio.com/wiki/screenreader_visibility
@@ -50,8 +44,6 @@ $default-baseline: 16px !default
 
   @include invisible
 
-// @mixin visually hidden
-//
 // Hide only visually, but have it available for screenreaders by Jon Neal.
 //
 // @see http://www.webaim.org/techniques/css/invisiblecontent
@@ -66,7 +58,6 @@ $default-baseline: 16px !default
   position: absolute
   width: 1px
 
-// @mixin text hidden
 @mixin text-hidden
   text-indent: pem(-10000)
 
@@ -83,10 +74,7 @@ $default-baseline: 16px !default
     position: static
     width: auto
 
-// @mixin micro clearfix
-//
-// Micro clearfix provides an easy way to contain floats without adding additional
-// markup.
+// Micro clearfix provides an easy way to contain floats without adding additional markup.
 //
 // @see http://nicolasgallagher.com/micro-clearfix-hack
 @mixin micro-clearfix

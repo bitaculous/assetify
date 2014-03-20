@@ -35,8 +35,8 @@ Assetify uses the following libraries:
 Code Status
 -----------
 
-[<img src="https://secure.travis-ci.org/bitaculous/assetify.png" title="Travis CI Status" alt="Travis CI Status" />](http://travis-ci.org/bitaculous/assetify)
-[<img src="https://gemnasium.com/bitaculous/assetify.png?travis" title="Gemnasium Status" alt="Gemnasium Status" />](https://gemnasium.com/bitaculous/assetify)
+[<img src="https://travis-ci.org/bitaculous/assetify.svg" title="Travis CI Status" alt="Travis CI Status" />](http://travis-ci.org/bitaculous/assetify)
+[<img src="https://gemnasium.com/bitaculous/assetify.svg" title="Gemnasium Status" alt="Gemnasium Status" />](https://gemnasium.com/bitaculous/assetify)
 
 License
 -------

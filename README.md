@@ -16,13 +16,6 @@ Installation
 
 2.  Run `bundle install`
 
-Usage
------
-
-### Sass
-
-Import assetify via `@import assetify` in your sass styles.
-
 Credits
 -------
 

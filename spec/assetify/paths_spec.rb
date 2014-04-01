@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe Assetify::Paths do
-  let(:root)               { File.expand_path '../../../', __FILE__}
+  let(:root)               { File.expand_path '../../../', __FILE__ }
   let(:assets)             { File.expand_path 'assets', root }
   let(:fonts)              { File.expand_path 'fonts', assets }
   let(:images)             { File.expand_path 'images', assets }

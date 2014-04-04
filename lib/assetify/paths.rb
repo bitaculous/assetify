@@ -1,50 +1,55 @@
 module Assetify
   module Paths
-    def root
-      @root
+    def assets_path
+      File.expand_path 'assets', @trail
     end
 
-    def assets
-      File.expand_path 'assets', root
+    def fonts_path
+      File.expand_path 'fonts', assets_path
     end
 
-    def fonts
-      File.expand_path 'fonts', assets
+    def images_path
+      File.expand_path 'images', assets_path
     end
 
-    def images
-      File.expand_path 'images', assets
+    def javascripts_path
+      File.expand_path 'javascripts', assets_path
     end
 
-    def javascripts
-      File.expand_path 'javascripts', assets
+    def stylesheets_path
+      File.expand_path 'stylesheets', assets_path
     end
 
-    def stylesheets
-      File.expand_path 'stylesheets', assets
+    def vendor_path
+      File.expand_path 'vendor', @trail
     end
 
-    def vendor_assets
-      File.expand_path 'vendor/assets', root
+    def vendor_assets_path
+      File.expand_path 'assets', vendor_path
     end
 
-    def vendor_fonts
-      File.expand_path 'fonts', vendor_assets
+    def vendor_fonts_path
+      File.expand_path 'fonts', vendor_assets_path
     end
 
-    def vendor_images
-      File.expand_path 'images', vendor_assets
+    def vendor_images_path
+      File.expand_path 'images', vendor_assets_path
     end
 
-    def vendor_javascripts
-      File.expand_path 'javascripts', vendor_assets
+    def vendor_javascripts_path
+      File.expand_path 'javascripts', vendor_assets_path
     end
 
-    def vendor_stylesheets
-      File.expand_path 'stylesheets', vendor_assets
+    def vendor_stylesheets_path
+      File.expand_path 'stylesheets', vendor_assets_path
     end
 
     protected
-      attr_reader :root
+
+    attr_reader :trail
+
+    def trail
+      File.expand_path '../../../', __FILE__
+    end
   end
 end

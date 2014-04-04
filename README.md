@@ -16,6 +16,54 @@ Installation
 
 2.  Run `bundle install`
 
+Usage
+-----
+
+### CSS
+
+#### normalize.css
+
+First, import normalize:
+
+```sass
+@import normalize
+```
+
+The most basic option is simply:
+
+```sass
+@include normalize
+```
+
+which includes the “full package”.
+
+Or include only specific parts:
+
+```sass
+@include base
+@include html5-display-definitions
+@include links
+@include text-level-semantics
+@include embedded-content
+@include grouping-content
+@include forms
+@include tables
+```
+
+#### reset.css
+
+First, import reset:
+
+```sass
+@import reset
+```
+
+Second, include it:
+
+```sass
+@include reset
+```
+
 Credits
 -------
 

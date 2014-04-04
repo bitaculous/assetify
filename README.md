@@ -64,6 +64,16 @@ Second, include it:
 @include reset
 ```
 
+#### Sass Media Queries
+
+Just import Sass Media Queries:
+
+```sass
+@import media_queries
+```
+
+and you're ready to [roll](http://paranoida.github.io/sass-mediaqueries "Sass Media Queries").
+
 Credits
 -------
 

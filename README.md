@@ -25,6 +25,7 @@ Assetify uses the following libraries:
 
 * [normalize.css](http://necolas.github.io/normalize.css "normalize.css")
 * [reset.css](http://meyerweb.com/eric/tools/css/reset "reset.css")
+* [Sass Media Queries](http://paranoida.github.io/sass-mediaqueries "Sass Media Queries")
 
 ### JavaScript
 

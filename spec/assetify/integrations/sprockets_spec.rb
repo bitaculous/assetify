@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Assetify::Integration::Sprockets do
+describe Assetify::Integrations::Sprockets do
   let(:load_paths) { Sprockets.paths }
 
   it 'expands the load path' do

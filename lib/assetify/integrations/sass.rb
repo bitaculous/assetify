@@ -1,7 +1,7 @@
 require 'sass'
 
 module Assetify
-  module Integration
+  module Integrations
     module Sass
       load_paths = ::Sass.load_paths
 

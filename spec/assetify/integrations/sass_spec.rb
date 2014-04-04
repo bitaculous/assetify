@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Assetify::Integration::Sass do
+describe Assetify::Integrations::Sass do
   let(:load_paths) { Sass.load_paths }
 
   it 'expands the load path' do

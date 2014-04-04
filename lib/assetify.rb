@@ -5,6 +5,6 @@ module Assetify
 
   @root = File.expand_path '../../', __FILE__
 
-  require 'assetify/integration/sass'
-  require 'assetify/integration/sprockets'
+  require 'assetify/integrations/sass'
+  require 'assetify/integrations/sprockets'
 end

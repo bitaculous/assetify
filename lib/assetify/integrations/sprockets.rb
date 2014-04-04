@@ -1,7 +1,7 @@
 require 'sprockets'
 
 module Assetify
-  module Integration
+  module Integrations
     module Sprockets
       ::Sprockets.append_path Assetify.fonts
       ::Sprockets.append_path Assetify.images

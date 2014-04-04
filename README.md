@@ -74,6 +74,34 @@ Just import Sass Media Queries:
 
 and you're ready to [roll](http://paranoida.github.io/sass-mediaqueries "Sass Media Queries").
 
+### JavaScript
+
+#### jQuery
+
+```coffeescript
+#= require jquery
+```
+
+#### yepnope
+
+```coffeescript
+#= require yepnope
+```
+
+#### Polyfills
+
+##### Modernizr
+
+```coffeescript
+#= require polyfills/modernizr
+```
+
+##### Console
+
+```coffeescript
+#= require polyfills/console
+```
+
 Credits
 -------
 
@@ -88,8 +116,12 @@ Assetify uses the following libraries:
 ### JavaScript
 
 * [jQuery](http://jquery.com "jQuery")
+* [yepnope](http://yepnopejs.com "yepnope is an asynchronous conditional resource loader that's super-fast, and allows you to load only the scripts that your users need.")
+
+#### Polyfills
+
 * [Modernizr](http://modernizr.com "Modernizr")
-* [yepnope](http://yepnopejs.com "yepnope")
+* [Console](https://github.com/h5bp/html5-boilerplate/blob/master/js/plugins.js "Avoid `console` errors in browsers that lack a console.")
 
 Code Status
 -----------

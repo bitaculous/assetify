@@ -82,6 +82,12 @@ and you're ready to [roll](http://paranoida.github.io/sass-mediaqueries "Sass Me
 #= require jquery
 ```
 
+#### Modernizr
+
+```coffeescript
+#= require modernizr
+```
+
 #### yepnope
 
 ```coffeescript
@@ -89,12 +95,6 @@ and you're ready to [roll](http://paranoida.github.io/sass-mediaqueries "Sass Me
 ```
 
 #### Polyfills
-
-##### Modernizr
-
-```coffeescript
-#= require polyfills/modernizr
-```
 
 ##### Console
 
@@ -115,12 +115,12 @@ Assetify uses the following libraries:
 
 ### JavaScript
 
-* [jQuery](http://jquery.com "jQuery")
+* [jQuery](http://jquery.com "The Write Less, Do More, JavaScript Library.")
+* [Modernizr](http://modernizr.com "Modernizr is a JavaScript library that detects HTML5 and CSS3 features in the user’s browser.")
 * [yepnope](http://yepnopejs.com "yepnope is an asynchronous conditional resource loader that's super-fast, and allows you to load only the scripts that your users need.")
 
 #### Polyfills
 
-* [Modernizr](http://modernizr.com "Modernizr")
 * [Console](https://github.com/h5bp/html5-boilerplate/blob/master/js/plugins.js "Avoid `console` errors in browsers that lack a console.")
 
 Code Status

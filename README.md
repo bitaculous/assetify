@@ -21,7 +21,7 @@ Usage
 
 ### CSS
 
-#### normalize.css
+#### [normalize.css](http://necolas.github.io/normalize.css "normalize.css")
 
 First, import normalize:
 
@@ -50,7 +50,7 @@ Or include only specific parts:
 @include tables
 ```
 
-#### reset.css
+#### [reset.css](http://meyerweb.com/eric/tools/css/reset "reset.css")
 
 First, import reset:
 
@@ -64,7 +64,7 @@ Second, include it:
 @include reset
 ```
 
-#### Sass Media Queries
+#### [Sass Media Queries](http://paranoida.github.io/sass-mediaqueries "Sass Media Queries")
 
 Just import Sass Media Queries:
 
@@ -76,19 +76,19 @@ and you're ready to [roll](http://paranoida.github.io/sass-mediaqueries "Sass Me
 
 ### JavaScript
 
-#### jQuery
+#### [jQuery](http://jquery.com "The Write Less, Do More, JavaScript Library.")
 
 ```coffeescript
 #= require jquery
 ```
 
-#### Modernizr
+#### [Modernizr](http://modernizr.com "Modernizr is a JavaScript library that detects HTML5 and CSS3 features in the user’s browser.")
 
 ```coffeescript
 #= require modernizr
 ```
 
-#### yepnope
+#### [yepnope](http://yepnopejs.com "yepnope is an asynchronous conditional resource loader that's super-fast, and allows you to load only the scripts that your users need.")
 
 ```coffeescript
 #= require yepnope
@@ -96,7 +96,7 @@ and you're ready to [roll](http://paranoida.github.io/sass-mediaqueries "Sass Me
 
 #### Polyfills
 
-##### Console
+##### [Console](https://github.com/h5bp/html5-boilerplate/blob/master/js/plugins.js "Avoid `console` errors in browsers that lack a console.")
 
 ```coffeescript
 #= require polyfills/console

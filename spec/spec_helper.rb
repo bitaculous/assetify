@@ -8,7 +8,7 @@ require 'assetify'
 support = File.expand_path '../support', __FILE__
 
 # Requires supporting ruby files with custom matchers, macros, etc.
-# in “spec/support” and its subdirectories.
+# in `spec/support` and its subdirectories.
 Dir["#{support}/**/*.rb"].each { |file| require file }
 
 RSpec.configure do |config|

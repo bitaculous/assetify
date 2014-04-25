@@ -13,8 +13,8 @@
 # Ignore ruby version configuration
 .ruby-version
 
-# Ignore “Gemfile.lock”
+# Ignore `Gemfile.lock`
 Gemfile.lock
 
-# Ignore “pkg” folder
+# Ignore `pkg` folder
 pkg

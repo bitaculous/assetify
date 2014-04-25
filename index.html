@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Assetify by bitaculous</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Assetify</h1>
+        <p>“All your assets are belong to us”</p>
+
+        <p class="view"><a href="https://github.com/bitaculous/assetify">View the Project on GitHub <small>bitaculous/assetify</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/bitaculous/assetify/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/bitaculous/assetify/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/bitaculous/assetify">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<ol>
+<li>
+<p>Add assetify to your Gemfile:</p>
+
+<pre><code>group :assets do
+  gem 'assetify', github: 'bitaculous/assetify'
+end
+</code></pre>
+</li>
+<li><p>Run <code>bundle install</code></p></li>
+</ol><h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<h3>
+<a name="css" class="anchor" href="#css"><span class="octicon octicon-link"></span></a>CSS</h3>
+
+<h4>
+<a name="normalizecss" class="anchor" href="#normalizecss"><span class="octicon octicon-link"></span></a><a href="http://necolas.github.io/normalize.css" title="normalize.css">normalize.css</a>
+</h4>
+
+<p>First, import normalize:</p>
+
+<div class="highlight highlight-sass"><pre><span class="k">@import</span> <span class="s">normalize</span>
+</pre></div>
+
+<p>The most basic option is simply:</p>
+
+<div class="highlight highlight-sass"><pre><span class="k">@include</span><span class="nd"> normalize</span>
+</pre></div>
+
+<p>which includes the “full package”.</p>
+
+<p>Or include only specific parts:</p>
+
+<div class="highlight highlight-sass"><pre><span class="k">@include</span><span class="nd"> base</span>
+<span class="k">@include</span><span class="nd"> html5-display-definitions</span>
+<span class="k">@include</span><span class="nd"> links</span>
+<span class="k">@include</span><span class="nd"> text-level-semantics</span>
+<span class="k">@include</span><span class="nd"> embedded-content</span>
+<span class="k">@include</span><span class="nd"> grouping-content</span>
+<span class="k">@include</span><span class="nd"> forms</span>
+<span class="k">@include</span><span class="nd"> tables</span>
+</pre></div>
+
+<h4>
+<a name="resetcss" class="anchor" href="#resetcss"><span class="octicon octicon-link"></span></a><a href="http://meyerweb.com/eric/tools/css/reset" title="reset.css">reset.css</a>
+</h4>
+
+<p>First, import reset:</p>
+
+<div class="highlight highlight-sass"><pre><span class="k">@import</span> <span class="s">reset</span>
+</pre></div>
+
+<p>Second, include it:</p>
+
+<div class="highlight highlight-sass"><pre><span class="k">@include</span><span class="nd"> reset</span>
+</pre></div>
+
+<h4>
+<a name="sass-media-queries" class="anchor" href="#sass-media-queries"><span class="octicon octicon-link"></span></a><a href="http://paranoida.github.io/sass-mediaqueries" title="Sass Media Queries">Sass Media Queries</a>
+</h4>
+
+<p>Just import Sass Media Queries:</p>
+
+<div class="highlight highlight-sass"><pre><span class="k">@import</span> <span class="s">media_queries</span>
+</pre></div>
+
+<p>and you're ready to <a href="http://paranoida.github.io/sass-mediaqueries" title="Sass Media Queries">roll</a>.</p>
+
+<h3>
+<a name="javascript" class="anchor" href="#javascript"><span class="octicon octicon-link"></span></a>JavaScript</h3>
+
+<h4>
+<a name="jquery" class="anchor" href="#jquery"><span class="octicon octicon-link"></span></a><a href="http://jquery.com" title="The Write Less, Do More, JavaScript Library.">jQuery</a>
+</h4>
+
+<div class="highlight highlight-coffeescript"><pre><span class="c1">#= require jquery</span>
+</pre></div>
+
+<h4>
+<a name="modernizr" class="anchor" href="#modernizr"><span class="octicon octicon-link"></span></a><a href="http://modernizr.com" title="Modernizr is a JavaScript library that detects HTML5 and CSS3 features in the user’s browser.">Modernizr</a>
+</h4>
+
+<div class="highlight highlight-coffeescript"><pre><span class="c1">#= require modernizr</span>
+</pre></div>
+
+<h4>
+<a name="yepnope" class="anchor" href="#yepnope"><span class="octicon octicon-link"></span></a><a href="http://yepnopejs.com" title="yepnope is an asynchronous conditional resource loader that's super-fast, and allows you to load only the scripts that your users need.">yepnope</a>
+</h4>
+
+<div class="highlight highlight-coffeescript"><pre><span class="c1">#= require yepnope</span>
+</pre></div>
+
+<h4>
+<a name="polyfills" class="anchor" href="#polyfills"><span class="octicon octicon-link"></span></a>Polyfills</h4>
+
+<h5>
+<a name="console" class="anchor" href="#console"><span class="octicon octicon-link"></span></a><a href="https://github.com/h5bp/html5-boilerplate/blob/master/js/plugins.js" title="Avoid `console` errors in browsers that lack a console.">Console</a>
+</h5>
+
+<div class="highlight highlight-coffeescript"><pre><span class="c1">#= require polyfills/console</span>
+</pre></div>
+
+<h2>
+<a name="credits" class="anchor" href="#credits"><span class="octicon octicon-link"></span></a>Credits</h2>
+
+<p>Assetify uses the following libraries:</p>
+
+<h3>
+<a name="css-1" class="anchor" href="#css-1"><span class="octicon octicon-link"></span></a>CSS</h3>
+
+<ul>
+<li><a href="http://necolas.github.io/normalize.css" title="normalize.css">normalize.css</a></li>
+<li><a href="http://meyerweb.com/eric/tools/css/reset" title="reset.css">reset.css</a></li>
+<li><a href="http://paranoida.github.io/sass-mediaqueries" title="Sass Media Queries">Sass Media Queries</a></li>
+</ul><h3>
+<a name="javascript-1" class="anchor" href="#javascript-1"><span class="octicon octicon-link"></span></a>JavaScript</h3>
+
+<ul>
+<li><a href="http://jquery.com" title="The Write Less, Do More, JavaScript Library.">jQuery</a></li>
+<li><a href="http://modernizr.com" title="Modernizr is a JavaScript library that detects HTML5 and CSS3 features in the user’s browser.">Modernizr</a></li>
+<li><a href="http://yepnopejs.com" title="yepnope is an asynchronous conditional resource loader that's super-fast, and allows you to load only the scripts that your users need.">yepnope</a></li>
+</ul><h4>
+<a name="polyfills-1" class="anchor" href="#polyfills-1"><span class="octicon octicon-link"></span></a>Polyfills</h4>
+
+<ul>
+<li><a href="https://github.com/h5bp/html5-boilerplate/blob/master/js/plugins.js" title="Avoid `console` errors in browsers that lack a console.">Console</a></li>
+</ul><h2>
+<a name="code-status" class="anchor" href="#code-status"><span class="octicon octicon-link"></span></a>Code Status</h2>
+
+<p><a href="http://travis-ci.org/bitaculous/assetify"><img src="https://travis-ci.org/bitaculous/assetify.svg" title="Travis CI Status" alt="Travis CI Status"></a>
+<a href="https://gemnasium.com/bitaculous/assetify"><img src="https://gemnasium.com/bitaculous/assetify.svg" title="Gemnasium Status" alt="Gemnasium Status"></a></p>
+
+<h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>Assetify is released under the MIT License.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/bitaculous">bitaculous</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>

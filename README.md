@@ -14,7 +14,7 @@ Installation
     end
     ```
 
-2.  Run `bundle install'
+2.  Run `bundle install`
 
 Usage
 -----

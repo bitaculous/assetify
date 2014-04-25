@@ -1,7 +1,7 @@
 [ASSETIFY](http://bitaculous.github.io/assetify "Assetify")
 ===========================================================
 
-**“All your assets are belong to us”**
+**“All your assets are belong to us” (“AYAABTU”)**
 
 Installation
 ------------

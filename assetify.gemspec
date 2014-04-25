@@ -7,7 +7,7 @@ require 'assetify/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'assetify'
-  spec.summary       = '“All your assets are belong to us”'
+  spec.summary       = '“All your assets are belong to us” (“AYAABTU”)'
   spec.author        = 'Maik Kempe'
   spec.email         = 'mkempe@bitaculous.com'
   spec.homepage      = 'http://bitaculous.github.io/assetify'

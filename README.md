@@ -128,4 +128,4 @@ Assetify uses the following libraries:
 License
 -------
 
-Assetify is released under the MIT License, see [LICENSE](https://raw.githubusercontent.com/bitaculous/assetify/master/LICENSE "License").
+Assetify is released under the MIT License (MIT), see [LICENSE](https://raw.githubusercontent.com/bitaculous/assetify/master/LICENSE "License").

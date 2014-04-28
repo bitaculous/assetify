@@ -3,6 +3,8 @@
 
 **“All your assets are belong to us” (“AYAABTU”)**
 
+[![Travis CI Status](https://travis-ci.org/bitaculous/assetify.svg)](http://travis-ci.org/bitaculous/assetify) [![Gemnasium Status](https://gemnasium.com/bitaculous/assetify.svg)](https://gemnasium.com/bitaculous/assetify)
+
 Installation
 ------------
 
@@ -123,13 +125,7 @@ Assetify uses the following libraries:
 
 * [Console](https://github.com/h5bp/html5-boilerplate/blob/master/js/plugins.js "Avoid `console` errors in browsers that lack a console.")
 
-Code Status
------------
-
-[<img src="https://travis-ci.org/bitaculous/assetify.svg" title="Travis CI Status" alt="Travis CI Status" />](http://travis-ci.org/bitaculous/assetify)
-[<img src="https://gemnasium.com/bitaculous/assetify.svg" title="Gemnasium Status" alt="Gemnasium Status" />](https://gemnasium.com/bitaculous/assetify)
-
 License
 -------
 
-Assetify is released under the MIT License.
+Assetify is released under the MIT License, see [LICENSE](https://raw.githubusercontent.com/bitaculous/assetify/master/LICENSE "License").

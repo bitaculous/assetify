@@ -3,6 +3,9 @@
 
 **“All your assets are belong to us” (“AYAABTU”)**
 
+Assetify is our package for [Sprockets](https://github.com/sstephenson/sprockets "Sprockets: Rack-based asset packaging"),
+the Rack-based asset packaging system, with libraries we need for our projects at [Bitaculous](http://bitaculous.com "It's all about the bits, baby!").
+
 [![Travis CI Status](https://travis-ci.org/bitaculous/assetify.svg)](http://travis-ci.org/bitaculous/assetify) [![Gemnasium Status](https://gemnasium.com/bitaculous/assetify.svg)](https://gemnasium.com/bitaculous/assetify)
 
 Installation
@@ -104,6 +107,12 @@ and you're ready to [roll](http://paranoida.github.io/sass-mediaqueries "Sass Me
 #= require polyfills/console
 ```
 
+##### [FastClick](https://github.com/ftlabs/fastclick "Polyfill to remove click delays on browsers with touch UIs.")
+
+```coffeescript
+#= require polyfills/fastclick
+```
+
 Credits
 -------
 
@@ -124,6 +133,7 @@ Assetify uses the following libraries:
 #### Polyfills
 
 * [Console](https://github.com/h5bp/html5-boilerplate/blob/master/js/plugins.js "Avoid `console` errors in browsers that lack a console.")
+* [FastClick](https://github.com/ftlabs/fastclick "Polyfill to remove click delays on browsers with touch UIs.")
 
 License
 -------

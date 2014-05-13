@@ -11,7 +11,7 @@ the Rack-based asset packaging system, with libraries we need for our projects a
 Installation
 ------------
 
-1.  Add assetify to your Gemfile:
+1. Add assetify to your Gemfile:
 
     ```
     group :assets do
@@ -19,7 +19,7 @@ Installation
     end
     ```
 
-2.  Run `bundle install`
+2. Run `bundle install`
 
 Usage
 -----

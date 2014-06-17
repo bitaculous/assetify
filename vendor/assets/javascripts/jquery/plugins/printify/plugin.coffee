@@ -3,13 +3,14 @@
 #= require_self
 
 (($, window, document) ->
-  $.fn.extend printify: (options, args...) ->
+  $.fn.printify = (options) ->
     @each ->
       element = $ @
-      data    = element.data 'printify'
 
-      if data
-        data[options].apply data, args if data[options]
-      else
-        element.data 'printify', (data = new Printify @, options)
+      if element.data('printify') is `undefined`
+        plugin = new Printify @, options
+
+        element.data 'printify', plugin
+
+      return
 ) jQuery, window, document

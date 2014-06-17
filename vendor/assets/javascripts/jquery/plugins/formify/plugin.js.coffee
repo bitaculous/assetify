@@ -3,13 +3,14 @@
 #= require_self
 
 (($, window, document) ->
-  $.fn.extend formify: (options, args...) ->
+  $.fn.formify = (options) ->
     @each ->
       element = $ @
-      data    = element.data 'formify'
 
-      if data
-        data[options].apply data, args if data[options]
-      else
-        element.data 'formify', (data = new Formify @, options)
+      if element.data('formify') is `undefined`
+        plugin = new Formify @, options
+
+        element.data 'formify', plugin
+
+      return
 ) jQuery, window, document

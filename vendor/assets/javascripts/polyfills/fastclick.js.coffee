@@ -1,3 +1,3 @@
 # This is the manifest for “fastclick.js”.
 
-#= require ./fastclick/fastclick-1.0.1.min
+#= require ./fastclick/fastclick-1.0.2.min

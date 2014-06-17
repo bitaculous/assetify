@@ -1,3 +1,3 @@
-# This is the manifest for “browser.js”.
+# This is the manifest for `browser.js`.
 
 #= require ./browser/mobile

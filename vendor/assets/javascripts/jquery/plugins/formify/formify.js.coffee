@@ -1,4 +1,4 @@
-# This is the manifest for “formify.js”.
+# This is the manifest for `formify.js`.
 
 #= require_self
 

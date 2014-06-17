@@ -1,1 +1,1 @@
-# This is the manifest for “bar.js”.
+# This is the manifest for `bar.js`.

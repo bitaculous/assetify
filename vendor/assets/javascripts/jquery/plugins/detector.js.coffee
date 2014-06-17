@@ -1,4 +1,4 @@
-# This is the manifest for “detector.js”.
+# This is the manifest for `detector.js`.
 
 #= require ./browser
 

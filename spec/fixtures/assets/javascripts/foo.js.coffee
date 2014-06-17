@@ -1,1 +1,1 @@
-# This is the manifest for “foo.js”.
+# This is the manifest for `foo.js`.

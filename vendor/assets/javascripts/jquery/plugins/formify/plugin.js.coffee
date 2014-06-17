@@ -1,4 +1,4 @@
-# This is the manifest for “plugin.js”.
+# This is the manifest for `plugin.js`.
 
 #= require_self
 

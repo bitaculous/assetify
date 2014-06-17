@@ -1,4 +1,4 @@
-# This is the manifest for “printify.js”.
+# This is the manifest for `printify.js`.
 
 #= require_self
 

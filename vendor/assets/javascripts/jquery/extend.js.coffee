@@ -1,4 +1,4 @@
-# This is the manifest for “extend.js”.
+# This is the manifest for `extend.js`.
 
 #= require_self
 

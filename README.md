@@ -1,12 +1,13 @@
-[ASSETIFY](http://bitaculous.github.io/assetify "Assetify")
-===========================================================
+[Assetify](http://bitaculous.github.io/assetify "“All your assets are belong to us”")
+=====================================================================================
 
-**“All your assets are belong to us” (“AYAABTU”)**
+**“All your assets are belong to us”**
 
 Assetify is our package for [Sprockets](https://github.com/sstephenson/sprockets "Sprockets: Rack-based asset packaging"),
 the Rack-based asset packaging system, with libraries we need for our projects at [Bitaculous](http://bitaculous.com "It's all about the bits, baby!").
 
-[![Travis CI Status](https://travis-ci.org/bitaculous/assetify.svg)](http://travis-ci.org/bitaculous/assetify) [![Gemnasium Status](https://gemnasium.com/bitaculous/assetify.svg)](https://gemnasium.com/bitaculous/assetify)
+[![Travis CI Status](https://travis-ci.org/bitaculous/assetify.svg)](http://travis-ci.org/bitaculous/assetify)
+[![Gemnasium Status](https://gemnasium.com/bitaculous/assetify.svg)](https://gemnasium.com/bitaculous/assetify)
 
 Installation
 ------------
@@ -135,7 +136,23 @@ Assetify uses the following libraries:
 * [Console](https://github.com/h5bp/html5-boilerplate/blob/master/js/plugins.js "Avoid `console` errors in browsers that lack a console.")
 * [FastClick](https://github.com/ftlabs/fastclick "Polyfill to remove click delays on browsers with touch UIs.")
 
+Bug Reports
+-----------
+
+Github Issues are used for managing bug reports and feature requests. If you run into issues, please search the issues
+and submit new problems [here](https://github.com/bitaculous/assetify/issues "Github Issues").
+
+Versioning
+----------
+
+This library aims to adhere to [Semantic Versioning 2.0.0][semver]. Violations of this scheme should be reported as bugs.
+Specifically, if a minor or patch version is released that breaks backward compatibility, that version should be
+immediately yanked and / or a new version should be immediately released that restores compatibility.
+
+[semver]: http://semver.org
+
 License
 -------
 
-Assetify is released under the MIT License (MIT), see [LICENSE](https://raw.githubusercontent.com/bitaculous/assetify/master/LICENSE "License").
+[Assetify](http://bitaculous.github.io/assetify "“All your assets are belong to us”") is released under the MIT License
+(MIT), see [LICENSE](https://raw.githubusercontent.com/bitaculous/assetify/master/LICENSE "License").

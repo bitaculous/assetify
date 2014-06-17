@@ -1,12 +1,10 @@
-require 'spec_helper'
-
 describe Assetify::Integrations::SassIntegration do
   include Helpers
 
   let(:load_paths) { ::Sass.load_paths }
 
-  describe '`stylesheets`' do
-    context 'the `stylesheets` path exists' do
+  describe '“stylesheets”' do
+    context 'the “stylesheets” path exists' do
       it 'expands the load path' do
         Assetify::Integrations::SassIntegration.setup stylesheets_path: stylesheets_path
 
@@ -14,7 +12,7 @@ describe Assetify::Integrations::SassIntegration do
       end
     end
 
-    context 'the `stylesheets` path does not exists' do
+    context 'the “stylesheets” path does not exists' do
       let(:stylesheets_path) { '/foo' }
 
       it 'does not expands the load path' do
@@ -25,8 +23,8 @@ describe Assetify::Integrations::SassIntegration do
     end
   end
 
-  describe '`vendor stylesheets`' do
-    context 'the `vendor stylesheets` path exists' do
+  describe '“vendor stylesheets”' do
+    context 'the “vendor stylesheets” path exists' do
       it 'expands the load path' do
         Assetify::Integrations::SassIntegration.setup vendor_stylesheets_path: vendor_stylesheets_path
 
@@ -34,7 +32,7 @@ describe Assetify::Integrations::SassIntegration do
       end
     end
 
-    context 'the `vendor stylesheets` path does not exists' do
+    context 'the “vendor stylesheets” path does not exists' do
       let(:vendor_stylesheets_path) { '/foo' }
 
       it 'does not expands the load path' do

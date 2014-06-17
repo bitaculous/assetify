@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 describe Assetify::Paths do
   let(:trail)                   { File.expand_path '../../../', __FILE__ }
   let(:assets_path)             { File.expand_path 'assets', trail }
@@ -15,47 +13,47 @@ describe Assetify::Paths do
   let(:vendor_javascripts_path) { File.expand_path 'javascripts', vendor_assets_path }
   let(:vendor_stylesheets_path) { File.expand_path 'stylesheets', vendor_assets_path }
 
-  it 'returns `assets` path' do
+  it 'returns the “assets” path' do
     expect(Assetify.assets_path).to eql assets_path
   end
 
-  it 'returns `fonts` path' do
+  it 'returns the “fonts” path' do
     expect(Assetify.fonts_path).to eql fonts_path
   end
 
-  it 'returns `images` path' do
+  it 'returns the “images” path' do
     expect(Assetify.images_path).to eql images_path
   end
 
-  it 'returns `javascripts` path' do
+  it 'returns the “javascripts” path' do
     expect(Assetify.javascripts_path).to eql javascripts_path
   end
 
-  it 'returns `stylesheets` path' do
+  it 'returns the “stylesheets” path' do
     expect(Assetify.stylesheets_path).to eql stylesheets_path
   end
 
-  it 'returns `vendor` path' do
+  it 'returns the “vendor” path' do
     expect(Assetify.vendor_path).to eql vendor_path
   end
 
-  it 'returns `vendor assets` path' do
+  it 'returns the “vendor assets” path' do
     expect(Assetify.vendor_assets_path).to eql vendor_assets_path
   end
 
-  it 'returns `vendor fonts` path' do
+  it 'returns the “vendor fonts” path' do
     expect(Assetify.vendor_fonts_path).to eql vendor_fonts_path
   end
 
-  it 'returns `vendor images` path' do
+  it 'returns the “vendor images” path' do
     expect(Assetify.vendor_images_path).to eql vendor_images_path
   end
 
-  it 'returns `vendor javascripts` path' do
+  it 'returns the “vendor javascripts” path' do
     expect(Assetify.vendor_javascripts_path).to eql vendor_javascripts_path
   end
 
-  it 'returns `vendor stylesheets` path' do
+  it 'returns “vendor stylesheets” path' do
     expect(Assetify.vendor_stylesheets_path).to eql vendor_stylesheets_path
   end
 end

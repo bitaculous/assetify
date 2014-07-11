@@ -1,13 +1,11 @@
-# This is the manifest for `plugin.js`.
-
-#= require_self
-
 (($, window, document) ->
+  'use strict'
+
   $.fn.printify = (options) ->
     @each ->
       element = $ @
 
-      if element.data('printify') is `undefined`
+      if typeof element.data('printify') is 'undefined'
         plugin = new Printify @, options
 
         element.data 'printify', plugin

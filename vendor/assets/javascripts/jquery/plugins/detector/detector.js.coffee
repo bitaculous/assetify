@@ -1,9 +1,5 @@
-# This is the manifest for `detector.js`.
-
-#= require_self
-
 class @Detector
-  # === Defaults ===
+  # === Variables ===
 
   defaults:
     detectMobile: true
@@ -13,7 +9,7 @@ class @Detector
 
   constructor: (element, options) ->
     @element = $ element
-    @options = $.extend { }, @defaults, options
+    @options = $.extend @defaults, options
 
     initialize.call @
 

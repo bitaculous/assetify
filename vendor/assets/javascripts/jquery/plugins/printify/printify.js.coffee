@@ -1,9 +1,5 @@
-# This is the manifest for `printify.js`.
-
-#= require_self
-
 class @Printify
-  # === Defaults ===
+  # === Variables ===
 
   defaults: { }
 
@@ -11,7 +7,7 @@ class @Printify
 
   constructor: (element, options) ->
     @element = $ element
-    @options = $.extend { }, @defaults, options
+    @options = $.extend @defaults, options
 
     initialize.call @
 
@@ -20,7 +16,7 @@ class @Printify
   # === Private ===
 
   initialize = ->
-    @element.click -> # Hook into click
+    @element.click ->
       do window.print
 
       false

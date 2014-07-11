@@ -121,49 +121,52 @@ Assetify uses the following libraries:
 
 ### CSS
 
-* [normalize.css](http://necolas.github.io/normalize.css "normalize.css")
-* [reset.css](http://meyerweb.com/eric/tools/css/reset "reset.css")
-* [Sass Media Queries](http://paranoida.github.io/sass-mediaqueries "Sass Media Queries")
+* [normalize.css]
+* [reset.css]
+* [Sass Media Queries]
 
 ### JavaScript
 
-* [Detect.js](https://github.com/darcyclarke/Detect.js "JS Library to detect browser, os and device based on the UserAgent string.")
-* [jQuery](http://jquery.com "The Write Less, Do More, JavaScript Library.")
-* [Modernizr](http://modernizr.com "Modernizr is a JavaScript library that detects HTML5 and CSS3 features in the user’s browser.")
-* [yepnope](http://yepnopejs.com "yepnope is an asynchronous conditional resource loader that's super-fast, and allows you to load only the scripts that your users need.")
+* [Detect.js]
+* [jQuery]
+* [Modernizr]
+* [yepnope]
 
 #### Polyfills
 
-* [Console](https://github.com/h5bp/html5-boilerplate/blob/master/js/plugins.js "Avoid `console` errors in browsers that lack a console.")
-* [FastClick](https://github.com/ftlabs/fastclick "Polyfill to remove click delays on browsers with touch UIs.")
+* [Console]
+* [FastClick]
 
 Bug Reports
 -----------
 
 Github Issues are used for managing bug reports and feature requests. If you run into issues, please search the issues
-and submit new problems [here](https://github.com/bitaculous/assetify/issues "Github Issues").
+and submit new problems [here].
 
 Versioning
 ----------
 
-This library aims to adhere to [Semantic Versioning 2.0.0](http://semver.org "Semantic Versioning 2.0.0"). Violations of
-this scheme should be reported as bugs. Specifically, if a minor or patch version is released that breaks backward
-compatibility, that version should be immediately yanked and / or a new version should be immediately released that
-restores compatibility.
+This library aims to adhere to [Semantic Versioning 2.0.0]. Violations of this scheme should be reported as bugs.
+Specifically, if a minor or patch version is released that breaks backward compatibility, that version should be
+immediately yanked and / or a new version should be immediately released that restores compatibility.
 
 License
 -------
 
-Assetify is released under the MIT License (MIT), see [LICENSE](https://raw.githubusercontent.com/bitaculous/assetify/master/LICENSE "License").
+Assetify is released under the MIT License (MIT), see [LICENSE].
 
 [Bitaculous]: http://bitaculous.com "It's all about the bits, baby!"
 [Console]: https://github.com/h5bp/html5-boilerplate/blob/master/js/plugins.js "Avoid `console` errors in browsers that lack a console."
+[Detect.js]: https://github.com/darcyclarke/Detect.js "JS Library to detect browser, os and device based on the UserAgent string."
 [FastClick]: https://github.com/ftlabs/fastclick "Polyfill to remove click delays on browsers with touch UIs."
+[here]: https://github.com/bitaculous/assetify/issues "Github Issues"
 [jQuery]: http://jquery.com "The Write Less, Do More, JavaScript Library."
+[LICENSE]: https://raw.githubusercontent.com/bitaculous/assetify/master/LICENSE "License"
 [Modernizr]: http://modernizr.com "Modernizr is a JavaScript library that detects HTML5 and CSS3 features in the user’s browser."
 [normalize.css]: http://necolas.github.io/normalize.css "normalize.css"
 [reset.css]: http://meyerweb.com/eric/tools/css/reset "reset.css"
 [roll]: http://paranoida.github.io/sass-mediaqueries "Sass Media Queries"
 [Sass Media Queries]: http://paranoida.github.io/sass-mediaqueries "Sass Media Queries"
+[Semantic Versioning 2.0.0]: http://semver.org "Semantic Versioning 2.0.0"
 [Sprockets]: https://github.com/sstephenson/sprockets "Sprockets: Rack-based asset packaging"
 [yepnope]: http://yepnopejs.com "yepnope is an asynchronous conditional resource loader that's super-fast, and allows you to load only the scripts that your users need."

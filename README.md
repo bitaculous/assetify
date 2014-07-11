@@ -27,7 +27,7 @@ Usage
 
 ### CSS
 
-#### [normalize.css](http://necolas.github.io/normalize.css "normalize.css")
+#### [normalize.css]
 
 First, import normalize:
 
@@ -56,7 +56,7 @@ Or include only specific parts:
 @include tables
 ```
 
-#### [reset.css](http://meyerweb.com/eric/tools/css/reset "reset.css")
+#### [reset.css]
 
 First, import reset:
 
@@ -70,7 +70,7 @@ Second, include it:
 @include reset
 ```
 
-#### [Sass Media Queries](http://paranoida.github.io/sass-mediaqueries "Sass Media Queries")
+#### [Sass Media Queries]
 
 Just import Sass Media Queries:
 
@@ -78,23 +78,23 @@ Just import Sass Media Queries:
 @import media_queries
 ```
 
-and you're ready to [roll](http://paranoida.github.io/sass-mediaqueries "Sass Media Queries").
+and you're ready to [roll].
 
 ### JavaScript
 
-#### [jQuery](http://jquery.com "The Write Less, Do More, JavaScript Library.")
+#### [jQuery]
 
 ```coffeescript
 #= require jquery
 ```
 
-#### [Modernizr](http://modernizr.com "Modernizr is a JavaScript library that detects HTML5 and CSS3 features in the user’s browser.")
+#### [Modernizr]
 
 ```coffeescript
 #= require modernizr
 ```
 
-#### [yepnope](http://yepnopejs.com "yepnope is an asynchronous conditional resource loader that's super-fast, and allows you to load only the scripts that your users need.")
+#### [yepnope]
 
 ```coffeescript
 #= require yepnope
@@ -102,13 +102,13 @@ and you're ready to [roll](http://paranoida.github.io/sass-mediaqueries "Sass Me
 
 #### Polyfills
 
-##### [Console](https://github.com/h5bp/html5-boilerplate/blob/master/js/plugins.js "Avoid `console` errors in browsers that lack a console.")
+##### [Console]
 
 ```coffeescript
 #= require polyfills/console
 ```
 
-##### [FastClick](https://github.com/ftlabs/fastclick "Polyfill to remove click delays on browsers with touch UIs.")
+##### [FastClick]
 
 ```coffeescript
 #= require polyfills/fastclick
@@ -157,4 +157,13 @@ License
 Assetify is released under the MIT License (MIT), see [LICENSE](https://raw.githubusercontent.com/bitaculous/assetify/master/LICENSE "License").
 
 [Bitaculous]: http://bitaculous.com "It's all about the bits, baby!"
+[Console]: https://github.com/h5bp/html5-boilerplate/blob/master/js/plugins.js "Avoid `console` errors in browsers that lack a console."
+[FastClick]: https://github.com/ftlabs/fastclick "Polyfill to remove click delays on browsers with touch UIs."
+[jQuery]: http://jquery.com "The Write Less, Do More, JavaScript Library."
+[Modernizr]: http://modernizr.com "Modernizr is a JavaScript library that detects HTML5 and CSS3 features in the user’s browser."
+[normalize.css]: http://necolas.github.io/normalize.css "normalize.css"
+[reset.css]: http://meyerweb.com/eric/tools/css/reset "reset.css"
+[roll]: http://paranoida.github.io/sass-mediaqueries "Sass Media Queries"
+[Sass Media Queries]: http://paranoida.github.io/sass-mediaqueries "Sass Media Queries"
 [Sprockets]: https://github.com/sstephenson/sprockets "Sprockets: Rack-based asset packaging"
+[yepnope]: http://yepnopejs.com "yepnope is an asynchronous conditional resource loader that's super-fast, and allows you to load only the scripts that your users need."

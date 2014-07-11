@@ -82,6 +82,12 @@ and you're ready to [roll].
 
 ### JavaScript
 
+#### [Detect.js]
+
+```coffeescript
+#= require detect
+```
+
 #### [jQuery]
 
 ```coffeescript

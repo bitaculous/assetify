@@ -3,8 +3,8 @@
 
 **“All your assets are belong to us”**
 
-Assetify is our package for [Sprockets](https://github.com/sstephenson/sprockets "Sprockets: Rack-based asset packaging"),
-the Rack-based asset packaging system, with libraries we need for our projects at [Bitaculous](http://bitaculous.com "It's all about the bits, baby!").
+Assetify is our package for [Sprockets], the Rack-based asset packaging system, with libraries we need for our projects
+at [Bitaculous].
 
 [![Travis CI Status](https://travis-ci.org/bitaculous/assetify.svg)](http://travis-ci.org/bitaculous/assetify)
 [![Gemnasium Status](https://gemnasium.com/bitaculous/assetify.svg)](https://gemnasium.com/bitaculous/assetify)
@@ -127,6 +127,7 @@ Assetify uses the following libraries:
 
 ### JavaScript
 
+* [Detect.js](https://github.com/darcyclarke/Detect.js "JS Library to detect browser, os and device based on the UserAgent string.")
 * [jQuery](http://jquery.com "The Write Less, Do More, JavaScript Library.")
 * [Modernizr](http://modernizr.com "Modernizr is a JavaScript library that detects HTML5 and CSS3 features in the user’s browser.")
 * [yepnope](http://yepnopejs.com "yepnope is an asynchronous conditional resource loader that's super-fast, and allows you to load only the scripts that your users need.")
@@ -145,14 +146,15 @@ and submit new problems [here](https://github.com/bitaculous/assetify/issues "Gi
 Versioning
 ----------
 
-This library aims to adhere to [Semantic Versioning 2.0.0][semver]. Violations of this scheme should be reported as bugs.
-Specifically, if a minor or patch version is released that breaks backward compatibility, that version should be
-immediately yanked and / or a new version should be immediately released that restores compatibility.
-
-[semver]: http://semver.org
+This library aims to adhere to [Semantic Versioning 2.0.0](http://semver.org "Semantic Versioning 2.0.0"). Violations of
+this scheme should be reported as bugs. Specifically, if a minor or patch version is released that breaks backward
+compatibility, that version should be immediately yanked and / or a new version should be immediately released that
+restores compatibility.
 
 License
 -------
 
-[Assetify](http://bitaculous.github.io/assetify "“All your assets are belong to us”") is released under the MIT License
-(MIT), see [LICENSE](https://raw.githubusercontent.com/bitaculous/assetify/master/LICENSE "License").
+Assetify is released under the MIT License (MIT), see [LICENSE](https://raw.githubusercontent.com/bitaculous/assetify/master/LICENSE "License").
+
+[Bitaculous]: http://bitaculous.com "It's all about the bits, baby!"
+[Sprockets]: https://github.com/sstephenson/sprockets "Sprockets: Rack-based asset packaging"

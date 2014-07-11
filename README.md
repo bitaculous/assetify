@@ -1,5 +1,5 @@
-[Assetify](http://bitaculous.github.io/assetify "“All your assets are belong to us”")
-=====================================================================================
+[Assetify]
+==========
 
 **“All your assets are belong to us”**
 
@@ -161,6 +161,7 @@ License
 
 Assetify is released under the MIT License (MIT), see [LICENSE].
 
+[Assetify]: http://bitaculous.github.io/assetify "“All your assets are belong to us”"
 [Bitaculous]: http://bitaculous.com "It's all about the bits, baby!"
 [Console]: https://github.com/h5bp/html5-boilerplate/blob/master/js/plugins.js "Avoid `console` errors in browsers that lack a console."
 [Detect.js]: https://github.com/darcyclarke/Detect.js "JS Library to detect browser, os and device based on the UserAgent string."

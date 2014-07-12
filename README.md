@@ -6,8 +6,8 @@
 Assetify is our package for [Sprockets], the Rack-based asset packaging system, with libraries we need for our projects
 at [Bitaculous].
 
-[![Travis CI Status](https://travis-ci.org/bitaculous/assetify.svg)](http://travis-ci.org/bitaculous/assetify)
-[![Gemnasium Status](https://gemnasium.com/bitaculous/assetify.svg)](https://gemnasium.com/bitaculous/assetify)
+[![Travis CI Status][Travis CI Status]][Travis CI]
+[![Gemnasium Status][Gemnasium Status]][Gemnasium]
 
 Installation
 ------------
@@ -159,16 +159,19 @@ immediately yanked and / or a new version should be immediately released that re
 License
 -------
 
-Assetify is released under the MIT License (MIT), see [LICENSE].
+Assetify is released under the [MIT License (MIT)], see [LICENSE].
 
 [Assetify]: http://bitaculous.github.io/assetify "“All your assets are belong to us”"
 [Bitaculous]: http://bitaculous.com "It's all about the bits, baby!"
 [Console]: https://github.com/h5bp/html5-boilerplate/blob/master/js/plugins.js "Avoid `console` errors in browsers that lack a console."
 [Detect.js]: https://github.com/darcyclarke/Detect.js "JS Library to detect browser, os and device based on the UserAgent string."
 [FastClick]: https://github.com/ftlabs/fastclick "Polyfill to remove click delays on browsers with touch UIs."
+[Gemnasium Status]: http://img.shields.io/gemnasium/bitaculous/assetify.svg?style=flat "Gemnasium Status"
+[Gemnasium]: https://gemnasium.com/bitaculous/assetify "Assetify at Gemnasium"
 [here]: https://github.com/bitaculous/assetify/issues "Github Issues"
 [jQuery]: http://jquery.com "The Write Less, Do More, JavaScript Library."
 [LICENSE]: https://raw.githubusercontent.com/bitaculous/assetify/master/LICENSE "License"
+[MIT License (MIT)]: http://opensource.org/licenses/MIT "The MIT License (MIT)"
 [Modernizr]: http://modernizr.com "Modernizr is a JavaScript library that detects HTML5 and CSS3 features in the user’s browser."
 [normalize.css]: http://necolas.github.io/normalize.css "normalize.css"
 [reset.css]: http://meyerweb.com/eric/tools/css/reset "reset.css"
@@ -176,4 +179,6 @@ Assetify is released under the MIT License (MIT), see [LICENSE].
 [Sass Media Queries]: http://paranoida.github.io/sass-mediaqueries "Sass Media Queries"
 [Semantic Versioning 2.0.0]: http://semver.org "Semantic Versioning 2.0.0"
 [Sprockets]: https://github.com/sstephenson/sprockets "Sprockets: Rack-based asset packaging"
+[Travis CI Status]: http://img.shields.io/travis/bitaculous/assetify.svg?style=flat "Travis CI Status"
+[Travis CI]: https://travis-ci.org/bitaculous/assetify "Assetify at Travis CI"
 [yepnope]: http://yepnopejs.com "yepnope is an asynchronous conditional resource loader that's super-fast, and allows you to load only the scripts that your users need."

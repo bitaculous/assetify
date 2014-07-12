@@ -143,7 +143,7 @@ Assetify uses the following libraries:
 * [Console]
 * [FastClick]
 
-Bug Reports
+Bug reports
 -----------
 
 Github Issues are used for managing bug reports and feature requests. If you run into issues, please search the issues

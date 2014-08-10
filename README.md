@@ -94,6 +94,32 @@ and you're ready to [roll].
 #= require jquery
 ```
 
+##### Plugins
+
+###### Browser
+
+```coffeescript
+#= require jquery/plugins/browser
+```
+
+###### Detector
+
+```coffeescript
+#= require jquery/plugins/detector
+```
+
+###### Printify
+
+```coffeescript
+#= require jquery/plugins/printify
+```
+
+###### [Velocity]
+
+```coffeescript
+#= require jquery/plugins/velocity
+```
+
 #### [Modernizr]
 
 ```coffeescript
@@ -136,6 +162,7 @@ Credits
 * [Detect.js]
 * [jQuery]
 * [Modernizr]
+* [Velocity]
 * [yepnope]
 
 #### Polyfills
@@ -181,4 +208,5 @@ License
 [Sprockets]: https://github.com/sstephenson/sprockets "Sprockets: Rack-based asset packaging"
 [Travis CI Status]: http://img.shields.io/travis/bitaculous/assetify.svg?style=flat "Travis CI Status"
 [Travis CI]: https://travis-ci.org/bitaculous/assetify "Assetify at Travis CI"
+[Velocity]: http://velocityjs.org "Accelerated JavaScript animation."
 [yepnope]: http://yepnopejs.com "yepnope is an asynchronous conditional resource loader that's super-fast, and allows you to load only the scripts that your users need."

@@ -120,6 +120,10 @@ and you're ready to [roll].
 #= require jquery/plugins/velocity
 ```
 
+```coffeescript
+#= require jquery/plugins/velocity/ui
+```
+
 #### [Modernizr]
 
 ```coffeescript

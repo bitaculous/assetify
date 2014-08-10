@@ -3,7 +3,7 @@
 source 'https://rubygems.org'
 
 group :default do
-  gem 'sass', '>= 3.2'
+  gem 'bourbon', '~> 4.0.2'
 
   gem 'sprockets', '~> 2.12.1'
 end

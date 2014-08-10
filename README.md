@@ -3,7 +3,7 @@
 
 **“All your assets are belong to us”**
 
-[Assetify] is our package for [Sprockets], the Rack-based asset packaging system, with common libraries we need for our
+[Assetify] is our package for [Sprockets], a Rack-based asset packaging system, with common libraries we need for our
 projects at [Bitaculous].
 
 [![Travis CI Status][Travis CI Status]][Travis CI]
@@ -153,15 +153,15 @@ and you're ready to [roll].
 Credits
 -------
 
-[Assetify] uses the following libraries:
+### [Assetify] uses the following libraries:
 
-### CSS
+#### CSS
 
 * [normalize.css]
 * [reset.css]
 * [Sass Media Queries]
 
-### JavaScript
+#### JavaScript
 
 * [Detect.js]
 * [jQuery]
@@ -169,10 +169,15 @@ Credits
 * [Velocity]
 * [yepnope]
 
-#### Polyfills
+##### Polyfills
 
 * [Console]
 * [FastClick]
+
+### [Assetify] uses the following gems:
+
+* [Bourbon]
+* [Sprockets]
 
 Bug reports
 -----------
@@ -194,6 +199,7 @@ License
 
 [Assetify]: http://bitaculous.github.io/assetify "“All your assets are belong to us”"
 [Bitaculous]: http://bitaculous.com "It's all about the bits, baby!"
+[Bourbon]: http://bourbon.io "A simple and lightweight mixin library for Sass."
 [Console]: https://github.com/h5bp/html5-boilerplate/blob/master/js/plugins.js "Avoid `console` errors in browsers that lack a console."
 [Detect.js]: https://github.com/darcyclarke/Detect.js "JS Library to detect browser, os and device based on the UserAgent string."
 [FastClick]: https://github.com/ftlabs/fastclick "Polyfill to remove click delays on browsers with touch UIs."
@@ -209,7 +215,7 @@ License
 [roll]: http://paranoida.github.io/sass-mediaqueries "Sass Media Queries"
 [Sass Media Queries]: http://paranoida.github.io/sass-mediaqueries "Sass Media Queries"
 [Semantic Versioning 2.0.0]: http://semver.org "Semantic Versioning 2.0.0"
-[Sprockets]: https://github.com/sstephenson/sprockets "Sprockets: Rack-based asset packaging"
+[Sprockets]: https://github.com/sstephenson/sprockets "Rack-based asset packaging system"
 [Travis CI Status]: http://img.shields.io/travis/bitaculous/assetify.svg?style=flat "Travis CI Status"
 [Travis CI]: https://travis-ci.org/bitaculous/assetify "Assetify at Travis CI"
 [Velocity]: http://velocityjs.org "Accelerated JavaScript animation."

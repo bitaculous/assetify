@@ -3,7 +3,7 @@
 
 **“All your assets are belong to us”**
 
-[Assetify] is our package for [Sprockets], a Rack-based asset packaging system, with common libraries we need for our
+Assetify is our package for [Sprockets], a Rack-based asset packaging system, with common libraries we need for our
 projects at [Bitaculous].
 
 [![Travis CI Status][Travis CI Status]][Travis CI]
@@ -12,7 +12,7 @@ projects at [Bitaculous].
 Installation
 ------------
 
-1. Add [Assetify] to your Gemfile:
+1. Add Assetify to your Gemfile:
 
     ```
     group :assets do
@@ -153,7 +153,7 @@ and you're ready to [roll].
 Credits
 -------
 
-### [Assetify] uses the following libraries:
+### Assetify uses the following libraries:
 
 #### CSS
 
@@ -174,7 +174,7 @@ Credits
 * [Console]
 * [FastClick]
 
-### [Assetify] uses the following gems:
+### Assetify uses the following gems:
 
 * [Bourbon]
 * [Sprockets]
@@ -195,7 +195,7 @@ immediately yanked and / or a new version should be immediately released that re
 License
 -------
 
-[Assetify] is released under the [MIT License (MIT)], see [LICENSE].
+Assetify is released under the [MIT License (MIT)], see [LICENSE].
 
 [Assetify]: http://bitaculous.github.io/assetify "“All your assets are belong to us”"
 [Bitaculous]: http://bitaculous.com "It's all about the bits, baby!"

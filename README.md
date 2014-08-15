@@ -200,7 +200,7 @@ Assetify is released under the [MIT License (MIT)], see [LICENSE].
 [Assetify]: http://bitaculous.github.io/assetify "“All your assets are belong to us”"
 [Bitaculous]: http://bitaculous.com "It's all about the bits, baby!"
 [Bourbon]: http://bourbon.io "A simple and lightweight mixin library for Sass."
-[Console]: https://github.com/h5bp/html5-boilerplate/blob/master/js/plugins.js "Avoid `console` errors in browsers that lack a console."
+[Console]: https://github.com/h5bp/html5-boilerplate/blob/master/src/js/plugins.js "Avoid `console` errors in browsers that lack a console."
 [Detect.js]: https://github.com/darcyclarke/Detect.js "JS Library to detect browser, os and device based on the UserAgent string."
 [FastClick]: https://github.com/ftlabs/fastclick "Polyfill to remove click delays on browsers with touch UIs."
 [Gemnasium Status]: http://img.shields.io/gemnasium/bitaculous/assetify.svg?style=flat "Gemnasium Status"

@@ -2,14 +2,7 @@
 //
 // @package assetify/common/normalizations
 
-$default-font-family: unquote('Arial, Helvetica, sans-serif') !default
-$default-font-size: 100% !default
-$default-font-style: normal !default
-$default-font-weight: normal !default
-$default-color: #000 !default
-$default-line-height: 1.25 !default
-
-@mixin font-normalization($font-family: $default-font-family, $font-size: $default-font-size, $font-style: $default-font-style, $font-weight: $default-font-weight, $color: $default-color, $line-height: $default-line-height)
+@mixin font-normalization($font-family: map-get($defaults, font-family), $font-size: map-get($defaults, font-size), $font-style: map-get($defaults, font-style), $font-weight: map-get($defaults, font-weight), $color: map-get($defaults, color), $line-height: map-get($defaults, line-height))
   html,
   body
     font-size: $font-size

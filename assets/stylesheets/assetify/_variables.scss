@@ -1,0 +1,12 @@
+// _variables.scss
+//
+// @package assetify
+
+$defaults: (
+  font-family: unquote('Arial, Helvetica, sans-serif'),
+  font-size: 100%,
+  font-style: normal,
+  font-weight: normal,
+  color: #000,
+  line-height: 1.25
+) !default;

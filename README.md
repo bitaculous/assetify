@@ -124,6 +124,12 @@ and you're ready to [roll].
 #= require jquery/plugins/velocity/ui
 ```
 
+###### [Waypoints]
+
+```coffeescript
+#= require jquery/plugins/waypoints
+```
+
 #### [Modernizr]
 
 ```coffeescript
@@ -164,10 +170,11 @@ Credits
 #### JavaScript
 
 * [Detect.js]
+* [jQuery]
 * [Modernizr]
 * [yepnope]
 
-##### [jQuery]
+##### jQuery Plugins
 
 * [Velocity]
 * [Waypoints]

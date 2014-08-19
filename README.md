@@ -164,10 +164,13 @@ Credits
 #### JavaScript
 
 * [Detect.js]
-* [jQuery]
 * [Modernizr]
-* [Velocity]
 * [yepnope]
+
+##### [jQuery]
+
+* [Velocity]
+* [Waypoints]
 
 ##### Polyfills
 
@@ -203,8 +206,8 @@ Assetify is released under the [MIT License (MIT)], see [LICENSE].
 [Console]: https://github.com/h5bp/html5-boilerplate/blob/master/src/js/plugins.js "Avoid `console` errors in browsers that lack a console."
 [Detect.js]: https://github.com/darcyclarke/Detect.js "JS Library to detect browser, os and device based on the UserAgent string."
 [FastClick]: https://github.com/ftlabs/fastclick "Polyfill to remove click delays on browsers with touch UIs."
-[Gemnasium Status]: http://img.shields.io/gemnasium/bitaculous/assetify.svg?style=flat "Gemnasium Status"
 [Gemnasium]: https://gemnasium.com/bitaculous/assetify "Assetify at Gemnasium"
+[Gemnasium Status]: http://img.shields.io/gemnasium/bitaculous/assetify.svg?style=flat "Gemnasium Status"
 [here]: https://github.com/bitaculous/assetify/issues "Github Issues"
 [jQuery]: http://jquery.com "The Write Less, Do More, JavaScript Library."
 [LICENSE]: https://raw.githubusercontent.com/bitaculous/assetify/master/LICENSE "License"
@@ -216,7 +219,8 @@ Assetify is released under the [MIT License (MIT)], see [LICENSE].
 [Sass Media Queries]: http://paranoida.github.io/sass-mediaqueries "Sass Media Queries"
 [Semantic Versioning 2.0.0]: http://semver.org "Semantic Versioning 2.0.0"
 [Sprockets]: https://github.com/sstephenson/sprockets "Rack-based asset packaging system"
-[Travis CI Status]: http://img.shields.io/travis/bitaculous/assetify.svg?style=flat "Travis CI Status"
 [Travis CI]: https://travis-ci.org/bitaculous/assetify "Assetify at Travis CI"
+[Travis CI Status]: http://img.shields.io/travis/bitaculous/assetify.svg?style=flat "Travis CI Status"
 [Velocity]: http://velocityjs.org "Accelerated JavaScript animation."
+[Waypoints]: http://imakewebthings.com/jquery-waypoints "Waypoints is a jQuery plugin that makes it easy to execute a function whenever you scroll to an element."
 [yepnope]: http://yepnopejs.com "yepnope is an asynchronous conditional resource loader that's super-fast, and allows you to load only the scripts that your users need."

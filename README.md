@@ -94,7 +94,19 @@ and you're ready to [roll].
 #= require jquery
 ```
 
-##### Plugins
+#### [Modernizr]
+
+```coffeescript
+#= require modernizr
+```
+
+#### [yepnope]
+
+```coffeescript
+#= require yepnope
+```
+
+##### jQuery Plugins
 
 ###### Browser
 
@@ -128,18 +140,6 @@ and you're ready to [roll].
 
 ```coffeescript
 #= require jquery/plugins/waypoints
-```
-
-#### [Modernizr]
-
-```coffeescript
-#= require modernizr
-```
-
-#### [yepnope]
-
-```coffeescript
-#= require yepnope
 ```
 
 #### Polyfills

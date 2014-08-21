@@ -1,25 +1,412 @@
+/*! VelocityJS.org (0.11.7). (C) 2014 Julian Shapiro. MIT @license: en.wikipedia.org/wiki/MIT_License */
+
+/*************************
+   Velocity jQuery Shim
+*************************/
+
+/*! VelocityJS.org jQuery Shim (1.0.0-rc1). (C) 2014 The jQuery Foundation. MIT @license: en.wikipedia.org/wiki/MIT_License. */
+
+/* This file contains the jQuery functions that Velocity relies on, thereby removing Velocity's dependency on a full copy of jQuery, and allowing it to work in any environment. */
+/* These shimmed functions are only used if jQuery isn't present. If both this shim and jQuery are loaded, Velocity defaults to jQuery proper. */
+/* Browser support: Using this shim instead of jQuery proper removes support for IE8. */
+
+;(function (window) {
+    /***************
+         Setup
+    ***************/
+
+    if (window.Velocity !== undefined) {
+        throw new Error("Velocity is already loaded. The shim must be loaded BEFORE jquery.velocity.js.");
+    }
+
+    /* jQuery base. */
+    var $ = function (selector, context) {
+        return new $.fn.init(selector, context);
+    };
+
+    /********************
+       Private Methods
+    ********************/
+
+    /* jQuery */
+    $.isWindow = function (obj) {
+        /* jshint eqeqeq: false */
+        return obj != null && obj == obj.window;
+    };
+
+    /* jQuery */
+    $.type = function (obj) {
+        if (obj == null) {
+            return obj + "";
+        }
+
+        return typeof obj === "object" || typeof obj === "function" ?
+            class2type[toString.call(obj)] || "object" :
+            typeof obj;
+    };
+
+    /* jQuery */
+    $.isArray = Array.isArray || function (obj) {
+        return $.type(obj) === "array";
+    };
+
+    /* jQuery */
+    function isArraylike (obj) {
+        var length = obj.length,
+            type = $.type(obj);
+
+        if (type === "function" || $.isWindow(obj)) {
+            return false;
+        }
+
+        if (obj.nodeType === 1 && length) {
+            return true;
+        }
+
+        return type === "array" || length === 0 || typeof length === "number" && length > 0 && (length - 1) in obj;
+    }
+
+    /***************
+       $ Methods
+    ***************/
+
+    /* jQuery: Support removed for IE<9. */
+    $.isPlainObject = function (obj) {
+        var key;
+
+        if (!obj || $.type(obj) !== "object" || obj.nodeType || $.isWindow(obj)) {
+            return false;
+        }
+
+        try {
+            if (obj.constructor &&
+                !hasOwn.call(obj, "constructor") &&
+                !hasOwn.call(obj.constructor.prototype, "isPrototypeOf")) {
+                return false;
+            }
+        } catch (e) {
+            return false;
+        }
+
+        for (key in obj) {}
+
+        return key === undefined || hasOwn.call(obj, key);
+    };
+
+    /* jQuery */
+    $.each = function(obj, callback, args) {
+        var value,
+            i = 0,
+            length = obj.length,
+            isArray = isArraylike(obj);
+
+        if (args) {
+            if (isArray) {
+                for (; i < length; i++) {
+                    value = callback.apply(obj[i], args);
+
+                    if (value === false) {
+                        break;
+                    }
+                }
+            } else {
+                for (i in obj) {
+                    value = callback.apply(obj[i], args);
+
+                    if (value === false) {
+                        break;
+                    }
+                }
+            }
+
+        } else {
+            if (isArray) {
+                for (; i < length; i++) {
+                    value = callback.call(obj[i], i, obj[i]);
+
+                    if (value === false) {
+                        break;
+                    }
+                }
+            } else {
+                for (i in obj) {
+                    value = callback.call(obj[i], i, obj[i]);
+
+                    if (value === false) {
+                        break;
+                    }
+                }
+            }
+        }
+
+        return obj;
+    };
+
+    /* Custom */
+    $.data = function (node, key, value) {
+        /* $.getData() */
+        if (value === undefined) {
+            var id = node[$.expando],
+                store = id && cache[id];
+
+            if (key === undefined) {
+                return store;
+            } else if (store) {
+                if (key in store) {
+                    return store[key];
+                }
+            }
+        /* $.setData() */
+        } else if (key !== undefined) {
+            var id = node[$.expando] || (node[$.expando] = ++$.uuid);
+
+            cache[id] = cache[id] || {};
+            cache[id][key] = value;
+
+            return value;
+        }
+    };
+
+    /* Custom */
+    $.removeData = function (node, keys) {
+        var id = node[$.expando],
+            store = id && cache[id];
+
+        if (store) {
+            $.each(keys, function(_, key) {
+                delete store[key];
+            });
+        }
+    };
+
+    /* jQuery */
+    $.extend = function () {
+        var src, copyIsArray, copy, name, options, clone,
+            target = arguments[0] || {},
+            i = 1,
+            length = arguments.length,
+            deep = false;
+
+        if (typeof target === "boolean") {
+            deep = target;
+
+            target = arguments[i] || {};
+            i++;
+        }
+
+        if (typeof target !== "object" && $.type(target) !== "function") {
+            target = {};
+        }
+
+        if (i === length) {
+            target = this;
+            i--;
+        }
+
+        for (; i < length; i++) {
+            if ((options = arguments[i]) != null) {
+                for (name in options) {
+                    src = target[name];
+                    copy = options[name];
+
+                    if (target === copy) {
+                        continue;
+                    }
+
+                    if (deep && copy && ($.isPlainObject(copy) || (copyIsArray = $.isArray(copy)))) {
+                        if (copyIsArray) {
+                            copyIsArray = false;
+                            clone = src && $.isArray(src) ? src : [];
+
+                        } else {
+                            clone = src && $.isPlainObject(src) ? src : {};
+                        }
+
+                        target[name] = $.extend(deep, clone, copy);
+
+                    } else if (copy !== undefined) {
+                        target[name] = copy;
+                    }
+                }
+            }
+        }
+
+        return target;
+    };
+
+    /* jQuery 1.4.3 */
+    $.queue = function (elem, type, data) {
+        function $makeArray (arr, results) {
+            var ret = results || [];
+
+            if (arr != null) {
+                if (isArraylike(Object(arr))) {
+                    /* $.merge */
+                    (function(first, second) {
+                        var len = +second.length,
+                            j = 0,
+                            i = first.length;
+
+                        while (j < len) {
+                            first[i++] = second[j++];
+                        }
+
+                        if (len !== len) {
+                            while (second[j] !== undefined) {
+                                first[i++] = second[j++];
+                            }
+                        }
+
+                        first.length = i;
+
+                        return first;
+                    })(ret, typeof arr === "string" ? [arr] : arr);
+                } else {
+                    [].push.call(ret, arr);
+                }
+            }
+
+            return ret;
+        }
+
+        if (!elem) {
+            return;
+        }
+
+        type = (type || "fx") + "queue";
+        var q = $.data(elem, type);
+
+        if (!data) {
+            return q || [];
+        }
+
+        if (!q || $.isArray(data)) {
+            q = $.data(elem, type, $makeArray(data));
+        } else {
+            q.push(data);
+        }
+
+        return q;
+    };
+
+    /* jQuery 1.4.3 */
+    $.dequeue = function (elem, type) {
+        type = type || "fx";
+
+        var queue = $.queue(elem, type),
+            fn = queue.shift();
+
+        if (fn === "inprogress") {
+            fn = queue.shift();
+        }
+
+        if (fn) {
+            if (type === "fx") {
+                queue.unshift("inprogress");
+            }
+
+            fn.call(elem, function() {
+                $.dequeue(elem, type);
+            });
+        }
+    };
+
+    /******************
+       $.fn Methods
+    ******************/
+
+    /* jQuery */
+    $.fn = $.prototype = {
+        init: function(selector) {
+            /* Just return the element wrapped inside an array; don't proceed with the actual jQuery node wrapping process. */
+            if (selector.nodeType) {
+                this[0] = selector;
+
+                return this;
+            } else {
+                throw new Error("Not a DOM node.");
+            }
+        },
+
+        offset: function () {
+            /* jQuery altered code: Disconnected DOM node checking and iOS3+BlackBerry support has been dropped. */
+            var box = this[0].getBoundingClientRect();
+
+            return {
+                top: box.top  + (window.pageYOffset || document.scrollTop  || 0)  - (document.clientTop  || 0),
+                left: box.left + (window.pageXOffset || document.scrollLeft  || 0) - (document.clientLeft || 0)
+            };
+        },
+
+        position: function () {
+            /* jQuery */
+            function offsetParent() {
+                var offsetParent = this.offsetParent || document;
+
+                while (offsetParent && (!offsetParent.nodeType.toLowerCase === "html" && offsetParent.style.position === "static")) {
+                    offsetParent = offsetParent.offsetParent;
+                }
+
+                return offsetParent || document;
+            }
+
+            /* Zepto */
+            var elem = this[0],
+                offsetParent = offsetParent.apply(elem),
+                offset = this.offset(),
+                parentOffset = /^(?:body|html)$/i.test(offsetParent.nodeName) ? { top: 0, left: 0 } : $(offsetParent).offset()
+
+            offset.top -= parseFloat(elem.style.marginTop) || 0;
+            offset.left -= parseFloat(elem.style.marginLeft) || 0;
+
+            if (offsetParent.style) {
+                parentOffset.top += parseFloat(offsetParent.style.borderTopWidth) || 0
+                parentOffset.left += parseFloat(offsetParent.style.borderLeftWidth) || 0
+            }
+
+            return {
+                top: offset.top - parentOffset.top,
+                left: offset.left - parentOffset.left
+            };
+        }
+    };
+
+    /**********************
+       Private Variables
+    **********************/
+
+    /* For $.data() */
+    var cache = {};
+    $.expando = "velocity" + (new Date().getTime());
+    $.uuid = 0;
+
+    /* For $.queue() */
+    var class2type = {},
+        hasOwn = class2type.hasOwnProperty,
+        toString = class2type.toString;
+
+    var types = "Boolean Number String Function Array Date RegExp Object Error".split(" ");
+    for (var i = 0; i < types.length; i++) {
+        class2type["[object " + types[i] + "]"] = types[i].toLowerCase();
+    }
+
+    /* Makes $(node) possible, without having to call init. */
+    $.fn.init.prototype = $.fn;
+
+    /* Globalize Velocity onto the window, and assign its Utilities property. */
+    window.Velocity = { Utilities: $ };
+})(window);
+
 /******************
     Velocity.js
 ******************/
 
-/*! VelocityJS.org (0.11.5). (C) 2014 Julian Shapiro. MIT @license: en.wikipedia.org/wiki/MIT_License */
-
-/*
-Structure:
-- CSS: CSS stack that works independently from the rest of Velocity.
-- animate(): Core animation method that iterates over the targeted elements and queues the incoming call onto each element individually.
-  - Pre-Queueing: Prepare the element for animation by instantiating its data cache and processing the call's options.
-  - Queueing: The logic that runs once the call has reached its point of execution in the element's $.queue() stack.
-              Most logic is placed here to avoid risking it becoming stale (if the element's properties have changed).
-  - Pushing: Consolidation of the tween data followed by its push onto the global in-progress calls container.
-- tick(): The single requestAnimationFrame loop responsible for tweening all in-progress calls.
-- completeCall(): Handles the cleanup process for each Velocity call.
-*/
+/*! VelocityJS.org (0.11.7). (C) 2014 Julian Shapiro. MIT @license: en.wikipedia.org/wiki/MIT_License */
 
 ;(function (factory) {    
     /* CommonJS module. */
     if (typeof module === "object" && typeof module.exports === "object") {
-        module.exports = factory(window.Velocity ? undefined : require("jquery"));
+        module.exports = factory(window.Velocity ? window.jQuery : require("jquery"));
     /* AMD module. */
     } else if (typeof define === "function" && define.amd) {        
         if (window.Velocity) {
@@ -33,6 +420,17 @@ Structure:
     }
 }(function (jQuery) {
 return function (global, window, document, undefined) {
+    /*
+    Structure:
+    - CSS: CSS stack that works independently from the rest of Velocity.
+    - animate(): Core animation method that iterates over the targeted elements and queues the incoming call onto each element individually.
+      - Pre-Queueing: Prepare the element for animation by instantiating its data cache and processing the call's options.
+      - Queueing: The logic that runs once the call has reached its point of execution in the element's $.queue() stack.
+                  Most logic is placed here to avoid risking it becoming stale (if the element's properties have changed).
+      - Pushing: Consolidation of the tween data followed by its push onto the global in-progress calls container.
+    - tick(): The single requestAnimationFrame loop responsible for tweening all in-progress calls.
+    - completeCall(): Handles the cleanup process for each Velocity call.
+    */
 
     /*****************
         Constants
@@ -103,6 +501,11 @@ return function (global, window, document, undefined) {
         return result;
     }
 
+    /* Wrap single elements in an array so that $.each() can iterate with the element instead of its node's children. */
+    function createElementsArray (elements) {
+        return Type.isNode(elements) ? [ elements ] : elements;
+    }
+
     var Type = {
         isString: function (variable) {
             return (typeof variable === "string");
@@ -160,7 +563,6 @@ return function (global, window, document, undefined) {
     if (jQuery && jQuery.fn !== undefined) {
         $ = jQuery;
     } else if (window.Velocity && window.Velocity.Utilities) {
-            
         $ = window.Velocity.Utilities;
     }
 
@@ -174,7 +576,7 @@ return function (global, window, document, undefined) {
        Revert to jQuery's $.animate(), and lose Velocity's extra features. */
     } else if (IE <= 7) {
         if (!jQuery) {
-            throw new Error("Velocity: For IE<=7, Velocity falls back to jQuery, which must first be loaded.");
+            throw new Error("Velocity: In IE<=7, Velocity falls back to jQuery, which must first be loaded.");
         } else {
             jQuery.fn.velocity = jQuery.fn.animate;
 
@@ -183,7 +585,7 @@ return function (global, window, document, undefined) {
         }
     /* IE8 doesn't work with the jQuery shim; it requires jQuery proper. */
     } else if (IE === 8 && !jQuery) {
-        throw new Error("Velocity: For IE8, Velocity requires jQuery proper to be loaded; Velocity's jQuery shim does not work with IE8.");
+        throw new Error("Velocity: In IE8, Velocity requires jQuery proper to be loaded; Velocity's jQuery shim does not work with IE8.");
     }
 
     /* Shorthand alias for jQuery's $.data() utility. */
@@ -286,7 +688,7 @@ return function (global, window, document, undefined) {
                 elements = [].slice.call(elements);
             }
 
-            $.each(Type.isNode(elements) ? [ elements ] : elements, function(i, element) {
+            $.each(createElementsArray(elements), function(i, element) {
                 /* Initialize Velocity's per-element data cache if this element hasn't previously been animated. */
                 if (Data(element) === undefined) {
                     Velocity.init(element);
@@ -315,7 +717,7 @@ return function (global, window, document, undefined) {
         },
         /* Set to true to force a duration of 1ms for all animations so that UI testing can be performed without waiting on animations to complete. */
         mock: false,
-        version: { major: 0, minor: 11, patch: 5 },
+        version: { major: 0, minor: 11, patch: 7 },
         /* Set to 1 or 2 (most verbose) to output debug info to console. */
         debug: false
     };
@@ -1696,7 +2098,7 @@ return function (global, window, document, undefined) {
                 *******************/
 
                 /* Clear the currently-active delay on each targeted element. */
-                $.each(Type.isNode(elements) ? [ elements ] : elements, function(i, element) {
+                $.each(createElementsArray(elements), function(i, element) {
                     if (Data(element) && Data(element).delayTimer) {
                         /* Stop the timer from triggering its cached next() function. */
                         clearTimeout(Data(element).delayTimer.setTimeout);
@@ -1724,8 +2126,8 @@ return function (global, window, document, undefined) {
                     /* Inactive calls are set to false by the logic inside completeCall(). Skip them. */
                     if (activeCall) {
                         /* If we're operating on a single element, wrap it in an array so that $.each() can iterate over it. */
-                        $.each(Type.isNode(activeCall[1]) ? [ activeCall[1] ] : activeCall[1], function(k, activeElement) {
-                            $.each(Type.isNode(elements) ? [ elements ] : elements, function(l, element) {
+                        $.each(createElementsArray(activeCall[1]), function(k, activeElement) {
+                            $.each(createElementsArray(elements), function(l, element) {
                                 /* Check that this call was applied to the target element. */
                                 if (element === activeElement) {
                                     if (Data(element)) {
@@ -1743,7 +2145,7 @@ return function (global, window, document, undefined) {
 
                                         /* Iterate through the items in the element's queue. */
                                         $.each($.queue(element, queueName), function(i, item) {
-                                            /* The queue array can contain an "inprogress" sentinal, which we skip. */
+                                            /* The queue array can contain an "inprogress" string, which we skip. */
                                             if (Type.isFunction(item)) {
                                                 /* Pass the item's callback a flag indicating that we want to abort from the queue call.
                                                    (Specifically, the queue will resolve the call's associated promise then abort.)  */
@@ -1796,7 +2198,7 @@ return function (global, window, document, undefined) {
                     }
 
                     /* Individually trigger the sequence for each element in the set to prevent users from having to handle iteration logic in their sequence. */
-                    $.each(elements, function(elementIndex, element) {
+                    $.each(createElementsArray(elements), function(elementIndex, element) {
                         /* If the stagger option was passed in, successively delay each element by the stagger value (in ms). Retain the original delay value. */
                         if (parseFloat(options.stagger)) {
                             options.delay = delayOriginal + (parseFloat(options.stagger) * elementIndex);
@@ -2665,7 +3067,9 @@ return function (global, window, document, undefined) {
                     call.push(tweensContainer);
 
                     /* Store the tweensContainer on the element, plus the current call's opts so that Velocity can reference this data the next time this element is animated. */
-                    Data(element).tweensContainer = tweensContainer;
+                    if (opts.queue !== false) {
+                        Data(element).tweensContainer = tweensContainer;
+                    }
                     Data(element).opts = opts;
                     /* Switch on the element's animating flag. */
                     Data(element).isAnimating = true;
@@ -2753,7 +3157,7 @@ return function (global, window, document, undefined) {
 
         /* If the "nodeType" property exists on the elements variable, we're animating a single element.
            Place it in an array so that $.each() can iterate over it. */
-        $.each(Type.isNode(elements) ? [ elements ] : elements, function(i, element) {
+        $.each(createElementsArray(elements), function(i, element) {
             /* Ensure each element in a set has a nodeType (is a real element) to avoid throwing errors. */
             if (Type.isNode(element)) {
                 processElement.call(element);

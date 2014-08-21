@@ -100,6 +100,16 @@ and you're ready to [roll].
 #= require modernizr
 ```
 
+###### [Velocity]
+
+```coffeescript
+#= require velocity
+```
+
+```coffeescript
+#= require velocity/ui
+```
+
 #### [yepnope]
 
 ```coffeescript
@@ -124,16 +134,6 @@ and you're ready to [roll].
 
 ```coffeescript
 #= require jquery/plugins/printify
-```
-
-###### [Velocity]
-
-```coffeescript
-#= require jquery/plugins/velocity
-```
-
-```coffeescript
-#= require jquery/plugins/velocity/ui
 ```
 
 ###### [Waypoints]
@@ -172,11 +172,11 @@ Credits
 * [Detect.js]
 * [jQuery]
 * [Modernizr]
+* [Velocity]
 * [yepnope]
 
 ##### jQuery Plugins
 
-* [Velocity]
 * [Waypoints]
 
 ##### Polyfills

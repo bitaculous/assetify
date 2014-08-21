@@ -100,7 +100,7 @@ and you're ready to [roll].
 #= require modernizr
 ```
 
-###### [Velocity]
+#### [Velocity]
 
 ```coffeescript
 #= require velocity

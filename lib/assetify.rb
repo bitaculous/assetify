@@ -1,9 +1,9 @@
 module Assetify
-  require_relative 'assetify/paths'
+  require 'assetify/paths'
 
   extend Paths
 
   @trail = File.expand_path '../../', __FILE__
 
-  require_relative 'assetify/integrations'
+  require 'assetify/integrations'
 end

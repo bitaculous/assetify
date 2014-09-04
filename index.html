@@ -28,7 +28,7 @@
         </ul>
       </header>
       <section>
-        <p><a href="http://bitaculous.github.io/assetify" title="“All your assets are belong to us”">Assetify</a> is our package for <a href="https://github.com/sstephenson/sprockets" title="Rack-based asset packaging system">Sprockets</a>, a Rack-based asset packaging system, with common libraries we need for our
+        <p>Assetify is our package for <a href="https://github.com/sstephenson/sprockets" title="Rack-based asset packaging system">Sprockets</a>, a Rack-based asset packaging system, with common libraries we need for our
 projects at <a href="http://bitaculous.com" title="It's all about the bits, baby!">Bitaculous</a>.</p>
 
 <h2>
@@ -36,7 +36,7 @@ projects at <a href="http://bitaculous.com" title="It's all about the bits, baby
 
 <ol>
 <li>
-<p>Add <a href="http://bitaculous.github.io/assetify" title="“All your assets are belong to us”">Assetify</a> to your Gemfile:</p>
+<p>Add Assetify to your Gemfile:</p>
 
 <pre><code>group :assets do
   gem 'assetify', github: 'bitaculous/assetify'
@@ -120,8 +120,32 @@ end
 <div class="highlight highlight-coffeescript"><pre><span class="c1">#= require jquery</span>
 </pre></div>
 
+<h4>
+<a name="modernizr" class="anchor" href="#modernizr"><span class="octicon octicon-link"></span></a><a href="http://modernizr.com" title="Modernizr is a JavaScript library that detects HTML5 and CSS3 features in the user’s browser.">Modernizr</a>
+</h4>
+
+<div class="highlight highlight-coffeescript"><pre><span class="c1">#= require modernizr</span>
+</pre></div>
+
+<h4>
+<a name="velocity" class="anchor" href="#velocity"><span class="octicon octicon-link"></span></a><a href="http://velocityjs.org" title="Accelerated JavaScript animation.">Velocity</a>
+</h4>
+
+<div class="highlight highlight-coffeescript"><pre><span class="c1">#= require velocity</span>
+</pre></div>
+
+<div class="highlight highlight-coffeescript"><pre><span class="c1">#= require velocity/ui</span>
+</pre></div>
+
+<h4>
+<a name="yepnope" class="anchor" href="#yepnope"><span class="octicon octicon-link"></span></a><a href="http://yepnopejs.com" title="yepnope is an asynchronous conditional resource loader that's super-fast, and allows you to load only the scripts that your users need.">yepnope</a>
+</h4>
+
+<div class="highlight highlight-coffeescript"><pre><span class="c1">#= require yepnope</span>
+</pre></div>
+
 <h5>
-<a name="plugins" class="anchor" href="#plugins"><span class="octicon octicon-link"></span></a>Plugins</h5>
+<a name="jquery-plugins" class="anchor" href="#jquery-plugins"><span class="octicon octicon-link"></span></a>jQuery Plugins</h5>
 
 <h6>
 <a name="browser" class="anchor" href="#browser"><span class="octicon octicon-link"></span></a>Browser</h6>
@@ -142,34 +166,17 @@ end
 </pre></div>
 
 <h6>
-<a name="velocity" class="anchor" href="#velocity"><span class="octicon octicon-link"></span></a><a href="http://velocityjs.org" title="Accelerated JavaScript animation.">Velocity</a>
+<a name="waypoints" class="anchor" href="#waypoints"><span class="octicon octicon-link"></span></a><a href="http://imakewebthings.com/jquery-waypoints" title="Waypoints is a jQuery plugin that makes it easy to execute a function whenever you scroll to an element.">Waypoints</a>
 </h6>
 
-<div class="highlight highlight-coffeescript"><pre><span class="c1">#= require jquery/plugins/velocity</span>
-</pre></div>
-
-<div class="highlight highlight-coffeescript"><pre><span class="c1">#= require jquery/plugins/velocity/ui</span>
-</pre></div>
-
-<h4>
-<a name="modernizr" class="anchor" href="#modernizr"><span class="octicon octicon-link"></span></a><a href="http://modernizr.com" title="Modernizr is a JavaScript library that detects HTML5 and CSS3 features in the user’s browser.">Modernizr</a>
-</h4>
-
-<div class="highlight highlight-coffeescript"><pre><span class="c1">#= require modernizr</span>
-</pre></div>
-
-<h4>
-<a name="yepnope" class="anchor" href="#yepnope"><span class="octicon octicon-link"></span></a><a href="http://yepnopejs.com" title="yepnope is an asynchronous conditional resource loader that's super-fast, and allows you to load only the scripts that your users need.">yepnope</a>
-</h4>
-
-<div class="highlight highlight-coffeescript"><pre><span class="c1">#= require yepnope</span>
+<div class="highlight highlight-coffeescript"><pre><span class="c1">#= require jquery/plugins/waypoints</span>
 </pre></div>
 
 <h4>
 <a name="polyfills" class="anchor" href="#polyfills"><span class="octicon octicon-link"></span></a>Polyfills</h4>
 
 <h5>
-<a name="console" class="anchor" href="#console"><span class="octicon octicon-link"></span></a><a href="https://github.com/h5bp/html5-boilerplate/blob/master/js/plugins.js" title="Avoid `console` errors in browsers that lack a console.">Console</a>
+<a name="console" class="anchor" href="#console"><span class="octicon octicon-link"></span></a><a href="https://github.com/h5bp/html5-boilerplate/blob/master/src/js/plugins.js" title="Avoid `console` errors in browsers that lack a console.">Console</a>
 </h5>
 
 <div class="highlight highlight-coffeescript"><pre><span class="c1">#= require polyfills/console</span>
@@ -186,8 +193,7 @@ end
 <a name="credits" class="anchor" href="#credits"><span class="octicon octicon-link"></span></a>Credits</h2>
 
 <h3>
-<a name="assetify-uses-the-following-libraries" class="anchor" href="#assetify-uses-the-following-libraries"><span class="octicon octicon-link"></span></a>
-<a href="http://bitaculous.github.io/assetify" title="“All your assets are belong to us”">Assetify</a> uses the following libraries:</h3>
+<a name="assetify-uses-the-following-libraries" class="anchor" href="#assetify-uses-the-following-libraries"><span class="octicon octicon-link"></span></a>Assetify uses the following libraries:</h3>
 
 <h4>
 <a name="css-1" class="anchor" href="#css-1"><span class="octicon octicon-link"></span></a>CSS</h4>
@@ -206,14 +212,18 @@ end
 <li><a href="http://velocityjs.org" title="Accelerated JavaScript animation.">Velocity</a></li>
 <li><a href="http://yepnopejs.com" title="yepnope is an asynchronous conditional resource loader that's super-fast, and allows you to load only the scripts that your users need.">yepnope</a></li>
 </ul><h5>
+<a name="jquery-plugins-1" class="anchor" href="#jquery-plugins-1"><span class="octicon octicon-link"></span></a>jQuery Plugins</h5>
+
+<ul>
+<li><a href="http://imakewebthings.com/jquery-waypoints" title="Waypoints is a jQuery plugin that makes it easy to execute a function whenever you scroll to an element.">Waypoints</a></li>
+</ul><h5>
 <a name="polyfills-1" class="anchor" href="#polyfills-1"><span class="octicon octicon-link"></span></a>Polyfills</h5>
 
 <ul>
-<li><a href="https://github.com/h5bp/html5-boilerplate/blob/master/js/plugins.js" title="Avoid `console` errors in browsers that lack a console.">Console</a></li>
+<li><a href="https://github.com/h5bp/html5-boilerplate/blob/master/src/js/plugins.js" title="Avoid `console` errors in browsers that lack a console.">Console</a></li>
 <li><a href="https://github.com/ftlabs/fastclick" title="Polyfill to remove click delays on browsers with touch UIs.">FastClick</a></li>
 </ul><h3>
-<a name="assetify-uses-the-following-gems" class="anchor" href="#assetify-uses-the-following-gems"><span class="octicon octicon-link"></span></a>
-<a href="http://bitaculous.github.io/assetify" title="“All your assets are belong to us”">Assetify</a> uses the following gems:</h3>
+<a name="assetify-uses-the-following-gems" class="anchor" href="#assetify-uses-the-following-gems"><span class="octicon octicon-link"></span></a>Assetify uses the following gems:</h3>
 
 <ul>
 <li><a href="http://bourbon.io" title="A simple and lightweight mixin library for Sass.">Bourbon</a></li>
@@ -240,7 +250,7 @@ immediately yanked and / or a new version should be immediately released that re
 <h2>
 <a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
 
-<p><a href="http://bitaculous.github.io/assetify" title="“All your assets are belong to us”">Assetify</a> is released under the <a href="http://opensource.org/licenses/MIT" title="The MIT License (MIT)">MIT License (MIT)</a>, see <a href="https://raw.githubusercontent.com/bitaculous/assetify/master/LICENSE" title="License">LICENSE</a>.</p>
+<p>Assetify is released under the <a href="http://opensource.org/licenses/MIT" title="The MIT License (MIT)">MIT License (MIT)</a>, see <a href="https://raw.githubusercontent.com/bitaculous/assetify/master/LICENSE" title="License">LICENSE</a>.</p>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/bitaculous">bitaculous</a></p>

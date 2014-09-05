@@ -189,7 +189,7 @@ Credits
 * [Bourbon]
 * [Sprockets]
 
-Bug reports
+Bug Reports
 -----------
 
 Github Issues are used for managing bug reports and feature requests. If you run into issues, please search the issues

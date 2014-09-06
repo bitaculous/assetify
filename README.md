@@ -100,6 +100,12 @@ and you're ready to [roll].
 #= require modernizr
 ```
 
+#### [Salvattore]
+
+```coffeescript
+#= require salvattore
+```
+
 #### [Velocity]
 
 ```coffeescript
@@ -172,6 +178,7 @@ Credits
 * [Detect.js]
 * [jQuery]
 * [Modernizr]
+* [Salvattore]
 * [Velocity]
 * [yepnope]
 
@@ -225,6 +232,7 @@ Assetify is released under the [MIT License (MIT)], see [LICENSE].
 [roll]: http://paranoida.github.io/sass-mediaqueries "Sass Media Queries"
 [Sass Media Queries]: http://paranoida.github.io/sass-mediaqueries "Sass Media Queries"
 [Semantic Versioning 2.0.0]: http://semver.org "Semantic Versioning 2.0.0"
+[Salvattore]: http://salvattore.com "A jQuery Masonry alternative with CSS-driven configuration."
 [Sprockets]: https://github.com/sstephenson/sprockets "Rack-based asset packaging system"
 [Travis CI]: https://travis-ci.org/bitaculous/assetify "Assetify at Travis CI"
 [Travis CI Status]: http://img.shields.io/travis/bitaculous/assetify.svg?style=flat "Travis CI Status"

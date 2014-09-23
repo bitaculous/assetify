@@ -194,6 +194,8 @@ Credits
 ### Assetify uses the following gems:
 
 * [Bourbon]
+* [Breakpoint]
+* [Modular Scale]
 * [Sassy Maps]
 * [Sprockets]
 
@@ -217,27 +219,29 @@ Assetify is released under the [MIT License (MIT)], see [LICENSE].
 
 [Assetify]: http://bitaculous.github.io/assetify "“All your assets are belong to us”"
 [Bitaculous]: http://bitaculous.com "It's all about the bits, baby!"
-[Bourbon]: http://bourbon.io "A simple and lightweight mixin library for Sass."
-[Console]: https://github.com/h5bp/html5-boilerplate/blob/master/src/js/plugins.js "Avoid `console` errors in browsers that lack a console."
-[Detect.js]: https://github.com/darcyclarke/Detect.js "JS Library to detect browser, os and device based on the UserAgent string."
-[FastClick]: https://github.com/ftlabs/fastclick "Polyfill to remove click delays on browsers with touch UIs."
+[Bourbon]: http://bourbon.io "A simple and lightweight mixin library for Sass"
+[Breakpoint]: https://github.com/Team-Sass/breakpoint "Really Simple Media Queries with Sass"
+[Console]: https://github.com/h5bp/html5-boilerplate/blob/master/src/js/plugins.js "Avoid `console` errors in browsers that lack a console"
+[Detect.js]: https://github.com/darcyclarke/Detect.js "JS Library to detect browser, os and device based on the UserAgent string"
+[FastClick]: https://github.com/ftlabs/fastclick "Polyfill to remove click delays on browsers with touch UIs"
 [Gemnasium]: https://gemnasium.com/bitaculous/assetify "Assetify at Gemnasium"
 [Gemnasium Status]: http://img.shields.io/gemnasium/bitaculous/assetify.svg?style=flat "Gemnasium Status"
 [here]: https://github.com/bitaculous/assetify/issues "Github Issues"
 [jQuery]: http://jquery.com "The Write Less, Do More, JavaScript Library."
 [LICENSE]: https://raw.githubusercontent.com/bitaculous/assetify/master/LICENSE "License"
 [MIT License (MIT)]: http://opensource.org/licenses/MIT "The MIT License (MIT)"
-[Modernizr]: http://modernizr.com "Modernizr is a JavaScript library that detects HTML5 and CSS3 features in the user’s browser."
-[normalize.css]: http://necolas.github.io/normalize.css "normalize.css"
-[reset.css]: http://meyerweb.com/eric/tools/css/reset "reset.css"
+[Modernizr]: http://modernizr.com "A JavaScript library that detects HTML5 and CSS3 features in the user’s browser"
+[Modular Scale]: https://github.com/Team-Sass/modular-scale "Modular scale calculator built into your Sass"
+[normalize.css]: http://necolas.github.io/normalize.css "A modern, HTML5-ready alternative to CSS resets"
+[reset.css]: http://meyerweb.com/eric/tools/css/reset "Reset CSS"
 [roll]: http://paranoida.github.io/sass-mediaqueries "Sass Media Queries"
-[Salvattore]: http://salvattore.com "A jQuery Masonry alternative with CSS-driven configuration."
-[Sass Media Queries]: http://paranoida.github.io/sass-mediaqueries "Sass Media Queries"
-[Sassy Maps]: https://github.com/Team-Sass/Sassy-Maps "Map helper functions for Sass 3.3 Maps including get-deep and set/set-deep."
+[Salvattore]: http://salvattore.com "A jQuery Masonry alternative with CSS-driven configuration"
+[Sass Media Queries]: http://paranoida.github.io/sass-mediaqueries "A collection of useful media queries mixins (including iOS devices like iPhones and iPads) for Sass"
+[Sassy Maps]: https://github.com/Team-Sass/Sassy-Maps "Map helper functions for Sass 3.3 Maps including get-deep and set/set-deep"
 [Semantic Versioning 2.0.0]: http://semver.org "Semantic Versioning 2.0.0"
 [Sprockets]: https://github.com/sstephenson/sprockets "Rack-based asset packaging system"
 [Travis CI]: https://travis-ci.org/bitaculous/assetify "Assetify at Travis CI"
 [Travis CI Status]: http://img.shields.io/travis/bitaculous/assetify.svg?style=flat "Travis CI Status"
-[Velocity]: http://velocityjs.org "Accelerated JavaScript animation."
-[Waypoints]: http://imakewebthings.com/jquery-waypoints "Waypoints is a jQuery plugin that makes it easy to execute a function whenever you scroll to an element."
-[yepnope]: http://yepnopejs.com "yepnope is an asynchronous conditional resource loader that's super-fast, and allows you to load only the scripts that your users need."
+[Velocity]: http://velocityjs.org "Accelerated JavaScript animation"
+[Waypoints]: http://imakewebthings.com/jquery-waypoints "A jQuery plugin that makes it easy to execute a function whenever you scroll to an element"
+[yepnope]: http://yepnopejs.com "An asynchronous conditional resource loader that's super-fast, and allows you to load only the scripts that your users need"

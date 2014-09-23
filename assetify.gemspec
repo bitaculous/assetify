@@ -25,6 +25,10 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'bourbon', '~> 4.0.2'
 
+  spec.add_dependency 'breakpoint', '~> 2.5.0'
+
+  spec.add_dependency 'modular-scale', '~> 2.0.5'
+
   spec.add_dependency 'sassy-maps', '~> 0.4.0'
 
   spec.add_dependency 'sprockets', '~> 2.12.2'

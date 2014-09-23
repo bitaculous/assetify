@@ -3,11 +3,19 @@
 source 'https://rubygems.org'
 
 group :default do
-  gem 'bourbon', '~> 4.0.2'
+  group :assets do
+    gem 'sprockets', '~> 2.12.2'
 
-  gem 'sassy-maps', '~> 0.4.0'
+    group :stylesheets do
+      gem 'bourbon', '~> 4.0.2'
 
-  gem 'sprockets', '~> 2.12.2'
+      gem 'breakpoint', '~> 2.5.0'
+
+      gem 'modular-scale', '~> 2.0.5'
+
+      gem 'sassy-maps', '~> 0.4.0'
+    end
+  end
 end
 
 group :development do

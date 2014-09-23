@@ -194,6 +194,7 @@ Credits
 ### Assetify uses the following gems:
 
 * [Bourbon]
+* [Sassy Maps]
 * [Sprockets]
 
 Bug Reports
@@ -230,9 +231,10 @@ Assetify is released under the [MIT License (MIT)], see [LICENSE].
 [normalize.css]: http://necolas.github.io/normalize.css "normalize.css"
 [reset.css]: http://meyerweb.com/eric/tools/css/reset "reset.css"
 [roll]: http://paranoida.github.io/sass-mediaqueries "Sass Media Queries"
-[Sass Media Queries]: http://paranoida.github.io/sass-mediaqueries "Sass Media Queries"
-[Semantic Versioning 2.0.0]: http://semver.org "Semantic Versioning 2.0.0"
 [Salvattore]: http://salvattore.com "A jQuery Masonry alternative with CSS-driven configuration."
+[Sass Media Queries]: http://paranoida.github.io/sass-mediaqueries "Sass Media Queries"
+[Sassy Maps]: https://github.com/Team-Sass/Sassy-Maps "Map helper functions for Sass 3.3 Maps including get-deep and set/set-deep."
+[Semantic Versioning 2.0.0]: http://semver.org "Semantic Versioning 2.0.0"
 [Sprockets]: https://github.com/sstephenson/sprockets "Rack-based asset packaging system"
 [Travis CI]: https://travis-ci.org/bitaculous/assetify "Assetify at Travis CI"
 [Travis CI Status]: http://img.shields.io/travis/bitaculous/assetify.svg?style=flat "Travis CI Status"

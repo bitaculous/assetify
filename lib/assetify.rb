@@ -1,4 +1,6 @@
 module Assetify
+  require 'assetify/vendor'
+
   require 'assetify/paths'
 
   extend Paths

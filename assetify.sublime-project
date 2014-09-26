@@ -3,13 +3,13 @@
     {
       "name": "assetify",
       "path": "./",
-      "file_exclude_patterns": [
-        ".keep"
-      ],
       "folder_exclude_patterns": [
         ".bundle",
         "bin",
         "pkg"
+      ],
+      "file_exclude_patterns": [
+        ".keep"
       ]
     }
   ]

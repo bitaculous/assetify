@@ -3,7 +3,7 @@ describe Assetify::Integrations::SassIntegration do
 
   subject { Assetify::Integrations::SassIntegration }
 
-  let(:load_paths) { ::Sass.load_paths }
+  let(:load_paths) { Sass.load_paths }
 
   describe 'stylesheets' do
     context 'the stylesheets path exists' do

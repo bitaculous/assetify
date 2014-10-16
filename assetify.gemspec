@@ -10,10 +10,9 @@ Gem::Specification.new do |spec|
   spec.summary     = '“All your assets are belong to us”'
   spec.author      = 'Maik Kempe'
   spec.email       = 'mkempe@bitaculous.com'
-  spec.homepage    = 'http://bitaculous.github.io/assetify'
-  spec.version     = Assetify::VERSION
-  spec.platform    = Gem::Platform::RUBY
+  spec.homepage    = 'https://bitaculous.github.io/assetify/'
   spec.license     = 'MIT'
+  spec.version     = Assetify::VERSION
 
   spec.files       = `git ls-files`.split($\)
   spec.executables = spec.files.grep(/^bin/).map { |file| File.basename file }
@@ -23,6 +22,8 @@ Gem::Specification.new do |spec|
 
   spec.required_rubygems_version = '~> 2.4'
 
+  spec.add_dependency 'sprockets', '~> 2.12.2'
+
   spec.add_dependency 'bourbon', '~> 4.0.2'
 
   spec.add_dependency 'breakpoint', '~> 2.5.0'
@@ -31,9 +32,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'sassy-maps', '~> 0.4.0'
 
-  spec.add_dependency 'sprockets', '~> 2.12.2'
-
-  spec.add_development_dependency 'bundler', '~> 1.7.3'
+  spec.add_development_dependency 'bundler', '~> 1.7'
 
   spec.add_development_dependency 'rake', '~> 10.3.2'
 

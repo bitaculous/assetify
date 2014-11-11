@@ -28,11 +28,10 @@
         </ul>
       </header>
       <section>
-        <p>Assetify is our package for <a href="https://github.com/sstephenson/sprockets" title="Rack-based asset packaging system">Sprockets</a>, a Rack-based asset packaging system, with common libraries we need for our
-projects at <a href="https://bitaculous.com" title="It's all about the bits, baby!">Bitaculous</a>.</p>
+        <p>Assetify is our package for <a href="http://sass-lang.com" title="Syntactically Awesome Style Sheets">Sass</a> and <a href="https://github.com/sstephenson/sprockets" title="Rack-based asset packaging system">Sprockets</a>, with common libraries we need for our projects at <a href="https://bitaculous.com" title="It's all about the bits, baby!">Bitaculous</a>.</p>
 
 <h2>
-<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
 
 <ol>
 <li>
@@ -47,165 +46,146 @@ end
 </ol>
 
 <h2>
-<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
 
 <h3>
-<a name="css" class="anchor" href="#css"><span class="octicon octicon-link"></span></a>CSS</h3>
+<a id="css" class="anchor" href="#css" aria-hidden="true"><span class="octicon octicon-link"></span></a>CSS</h3>
 
 <h4>
-<a name="normalizecss" class="anchor" href="#normalizecss"><span class="octicon octicon-link"></span></a><a href="http://necolas.github.io/normalize.css" title="A modern, HTML5-ready alternative to CSS resets">normalize.css</a>
+<a id="normalizecss" class="anchor" href="#normalizecss" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://necolas.github.io/normalize.css" title="A modern, HTML5-ready alternative to CSS resets">normalize.css</a>
 </h4>
 
 <p>First, import normalize:</p>
 
-<div class="highlight highlight-sass"><pre><span class="k">@import</span> <span class="s">normalize</span>
-</pre></div>
+<div class="highlight highlight-sass"><pre><span class="k">@import</span><span class="nv"> normalize</span></pre></div>
 
 <p>The most basic option is simply:</p>
 
-<div class="highlight highlight-sass"><pre><span class="k">@include</span><span class="nd"> normalize</span>
-</pre></div>
+<div class="highlight highlight-sass"><pre>@include normalize</pre></div>
 
 <p>which includes the “full package”.</p>
 
 <p>Or include only specific parts:</p>
 
-<div class="highlight highlight-sass"><pre><span class="k">@include</span><span class="nd"> base</span>
-<span class="k">@include</span><span class="nd"> html5-display-definitions</span>
-<span class="k">@include</span><span class="nd"> links</span>
-<span class="k">@include</span><span class="nd"> text-level-semantics</span>
-<span class="k">@include</span><span class="nd"> embedded-content</span>
-<span class="k">@include</span><span class="nd"> grouping-content</span>
-<span class="k">@include</span><span class="nd"> forms</span>
-<span class="k">@include</span><span class="nd"> tables</span>
-</pre></div>
+<div class="highlight highlight-sass"><pre>@include <span class="nt">base</span>
+@include html5-display-definitions
+@include links
+@include text-level-semantics
+@include embedded-content
+@include grouping-content
+@include forms
+@include tables</pre></div>
 
 <h4>
-<a name="resetcss" class="anchor" href="#resetcss"><span class="octicon octicon-link"></span></a><a href="http://meyerweb.com/eric/tools/css/reset" title="Reset CSS">reset.css</a>
+<a id="resetcss" class="anchor" href="#resetcss" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://meyerweb.com/eric/tools/css/reset" title="Reset CSS">reset.css</a>
 </h4>
 
 <p>First, import reset:</p>
 
-<div class="highlight highlight-sass"><pre><span class="k">@import</span> <span class="s">reset</span>
-</pre></div>
+<div class="highlight highlight-sass"><pre><span class="k">@import</span><span class="nv"> reset</span></pre></div>
 
 <p>Second, include it:</p>
 
-<div class="highlight highlight-sass"><pre><span class="k">@include</span><span class="nd"> reset</span>
-</pre></div>
+<div class="highlight highlight-sass"><pre>@include reset</pre></div>
 
 <h4>
-<a name="sass-media-queries" class="anchor" href="#sass-media-queries"><span class="octicon octicon-link"></span></a><a href="http://paranoida.github.io/sass-mediaqueries" title="A collection of useful media queries mixins (including iOS devices like iPhones and iPads) for Sass">Sass Media Queries</a>
+<a id="sass-media-queries" class="anchor" href="#sass-media-queries" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://paranoida.github.io/sass-mediaqueries" title="A collection of useful media queries mixins (including iOS devices like iPhones and iPads) for Sass">Sass Media Queries</a>
 </h4>
 
 <p>Just import Sass Media Queries:</p>
 
-<div class="highlight highlight-sass"><pre><span class="k">@import</span> <span class="s">media_queries</span>
-</pre></div>
+<div class="highlight highlight-sass"><pre><span class="k">@import</span><span class="nv"> media_queries</span></pre></div>
 
 <p>and you're ready to <a href="http://paranoida.github.io/sass-mediaqueries" title="Sass Media Queries">roll</a>.</p>
 
 <h3>
-<a name="javascript" class="anchor" href="#javascript"><span class="octicon octicon-link"></span></a>JavaScript</h3>
+<a id="javascript" class="anchor" href="#javascript" aria-hidden="true"><span class="octicon octicon-link"></span></a>JavaScript</h3>
 
 <h4>
-<a name="detectjs" class="anchor" href="#detectjs"><span class="octicon octicon-link"></span></a><a href="https://github.com/darcyclarke/Detect.js" title="JS Library to detect browser, os and device based on the UserAgent string">Detect.js</a>
+<a id="detectjs" class="anchor" href="#detectjs" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="https://github.com/darcyclarke/Detect.js" title="JS Library to detect browser, os and device based on the UserAgent string">Detect.js</a>
 </h4>
 
-<div class="highlight highlight-coffeescript"><pre><span class="c1">#= require detect</span>
-</pre></div>
+<div class="highlight highlight-coffeescript"><pre><span class="c1">#= require detect</span></pre></div>
 
 <h4>
-<a name="jquery" class="anchor" href="#jquery"><span class="octicon octicon-link"></span></a><a href="https://jquery.com" title="The Write Less, Do More, JavaScript Library.">jQuery</a>
+<a id="jquery" class="anchor" href="#jquery" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="https://jquery.com" title="The Write Less, Do More, JavaScript Library.">jQuery</a>
 </h4>
 
-<div class="highlight highlight-coffeescript"><pre><span class="c1">#= require jquery</span>
-</pre></div>
+<div class="highlight highlight-coffeescript"><pre><span class="c1">#= require jquery</span></pre></div>
 
 <h4>
-<a name="modernizr" class="anchor" href="#modernizr"><span class="octicon octicon-link"></span></a><a href="http://modernizr.com" title="A JavaScript library that detects HTML5 and CSS3 features in the user’s browser">Modernizr</a>
+<a id="modernizr" class="anchor" href="#modernizr" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://modernizr.com" title="A JavaScript library that detects HTML5 and CSS3 features in the user’s browser">Modernizr</a>
 </h4>
 
-<div class="highlight highlight-coffeescript"><pre><span class="c1">#= require modernizr</span>
-</pre></div>
+<div class="highlight highlight-coffeescript"><pre><span class="c1">#= require modernizr</span></pre></div>
 
 <h4>
-<a name="salvattore" class="anchor" href="#salvattore"><span class="octicon octicon-link"></span></a><a href="http://salvattore.com" title="A jQuery Masonry alternative with CSS-driven configuration">Salvattore</a>
+<a id="salvattore" class="anchor" href="#salvattore" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://salvattore.com" title="A jQuery Masonry alternative with CSS-driven configuration">Salvattore</a>
 </h4>
 
-<div class="highlight highlight-coffeescript"><pre><span class="c1">#= require salvattore</span>
-</pre></div>
+<div class="highlight highlight-coffeescript"><pre><span class="c1">#= require salvattore</span></pre></div>
 
 <h4>
-<a name="velocity" class="anchor" href="#velocity"><span class="octicon octicon-link"></span></a><a href="http://velocityjs.org" title="Accelerated JavaScript animation">Velocity</a>
+<a id="velocity" class="anchor" href="#velocity" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://velocityjs.org" title="Accelerated JavaScript animation">Velocity</a>
 </h4>
 
-<div class="highlight highlight-coffeescript"><pre><span class="c1">#= require velocity</span>
-</pre></div>
+<div class="highlight highlight-coffeescript"><pre><span class="c1">#= require velocity</span></pre></div>
 
-<div class="highlight highlight-coffeescript"><pre><span class="c1">#= require velocity/ui</span>
-</pre></div>
+<div class="highlight highlight-coffeescript"><pre><span class="c1">#= require velocity/ui</span></pre></div>
 
 <h4>
-<a name="yepnope" class="anchor" href="#yepnope"><span class="octicon octicon-link"></span></a><a href="http://yepnopejs.com" title="An asynchronous conditional resource loader that's super-fast, and allows you to load only the scripts that your users need">yepnope</a>
+<a id="yepnope" class="anchor" href="#yepnope" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://yepnopejs.com" title="An asynchronous conditional resource loader that's super-fast, and allows you to load only the scripts that your users need">yepnope</a>
 </h4>
 
-<div class="highlight highlight-coffeescript"><pre><span class="c1">#= require yepnope</span>
-</pre></div>
+<div class="highlight highlight-coffeescript"><pre><span class="c1">#= require yepnope</span></pre></div>
 
 <h5>
-<a name="jquery-plugins" class="anchor" href="#jquery-plugins"><span class="octicon octicon-link"></span></a>jQuery Plugins</h5>
+<a id="jquery-plugins" class="anchor" href="#jquery-plugins" aria-hidden="true"><span class="octicon octicon-link"></span></a>jQuery Plugins</h5>
 
 <h6>
-<a name="browser" class="anchor" href="#browser"><span class="octicon octicon-link"></span></a>Browser</h6>
+<a id="browser" class="anchor" href="#browser" aria-hidden="true"><span class="octicon octicon-link"></span></a>Browser</h6>
 
-<div class="highlight highlight-coffeescript"><pre><span class="c1">#= require jquery/plugins/browser</span>
-</pre></div>
-
-<h6>
-<a name="detector" class="anchor" href="#detector"><span class="octicon octicon-link"></span></a>Detector</h6>
-
-<div class="highlight highlight-coffeescript"><pre><span class="c1">#= require jquery/plugins/detector</span>
-</pre></div>
+<div class="highlight highlight-coffeescript"><pre><span class="c1">#= require jquery/plugins/browser</span></pre></div>
 
 <h6>
-<a name="printify" class="anchor" href="#printify"><span class="octicon octicon-link"></span></a>Printify</h6>
+<a id="detector" class="anchor" href="#detector" aria-hidden="true"><span class="octicon octicon-link"></span></a>Detector</h6>
 
-<div class="highlight highlight-coffeescript"><pre><span class="c1">#= require jquery/plugins/printify</span>
-</pre></div>
+<div class="highlight highlight-coffeescript"><pre><span class="c1">#= require jquery/plugins/detector</span></pre></div>
 
 <h6>
-<a name="waypoints" class="anchor" href="#waypoints"><span class="octicon octicon-link"></span></a><a href="http://imakewebthings.com/jquery-waypoints" title="A jQuery plugin that makes it easy to execute a function whenever you scroll to an element">Waypoints</a>
+<a id="printify" class="anchor" href="#printify" aria-hidden="true"><span class="octicon octicon-link"></span></a>Printify</h6>
+
+<div class="highlight highlight-coffeescript"><pre><span class="c1">#= require jquery/plugins/printify</span></pre></div>
+
+<h6>
+<a id="waypoints" class="anchor" href="#waypoints" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://imakewebthings.com/jquery-waypoints" title="A jQuery plugin that makes it easy to execute a function whenever you scroll to an element">Waypoints</a>
 </h6>
 
-<div class="highlight highlight-coffeescript"><pre><span class="c1">#= require jquery/plugins/waypoints</span>
-</pre></div>
+<div class="highlight highlight-coffeescript"><pre><span class="c1">#= require jquery/plugins/waypoints</span></pre></div>
 
 <h4>
-<a name="polyfills" class="anchor" href="#polyfills"><span class="octicon octicon-link"></span></a>Polyfills</h4>
+<a id="polyfills" class="anchor" href="#polyfills" aria-hidden="true"><span class="octicon octicon-link"></span></a>Polyfills</h4>
 
 <h5>
-<a name="console" class="anchor" href="#console"><span class="octicon octicon-link"></span></a><a href="https://github.com/h5bp/html5-boilerplate/blob/master/src/js/plugins.js" title="Avoid `console` errors in browsers that lack a console">Console</a>
+<a id="console" class="anchor" href="#console" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="https://github.com/h5bp/html5-boilerplate/blob/master/src/js/plugins.js" title="Avoid `console` errors in browsers that lack a console">Console</a>
 </h5>
 
-<div class="highlight highlight-coffeescript"><pre><span class="c1">#= require polyfills/console</span>
-</pre></div>
+<div class="highlight highlight-coffeescript"><pre><span class="c1">#= require polyfills/console</span></pre></div>
 
 <h5>
-<a name="fastclick" class="anchor" href="#fastclick"><span class="octicon octicon-link"></span></a><a href="https://github.com/ftlabs/fastclick" title="Polyfill to remove click delays on browsers with touch UIs">FastClick</a>
+<a id="fastclick" class="anchor" href="#fastclick" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="https://github.com/ftlabs/fastclick" title="Polyfill to remove click delays on browsers with touch UIs">FastClick</a>
 </h5>
 
-<div class="highlight highlight-coffeescript"><pre><span class="c1">#= require polyfills/fastclick</span>
-</pre></div>
+<div class="highlight highlight-coffeescript"><pre><span class="c1">#= require polyfills/fastclick</span></pre></div>
 
 <h2>
-<a name="credits" class="anchor" href="#credits"><span class="octicon octicon-link"></span></a>Credits</h2>
+<a id="credits" class="anchor" href="#credits" aria-hidden="true"><span class="octicon octicon-link"></span></a>Credits</h2>
 
 <h3>
-<a name="assetify-uses-the-following-libraries" class="anchor" href="#assetify-uses-the-following-libraries"><span class="octicon octicon-link"></span></a>Assetify uses the following libraries:</h3>
+<a id="assetify-uses-the-following-libraries" class="anchor" href="#assetify-uses-the-following-libraries" aria-hidden="true"><span class="octicon octicon-link"></span></a>Assetify uses the following libraries:</h3>
 
 <h4>
-<a name="css-1" class="anchor" href="#css-1"><span class="octicon octicon-link"></span></a>CSS</h4>
+<a id="css-1" class="anchor" href="#css-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>CSS</h4>
 
 <ul>
 <li><a href="http://necolas.github.io/normalize.css" title="A modern, HTML5-ready alternative to CSS resets">normalize.css</a></li>
@@ -214,7 +194,7 @@ end
 </ul>
 
 <h4>
-<a name="javascript-1" class="anchor" href="#javascript-1"><span class="octicon octicon-link"></span></a>JavaScript</h4>
+<a id="javascript-1" class="anchor" href="#javascript-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>JavaScript</h4>
 
 <ul>
 <li><a href="https://github.com/darcyclarke/Detect.js" title="JS Library to detect browser, os and device based on the UserAgent string">Detect.js</a></li>
@@ -226,14 +206,14 @@ end
 </ul>
 
 <h5>
-<a name="jquery-plugins-1" class="anchor" href="#jquery-plugins-1"><span class="octicon octicon-link"></span></a>jQuery Plugins</h5>
+<a id="jquery-plugins-1" class="anchor" href="#jquery-plugins-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>jQuery Plugins</h5>
 
 <ul>
 <li><a href="http://imakewebthings.com/jquery-waypoints" title="A jQuery plugin that makes it easy to execute a function whenever you scroll to an element">Waypoints</a></li>
 </ul>
 
 <h5>
-<a name="polyfills-1" class="anchor" href="#polyfills-1"><span class="octicon octicon-link"></span></a>Polyfills</h5>
+<a id="polyfills-1" class="anchor" href="#polyfills-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Polyfills</h5>
 
 <ul>
 <li><a href="https://github.com/h5bp/html5-boilerplate/blob/master/src/js/plugins.js" title="Avoid `console` errors in browsers that lack a console">Console</a></li>
@@ -241,7 +221,7 @@ end
 </ul>
 
 <h3>
-<a name="assetify-uses-the-following-gems" class="anchor" href="#assetify-uses-the-following-gems"><span class="octicon octicon-link"></span></a>Assetify uses the following gems:</h3>
+<a id="assetify-uses-the-following-gems" class="anchor" href="#assetify-uses-the-following-gems" aria-hidden="true"><span class="octicon octicon-link"></span></a>Assetify uses the following gems:</h3>
 
 <ul>
 <li><a href="http://bourbon.io" title="A simple and lightweight mixin library for Sass">Bourbon</a></li>
@@ -252,26 +232,26 @@ end
 </ul>
 
 <h2>
-<a name="code-status" class="anchor" href="#code-status"><span class="octicon octicon-link"></span></a>Code Status</h2>
+<a id="code-status" class="anchor" href="#code-status" aria-hidden="true"><span class="octicon octicon-link"></span></a>Code Status</h2>
 
 <p><a href="https://travis-ci.org/bitaculous/assetify" title="Assetify at Travis CI"><img src="https://img.shields.io/travis/bitaculous/assetify.svg?style=flat" alt="Travis CI Status" title="Travis CI Status"></a>
 <a href="https://gemnasium.com/bitaculous/assetify" title="Assetify at Gemnasium"><img src="https://img.shields.io/gemnasium/bitaculous/assetify.svg?style=flat" alt="Gemnasium Status" title="Gemnasium Status"></a></p>
 
 <h2>
-<a name="bug-reports" class="anchor" href="#bug-reports"><span class="octicon octicon-link"></span></a>Bug Reports</h2>
+<a id="bug-reports" class="anchor" href="#bug-reports" aria-hidden="true"><span class="octicon octicon-link"></span></a>Bug Reports</h2>
 
 <p>Github Issues are used for managing bug reports and feature requests. If you run into issues, please search the issues
 and submit new problems <a href="https://github.com/bitaculous/assetify/issues" title="Github Issues">here</a>.</p>
 
 <h2>
-<a name="versioning" class="anchor" href="#versioning"><span class="octicon octicon-link"></span></a>Versioning</h2>
+<a id="versioning" class="anchor" href="#versioning" aria-hidden="true"><span class="octicon octicon-link"></span></a>Versioning</h2>
 
 <p>This library aims to adhere to <a href="http://semver.org" title="Semantic Versioning 2.0.0">Semantic Versioning 2.0.0</a>. Violations of this scheme should be reported as bugs.
 Specifically, if a minor or patch version is released that breaks backward compatibility, that version should be
 immediately yanked and / or a new version should be immediately released that restores compatibility.</p>
 
 <h2>
-<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
 
 <p>Assetify is released under the <a href="http://opensource.org/licenses/MIT" title="The MIT License (MIT)">MIT License (MIT)</a>, see <a href="https://raw.githubusercontent.com/bitaculous/assetify/master/LICENSE" title="License">LICENSE</a>.</p>
       </section>

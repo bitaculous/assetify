@@ -3,8 +3,7 @@
 
 **“All your assets are belong to us”**
 
-Assetify is our package for [Sprockets], a Rack-based asset packaging system, with common libraries we need for our
-projects at [Bitaculous].
+Assetify is our package for [Sass] and [Sprockets], with common libraries we need for our projects at [Bitaculous].
 
 [![Travis CI Status][Travis CI Status]][Travis CI]
 [![Gemnasium Status][Gemnasium Status]][Gemnasium]
@@ -236,6 +235,7 @@ Assetify is released under the [MIT License (MIT)], see [LICENSE].
 [reset.css]: http://meyerweb.com/eric/tools/css/reset "Reset CSS"
 [roll]: http://paranoida.github.io/sass-mediaqueries "Sass Media Queries"
 [Salvattore]: http://salvattore.com "A jQuery Masonry alternative with CSS-driven configuration"
+[Sass]: http://sass-lang.com "Syntactically Awesome Style Sheets"
 [Sass Media Queries]: http://paranoida.github.io/sass-mediaqueries "A collection of useful media queries mixins (including iOS devices like iPhones and iPads) for Sass"
 [Sassy Maps]: https://github.com/Team-Sass/Sassy-Maps "Map helper functions for Sass 3.3 Maps including get-deep and set/set-deep"
 [Semantic Versioning 2.0.0]: http://semver.org "Semantic Versioning 2.0.0"

@@ -5,14 +5,12 @@ $:.unshift lib unless $:.include? lib
 
 require 'assetify/version'
 
-Gem::Specification.new do |spec|
-  spec.name        = 'assetify'
+Gem::Specification.new 'assetify', Assetify::VERSION do |spec|
   spec.summary     = '“All your assets are belong to us”'
   spec.author      = 'Maik Kempe'
   spec.email       = 'mkempe@bitaculous.com'
   spec.homepage    = 'https://bitaculous.github.io/assetify/'
   spec.license     = 'MIT'
-  spec.version     = Assetify::VERSION
 
   spec.files       = `git ls-files`.split($\)
   spec.executables = spec.files.grep(/^bin/).map { |file| File.basename file }

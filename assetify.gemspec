@@ -32,7 +32,7 @@ Gem::Specification.new 'assetify', Assetify::VERSION do |spec|
 
   spec.add_development_dependency 'bundler', '~> 1.7'
 
-  spec.add_development_dependency 'rake', '~> 10.3.2'
+  spec.add_development_dependency 'rake', '~> 10.4.2'
 
   spec.add_development_dependency 'rspec', '~> 3.1.0'
 end

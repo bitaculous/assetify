@@ -11,10 +11,10 @@ Gem::Specification.new 'assetify', Assetify::VERSION do |spec|
   spec.email       = 'mkempe@bitaculous.com'
   spec.homepage    = 'https://bitaculous.github.io/assetify/'
   spec.license     = 'MIT'
-
   spec.files       = `git ls-files`.split($\)
   spec.executables = spec.files.grep(/^bin/).map { |file| File.basename file }
   spec.test_files  = spec.files.grep(/^(features|spec|test)/)
+  spec.extra_rdoc_files = ['LICENSE', 'README.md']
 
   spec.required_ruby_version = '~> 2.1'
 
@@ -22,7 +22,7 @@ Gem::Specification.new 'assetify', Assetify::VERSION do |spec|
 
   spec.add_dependency 'sprockets', '~> 2.12.3'
 
-  spec.add_dependency 'bourbon', '~> 4.0.2'
+  spec.add_dependency 'bourbon', '~> 4.1.0'
 
   spec.add_dependency 'breakpoint', '~> 2.5.0'
 

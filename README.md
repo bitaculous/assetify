@@ -161,6 +161,23 @@ and you're ready to [roll].
 #= require polyfills/fastclick
 ```
 
+Development
+-----------
+
+### Specs
+
+Use the `rspec` command to run the specs:
+
+```
+$ rspec
+```
+
+or via [Guard]:
+
+```
+$ guard -g spec
+```
+
 Credits
 -------
 
@@ -225,6 +242,7 @@ Assetify is released under the [MIT License (MIT)], see [LICENSE].
 [FastClick]: https://github.com/ftlabs/fastclick "Polyfill to remove click delays on browsers with touch UIs"
 [Gemnasium]: https://gemnasium.com/bitaculous/assetify "Assetify at Gemnasium"
 [Gemnasium Status]: https://img.shields.io/gemnasium/bitaculous/assetify.svg?style=flat "Gemnasium Status"
+[Guard]: http://guardgem.org "A command line tool to easily handle events on file system modifications."
 [here]: https://github.com/bitaculous/assetify/issues "Github Issues"
 [jQuery]: https://jquery.com "The Write Less, Do More, JavaScript Library."
 [LICENSE]: https://raw.githubusercontent.com/bitaculous/assetify/master/LICENSE "License"

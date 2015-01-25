@@ -1,7 +1,8 @@
 class @Printify
   # === Variables ===
 
-  defaults: { }
+  defaults:
+    debug: false
 
   # === Public ===
 

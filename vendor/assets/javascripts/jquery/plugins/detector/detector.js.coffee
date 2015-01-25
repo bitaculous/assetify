@@ -4,6 +4,7 @@ class @Detector
   defaults:
     detectMobile: true
     detectOS: true
+    debug: false
 
   # === Public ===
 

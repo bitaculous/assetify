@@ -1,12 +1,11 @@
 [Assetify]
 ==========
 
+[![Travis CI Status][Travis CI Status]][Travis CI] [![Gemnasium Status][Gemnasium Status]][Gemnasium]
+
 **“All your assets are belong to us”**
 
 Assetify is our package for [Sass] and [Sprockets], with common libraries we need for our projects at [Bitaculous].
-
-[![Travis CI Status][Travis CI Status]][Travis CI]
-[![Gemnasium Status][Gemnasium Status]][Gemnasium]
 
 Installation
 ------------

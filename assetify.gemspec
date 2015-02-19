@@ -18,12 +18,12 @@ Gem::Specification.new 'assetify', Assetify::VERSION do |spec|
   spec.required_rubygems_version = '~> 2.4'
 
   spec.add_runtime_dependency 'sprockets',     '~> 2.12.3'
-  spec.add_runtime_dependency 'bourbon',       '~> 4.1.1'
+  spec.add_runtime_dependency 'bourbon',       '~> 4.2.0'
   spec.add_runtime_dependency 'breakpoint',    '~> 2.5.0'
-  spec.add_runtime_dependency 'modular-scale', '~> 2.0.5'
+  spec.add_runtime_dependency 'modular-scale', '~> 2.0.6'
   spec.add_runtime_dependency 'sassy-maps',    '~> 0.4.0'
 
   spec.add_development_dependency 'bundler', '~> 1.7'
   spec.add_development_dependency 'rake',    '~> 10.4.2'
-  spec.add_development_dependency 'rspec',   '~> 3.1.0'
+  spec.add_development_dependency 'rspec',   '~> 3.2.0'
 end

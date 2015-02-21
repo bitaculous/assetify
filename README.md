@@ -114,6 +114,12 @@ and you're ready to [roll].
 #= require velocity/ui
 ```
 
+#### [Waypoints]
+
+```coffeescript
+#= require waypoints
+```
+
 #### [yepnope]
 
 ```coffeescript
@@ -195,11 +201,8 @@ Credits
 * [Modernizr]
 * [Salvattore]
 * [Velocity]
-* [yepnope]
-
-##### jQuery Plugins
-
 * [Waypoints]
+* [yepnope]
 
 ##### Polyfills
 
@@ -260,5 +263,5 @@ Assetify is released under the [MIT License (MIT)], see [LICENSE].
 [Travis CI]: https://travis-ci.org/bitaculous/assetify "Assetify at Travis CI"
 [Travis CI Status]: https://img.shields.io/travis/bitaculous/assetify.svg?style=flat "Travis CI Status"
 [Velocity]: http://velocityjs.org "Accelerated JavaScript animation"
-[Waypoints]: http://imakewebthings.com/jquery-waypoints "A jQuery plugin that makes it easy to execute a function whenever you scroll to an element"
+[Waypoints]: http://imakewebthings.com/waypoints "A library that makes it easy to execute a function whenever you scroll to an element."
 [yepnope]: http://yepnopejs.com "An asynchronous conditional resource loader that's super-fast, and allows you to load only the scripts that your users need"

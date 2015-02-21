@@ -1,4 +1,4 @@
-# Avoid `console` errors in browsers that lack a console
+# Avoid `console` errors in browsers that lack a console.
 method = undefined
 
 noop = ->
@@ -36,5 +36,5 @@ console = (window.console = window.console or {})
 while length--
   method = methods[length]
 
-  # Only stub undefined methods
+  # Only stub undefined methods.
   console[method] = noop  unless console[method]

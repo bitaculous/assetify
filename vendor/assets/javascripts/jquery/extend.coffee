@@ -3,6 +3,7 @@
 #= require_self
 
 (($, window, document) ->
-  $.fn.present = -> # Helper to test whether an element exists
+  # Helper to test whether an element exists.
+  $.fn.present = ->
     $(@).length
 ) jQuery, window, document

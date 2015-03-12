@@ -23,7 +23,7 @@ Gem::Specification.new 'assetify', Assetify::VERSION do |spec|
   spec.add_runtime_dependency 'modular-scale', '~> 2.0.6'
   spec.add_runtime_dependency 'sassy-maps',    '~> 0.4.0'
 
-  spec.add_development_dependency 'bundler', '~> 1.8'
+  spec.add_development_dependency 'bundler', '~> 1.7'
   spec.add_development_dependency 'rake',    '~> 10.4.2'
   spec.add_development_dependency 'rspec',   '~> 3.2.0'
 end

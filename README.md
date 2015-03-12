@@ -23,7 +23,7 @@ Installation
 Usage
 -----
 
-### CSS
+### Sass / CSS
 
 #### [normalize.css]
 
@@ -78,7 +78,7 @@ Just import Sass Media Queries:
 
 and you're ready to [roll].
 
-### JavaScript
+### CoffeeScript / JavaScript
 
 #### [Detect.js]
 

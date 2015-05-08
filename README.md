@@ -140,6 +140,12 @@ and you're ready to [roll].
 #= require jquery/plugins/detector
 ```
 
+###### [hoverIntent]
+
+```coffeescript
+#= require jquery/plugins/hover_intent
+```
+
 ###### Printify
 
 ```coffeescript
@@ -204,6 +210,11 @@ Credits
 * [Waypoints]
 * [yepnope]
 
+##### jQuery
+
+* [hoverIntent]
+* [Waypoints]
+
 ##### Polyfills
 
 * [Console]
@@ -246,6 +257,7 @@ Assetify is released under the [MIT License (MIT)], see [LICENSE].
 [Gemnasium Status]: https://img.shields.io/gemnasium/bitaculous/assetify.svg?style=flat "Gemnasium Status"
 [Guard]: http://guardgem.org "A command line tool to easily handle events on file system modifications."
 [here]: https://github.com/bitaculous/assetify/issues "Github Issues"
+[hoverIntent]: https://github.com/briancherne/jquery-hoverIntent "HoverIntent is a plug-in that attempts to determine the user's intent... like a crystal ball, only with mouse movement!"
 [jQuery]: https://jquery.com "The Write Less, Do More, JavaScript Library."
 [LICENSE]: https://raw.githubusercontent.com/bitaculous/assetify/master/LICENSE "License"
 [MIT License (MIT)]: http://opensource.org/licenses/MIT "The MIT License (MIT)"

@@ -61,20 +61,20 @@ end
 
 <p>The most basic option is simply:</p>
 
-<div class="highlight highlight-sass"><pre><span class="pl-k">@include</span><span class="pl-s3"> normalize</span></pre></div>
+<div class="highlight highlight-sass"><pre><span class="pl-k">@include</span><span class="pl-c1"> normalize</span></pre></div>
 
 <p>which includes the “full package”.</p>
 
 <p>Or include only specific parts:</p>
 
-<div class="highlight highlight-sass"><pre><span class="pl-k">@include</span><span class="pl-s3"> base</span>
-<span class="pl-k">@include</span><span class="pl-s3"> html5-display-definitions</span>
-<span class="pl-k">@include</span><span class="pl-s3"> links</span>
-<span class="pl-k">@include</span><span class="pl-s3"> text-level-semantics</span>
-<span class="pl-k">@include</span><span class="pl-s3"> embedded-content</span>
-<span class="pl-k">@include</span><span class="pl-s3"> grouping-content</span>
-<span class="pl-k">@include</span><span class="pl-s3"> forms</span>
-<span class="pl-k">@include</span><span class="pl-s3"> tables</span></pre></div>
+<div class="highlight highlight-sass"><pre><span class="pl-k">@include</span><span class="pl-c1"> base</span>
+<span class="pl-k">@include</span><span class="pl-c1"> html5-display-definitions</span>
+<span class="pl-k">@include</span><span class="pl-c1"> links</span>
+<span class="pl-k">@include</span><span class="pl-c1"> text-level-semantics</span>
+<span class="pl-k">@include</span><span class="pl-c1"> embedded-content</span>
+<span class="pl-k">@include</span><span class="pl-c1"> grouping-content</span>
+<span class="pl-k">@include</span><span class="pl-c1"> forms</span>
+<span class="pl-k">@include</span><span class="pl-c1"> tables</span></pre></div>
 
 <h4>
 <a id="resetcss" class="anchor" href="#resetcss" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://meyerweb.com/eric/tools/css/reset" title="Reset CSS">reset.css</a>
@@ -82,11 +82,11 @@ end
 
 <p>First, import reset:</p>
 
-<div class="highlight highlight-sass"><pre><span class="pl-k">@import</span> <span class="pl-s3">reset</span></pre></div>
+<div class="highlight highlight-sass"><pre><span class="pl-k">@import</span> <span class="pl-c1">reset</span></pre></div>
 
 <p>Second, include it:</p>
 
-<div class="highlight highlight-sass"><pre><span class="pl-k">@include</span><span class="pl-s3"> reset</span></pre></div>
+<div class="highlight highlight-sass"><pre><span class="pl-k">@include</span><span class="pl-c1"> reset</span></pre></div>
 
 <h4>
 <a id="sass-media-queries" class="anchor" href="#sass-media-queries" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://paranoida.github.io/sass-mediaqueries" title="A collection of useful media queries mixins (including iOS devices like iPhones and iPads) for Sass">Sass Media Queries</a>
@@ -159,6 +159,12 @@ end
 <div class="highlight highlight-coffeescript"><pre><span class="pl-c">#= require jquery/plugins/detector</span></pre></div>
 
 <h6>
+<a id="hoverintent" class="anchor" href="#hoverintent" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="https://github.com/briancherne/jquery-hoverIntent" title="HoverIntent is a plug-in that attempts to determine the user's intent... like a crystal ball, only with mouse movement!">hoverIntent</a>
+</h6>
+
+<div class="highlight highlight-coffeescript"><pre><span class="pl-c">#= require jquery/plugins/hover_intent</span></pre></div>
+
+<h6>
 <a id="printify" class="anchor" href="#printify" aria-hidden="true"><span class="octicon octicon-link"></span></a>Printify</h6>
 
 <div class="highlight highlight-coffeescript"><pre><span class="pl-c">#= require jquery/plugins/printify</span></pre></div>
@@ -226,6 +232,14 @@ end
 <li><a href="http://velocityjs.org" title="Accelerated JavaScript animation">Velocity</a></li>
 <li><a href="http://imakewebthings.com/waypoints" title="A library that makes it easy to execute a function whenever you scroll to an element.">Waypoints</a></li>
 <li><a href="http://yepnopejs.com" title="An asynchronous conditional resource loader that's super-fast, and allows you to load only the scripts that your users need">yepnope</a></li>
+</ul>
+
+<h5>
+<a id="jquery-1" class="anchor" href="#jquery-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>jQuery</h5>
+
+<ul>
+<li><a href="https://github.com/briancherne/jquery-hoverIntent" title="HoverIntent is a plug-in that attempts to determine the user's intent... like a crystal ball, only with mouse movement!">hoverIntent</a></li>
+<li><a href="http://imakewebthings.com/waypoints" title="A library that makes it easy to execute a function whenever you scroll to an element.">Waypoints</a></li>
 </ul>
 
 <h5>

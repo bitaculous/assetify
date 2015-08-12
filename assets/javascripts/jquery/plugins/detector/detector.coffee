@@ -10,7 +10,7 @@ class @Detector
 
   constructor: (element, options) ->
     @element = $ element
-    @options = $.extend @defaults, options
+    @options = $.extend true, { }, @defaults, options
 
     initialize.call @
 

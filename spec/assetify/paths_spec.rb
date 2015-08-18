@@ -1,4 +1,4 @@
-describe Assetify::Paths do
+RSpec.describe Assetify::Paths do
   subject { Assetify }
 
   let(:trail)                   { File.expand_path '../../../', __FILE__ }

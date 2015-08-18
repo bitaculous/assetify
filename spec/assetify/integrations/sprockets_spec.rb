@@ -1,4 +1,4 @@
-describe Assetify::Integrations::SprocketsIntegration do
+RSpec.describe Assetify::Integrations::SprocketsIntegration do
   include Helpers
 
   subject { Assetify::Integrations::SprocketsIntegration }

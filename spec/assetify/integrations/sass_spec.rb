@@ -1,4 +1,4 @@
-describe Assetify::Integrations::SassIntegration do
+RSpec.describe Assetify::Integrations::SassIntegration do
   include Helpers
 
   subject { Assetify::Integrations::SassIntegration }

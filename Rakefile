@@ -1,10 +1,22 @@
 #!/usr/bin/env rake
 
-require 'bundler/setup'
-require 'bundler/gem_tasks'
+begin
+  require 'bundler/setup'
+rescue LoadError
+  puts 'You must `gem install bundler` and `bundle install` to run rake tasks.'
+end
+
+# === Bundler ===
+
+Bundler::GemHelper.install_tasks
+
+# === RSpec ===
 
 require 'rspec/core/rake_task'
 
 RSpec::Core::RakeTask.new :spec
 
+# === Configuration ===
+
+# Run all specs as default task.
 task default: :spec

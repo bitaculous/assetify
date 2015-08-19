@@ -2,10 +2,12 @@
 
 source 'https://rubygems.org'
 
-gemspec # Include gemspec dependencies
+# Declare the gem's dependencies in `assetify.gemspec`. Bundler will treat runtime dependencies like base dependencies,
+# and development dependencies will be added by default to the `:development` group.
+gemspec
 
 group :development do
-  gem 'guard-rspec', '~> 4.6.3', require: false
+  gem 'guard-rspec', '~> 4.6.4', require: false
 end
 
 group :misc do

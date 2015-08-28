@@ -24,5 +24,5 @@ end
 group :misc do
   gem 'growl', '~> 1.0.3', require: RUBY_PLATFORM.include?('darwin') && 'growl'
 
-  gem 'rb-fsevent', '~> 0.9.4', require: RUBY_PLATFORM.include?('darwin') && 'rb-fsevent'
+  gem 'rb-fsevent', '~> 0.9.5', require: RUBY_PLATFORM.include?('darwin') && 'rb-fsevent'
 end

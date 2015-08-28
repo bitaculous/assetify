@@ -1,6 +1,6 @@
 root = File.expand_path '../../', __FILE__
 
-# Require Assetify.
+# Require the test object.
 require 'assetify'
 
 # Require the spec helper.

@@ -1,9 +1,6 @@
 #!/usr/bin/env gem build
 
-lib = File.expand_path '../lib', __FILE__
-$:.unshift lib unless $:.include? lib
-
-require 'assetify/version'
+require File.expand_path '../lib/assetify/version', __FILE__
 
 Gem::Specification.new 'assetify', Assetify::VERSION do |spec|
   spec.summary          = '“All your assets are belong to us”'

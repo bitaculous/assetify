@@ -1,5 +1,5 @@
 module Assetify
-  module Integrations
+  module Integrations # :nodoc:
     require 'assetify/integrations/sass_integration'
     SassIntegration.setup
 

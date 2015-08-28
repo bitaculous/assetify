@@ -1,5 +1,5 @@
 module Assetify
-  module Paths
+  module Paths # :nodoc:
     def assets_path
       File.expand_path 'assets', @trail
     end

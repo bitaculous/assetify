@@ -1,7 +1,8 @@
 [Assetify]
 ==========
 
-[![Travis CI Status][Travis CI Status]][Travis CI] [![Gemnasium Status][Gemnasium Status]][Gemnasium]
+[![Travis CI Status][Travis CI Status]][Travis CI]
+[![Gemnasium Status][Gemnasium Status]][Gemnasium]
 
 **“All your assets are belong to us”**
 
@@ -175,7 +176,7 @@ and you're ready to [roll].
 Development
 -----------
 
-### Specs
+### Run Specs
 
 Use the `rspec` command to run the specs:
 
@@ -188,6 +189,12 @@ or via [Guard]:
 ```
 $ guard -g spec
 ```
+
+### Run [RuboCop]
+
+Run `rubocop`.
+
+To run Specs and RuboCop altogether, run `rake`.
 
 Credits
 -------
@@ -266,6 +273,7 @@ Assetify is released under the [MIT License (MIT)], see [LICENSE].
 [normalize.css]: http://necolas.github.io/normalize.css "A modern, HTML5-ready alternative to CSS resets"
 [reset.css]: http://meyerweb.com/eric/tools/css/reset "Reset CSS"
 [roll]: http://paranoida.github.io/sass-mediaqueries "Sass Media Queries"
+[RuboCop]: https://github.com/bbatsov/rubocop "A Ruby static code analyzer, based on the community Ruby style guide."
 [Salvattore]: http://salvattore.com "A jQuery Masonry alternative with CSS-driven configuration"
 [Sass]: http://sass-lang.com "Syntactically Awesome Style Sheets"
 [Sass Media Queries]: http://paranoida.github.io/sass-mediaqueries "A collection of useful media queries mixins (including iOS devices like iPhones and iPads) for Sass"

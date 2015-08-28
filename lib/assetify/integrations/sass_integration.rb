@@ -1,7 +1,10 @@
 require 'sass'
 
 module Assetify
-  module Integrations
+  module Integrations # :nodoc:
+    # = SassIntegration
+    #
+    # The class for the Sass integration.
     class SassIntegration
       def self.setup(stylesheets_path: Assetify.stylesheets_path,
                      vendor_stylesheets_path: Assetify.vendor_stylesheets_path)

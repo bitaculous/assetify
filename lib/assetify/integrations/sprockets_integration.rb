@@ -1,7 +1,16 @@
 require 'sprockets'
 
 module Assetify
-  module Integrations
+  module Integrations # :nodoc:
+    # = SprocketsIntegration
+    #
+    # The class for the Sprockets integration
+    #
+    # rubocop:disable MethodLength
+    # rubocop:disable Metrics/AbcSize
+    # rubocop:disable Metrics/CyclomaticComplexity
+    # rubocop:disable Metrics/ParameterLists
+    # rubocop:disable Metrics/PerceivedComplexity
     class SprocketsIntegration
       def self.setup(fonts_path: Assetify.fonts_path,
                      images_path: Assetify.images_path,

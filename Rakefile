@@ -16,7 +16,18 @@ require 'rspec/core/rake_task'
 
 RSpec::Core::RakeTask.new :spec
 
+# === RuboCop ===
+
+require 'rubocop/rake_task'
+
+RuboCop::RakeTask.new(:rubocop) do |task|
+  task.requires << 'rubocop-rspec'
+
+  # Don't abort Rake on failure.
+  task.fail_on_error = false
+end
+
 # === Configuration ===
 
-# Run all specs as default task.
-task default: :spec
+# Run all specs and RuboCop as default task.
+task default: [:spec, :rubocop]

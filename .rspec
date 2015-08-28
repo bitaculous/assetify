@@ -1,3 +1,4 @@
 --backtrace
 --color
---require spec_helper
+--format NyanCatWideFormatter
+--require assetify_helper

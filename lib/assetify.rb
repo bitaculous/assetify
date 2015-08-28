@@ -1,4 +1,4 @@
-module Assetify
+module Assetify # :nodoc:
   require 'assetify/vendor'
 
   require 'assetify/paths'

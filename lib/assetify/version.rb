@@ -1,3 +1,3 @@
-module Assetify
+module Assetify # :nodoc:
   VERSION = '1.9.3'
 end

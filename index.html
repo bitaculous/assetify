@@ -6,7 +6,7 @@
     <title>Assetify by bitaculous</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -37,12 +37,9 @@
 <li>
 <p>Add Assetify to your Gemfile:</p>
 
-<pre><code>group :assets do
-  gem 'assetify', github: 'bitaculous/assetify'
-end
-</code></pre>
+<div class="highlight highlight-ruby"><pre><span class="pl-k">gem</span> <span class="pl-s"><span class="pl-pds">'</span>bitaculous-assetify<span class="pl-pds">'</span></span>, <span class="pl-c1">github:</span> <span class="pl-s"><span class="pl-pds">'</span>bitaculous/assetify<span class="pl-pds">'</span></span></pre></div>
 </li>
-<li><p>Run <code>bundle install</code></p></li>
+<li><p>Run <code>bundle</code> to install all dependencies with <a href="http://bundler.io" title="The best way to manage a Ruby application's gems">Bundler</a>.</p></li>
 </ol>
 
 <h2>
@@ -55,38 +52,30 @@ end
 <a id="normalizecss" class="anchor" href="#normalizecss" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://necolas.github.io/normalize.css" title="A modern, HTML5-ready alternative to CSS resets">normalize.css</a>
 </h4>
 
-<p>First, import normalize:</p>
+<p>The most basic option is simply:</p>
 
 <div class="highlight highlight-sass"><pre><span class="pl-k">@import</span> normalize</pre></div>
 
-<p>The most basic option is simply:</p>
-
-<div class="highlight highlight-sass"><pre><span class="pl-k">@include</span><span class="pl-c1"> normalize</span></pre></div>
-
 <p>which includes the “full package”.</p>
 
-<p>Or include only specific parts:</p>
+<p>Or import only specific parts:</p>
 
-<div class="highlight highlight-sass"><pre><span class="pl-k">@include</span><span class="pl-c1"> base</span>
-<span class="pl-k">@include</span><span class="pl-c1"> html5-display-definitions</span>
-<span class="pl-k">@include</span><span class="pl-c1"> links</span>
-<span class="pl-k">@include</span><span class="pl-c1"> text-level-semantics</span>
-<span class="pl-k">@include</span><span class="pl-c1"> embedded-content</span>
-<span class="pl-k">@include</span><span class="pl-c1"> grouping-content</span>
-<span class="pl-k">@include</span><span class="pl-c1"> forms</span>
-<span class="pl-k">@include</span><span class="pl-c1"> tables</span></pre></div>
+<div class="highlight highlight-sass"><pre><span class="pl-k">@import</span> normalize/<span class="pl-k">base</span>
+<span class="pl-k">@import</span> normalize/html<span class="pl-c1">5</span>_display_definitions
+<span class="pl-k">@import</span> normalize/links
+<span class="pl-k">@import</span> normalize/text_level_semantics
+<span class="pl-k">@import</span> normalize/embedded_content
+<span class="pl-k">@import</span> normalize/grouping_content
+<span class="pl-k">@import</span> normalize/forms
+<span class="pl-k">@import</span> normalize/tables</pre></div>
 
 <h4>
 <a id="resetcss" class="anchor" href="#resetcss" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://meyerweb.com/eric/tools/css/reset" title="Reset CSS">reset.css</a>
 </h4>
 
-<p>First, import reset:</p>
+<p>Import reset:</p>
 
 <div class="highlight highlight-sass"><pre><span class="pl-k">@import</span> <span class="pl-c1">reset</span></pre></div>
-
-<p>Second, include it:</p>
-
-<div class="highlight highlight-sass"><pre><span class="pl-k">@include</span><span class="pl-c1"> reset</span></pre></div>
 
 <h4>
 <a id="sass-media-queries" class="anchor" href="#sass-media-queries" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://paranoida.github.io/sass-mediaqueries" title="A collection of useful media queries mixins (including iOS devices like iPhones and iPads) for Sass">Sass Media Queries</a>
@@ -194,17 +183,47 @@ end
 <a id="development" class="anchor" href="#development" aria-hidden="true"><span class="octicon octicon-link"></span></a>Development</h2>
 
 <h3>
-<a id="specs" class="anchor" href="#specs" aria-hidden="true"><span class="octicon octicon-link"></span></a>Specs</h3>
+<a id="run-specs-with-rspec" class="anchor" href="#run-specs-with-rspec" aria-hidden="true"><span class="octicon octicon-link"></span></a>Run specs with <a href="http://rspec.info" title="Behaviour Driven Development for Ruby">RSpec</a>
+</h3>
 
-<p>Use the <code>rspec</code> command to run the specs:</p>
-
-<pre><code>$ rspec
-</code></pre>
+<p>Run <code>rspec</code>.</p>
 
 <p>or via <a href="http://guardgem.org" title="A command line tool to easily handle events on file system modifications.">Guard</a>:</p>
 
 <pre><code>$ guard -g spec
 </code></pre>
+
+<h3>
+<a id="see-test-coverage" class="anchor" href="#see-test-coverage" aria-hidden="true"><span class="octicon octicon-link"></span></a>See Test Coverage</h3>
+
+<p>Run <code>COVERAGE=true rspec</code>.</p>
+
+<h3>
+<a id="run-rubocop" class="anchor" href="#run-rubocop" aria-hidden="true"><span class="octicon octicon-link"></span></a>Run <a href="https://github.com/bbatsov/rubocop" title="A Ruby static code analyzer, based on the community Ruby style guide.">RuboCop</a>
+</h3>
+
+<p>Run <code>rubocop</code>.</p>
+
+<p>To run all specs and RuboCop altogether, run <code>rake</code>.</p>
+
+<h2>
+<a id="code-status" class="anchor" href="#code-status" aria-hidden="true"><span class="octicon octicon-link"></span></a>Code Status</h2>
+
+<p><a href="https://travis-ci.org/bitaculous/assetify" title="Assetify at Travis CI"><img src="https://img.shields.io/travis/bitaculous/assetify.svg?style=flat" alt="Travis CI Status" title="Travis CI Status"></a>
+<a href="https://gemnasium.com/bitaculous/assetify" title="Assetify at Gemnasium"><img src="https://img.shields.io/gemnasium/bitaculous/assetify.svg?style=flat" alt="Gemnasium Status" title="Gemnasium Status"></a></p>
+
+<h2>
+<a id="bug-reports" class="anchor" href="#bug-reports" aria-hidden="true"><span class="octicon octicon-link"></span></a>Bug Reports</h2>
+
+<p>Github Issues are used for managing bug reports and feature requests. If you run into issues, please search the issues
+and submit new problems <a href="https://github.com/bitaculous/assetify/issues" title="Github Issues">here</a>.</p>
+
+<h2>
+<a id="versioning" class="anchor" href="#versioning" aria-hidden="true"><span class="octicon octicon-link"></span></a>Versioning</h2>
+
+<p>This library aims to adhere to <a href="http://semver.org" title="Semantic Versioning 2.0.0">Semantic Versioning 2.0.0</a>. Violations of this scheme should be reported as bugs.
+Specifically, if a minor or patch version is released that breaks backward compatibility, that version should be
+immediately yanked and / or a new version should be immediately released that restores compatibility.</p>
 
 <h2>
 <a id="credits" class="anchor" href="#credits" aria-hidden="true"><span class="octicon octicon-link"></span></a>Credits</h2>
@@ -260,24 +279,6 @@ end
 <li><a href="https://github.com/Team-Sass/Sassy-Maps" title="Map helper functions for Sass 3.3 Maps including get-deep and set/set-deep">Sassy Maps</a></li>
 <li><a href="https://github.com/sstephenson/sprockets" title="Rack-based asset packaging system">Sprockets</a></li>
 </ul>
-
-<h2>
-<a id="code-status" class="anchor" href="#code-status" aria-hidden="true"><span class="octicon octicon-link"></span></a>Code Status</h2>
-
-<p><a href="https://travis-ci.org/bitaculous/assetify" title="Assetify at Travis CI"><img src="https://img.shields.io/travis/bitaculous/assetify.svg?style=flat" alt="Travis CI Status" title="Travis CI Status"></a> <a href="https://gemnasium.com/bitaculous/assetify" title="Assetify at Gemnasium"><img src="https://img.shields.io/gemnasium/bitaculous/assetify.svg?style=flat" alt="Gemnasium Status" title="Gemnasium Status"></a></p>
-
-<h2>
-<a id="bug-reports" class="anchor" href="#bug-reports" aria-hidden="true"><span class="octicon octicon-link"></span></a>Bug Reports</h2>
-
-<p>Github Issues are used for managing bug reports and feature requests. If you run into issues, please search the issues
-and submit new problems <a href="https://github.com/bitaculous/assetify/issues" title="Github Issues">here</a>.</p>
-
-<h2>
-<a id="versioning" class="anchor" href="#versioning" aria-hidden="true"><span class="octicon octicon-link"></span></a>Versioning</h2>
-
-<p>This library aims to adhere to <a href="http://semver.org" title="Semantic Versioning 2.0.0">Semantic Versioning 2.0.0</a>. Violations of this scheme should be reported as bugs.
-Specifically, if a minor or patch version is released that breaks backward compatibility, that version should be
-immediately yanked and / or a new version should be immediately released that restores compatibility.</p>
 
 <h2>
 <a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>

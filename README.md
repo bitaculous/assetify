@@ -17,7 +17,7 @@ Installation
     gem 'bitaculous-assetify', github: 'bitaculous/assetify'
     ```
 
-2. Run `bundle` to install all dependencies with [Bundler].
+2. Run `bundle` to install all dependencies with [Bundler]
 
 Usage
 -----

@@ -1,1 +1,0 @@
-# This is the manifest for `foo.js`.

@@ -2,8 +2,8 @@
 
 source 'https://rubygems.org'
 
-# Declare the gem's dependencies in `assetify.gemspec`. Bundler will treat runtime dependencies like base dependencies,
-# and development dependencies will be added by default to the `:development` group.
+# Declare the gem's dependencies in `bitaculous-assetify.gemspec`. Bundler will treat runtime dependencies like base
+# dependencies, and development dependencies will be added by default to the `:development` group.
 gemspec
 
 group :development do
@@ -13,8 +13,8 @@ end
 group :test do
   # --- Code Analysis ---
 
-  gem 'rubocop',       '~> 0.33.0', require: false
-  gem 'rubocop-rspec', '~> 1.3.0',  require: false
+  gem 'rubocop',       '~> 0.34.0', require: false
+  gem 'rubocop-rspec', '~> 1.3.1',  require: false
 
   # --- Formatter ---
 
@@ -24,5 +24,5 @@ end
 group :misc do
   gem 'growl', '~> 1.0.3', require: RUBY_PLATFORM.include?('darwin') && 'growl'
 
-  gem 'rb-fsevent', '~> 0.9.5', require: RUBY_PLATFORM.include?('darwin') && 'rb-fsevent'
+  gem 'rb-fsevent', '~> 0.9.6', require: RUBY_PLATFORM.include?('darwin') && 'rb-fsevent'
 end

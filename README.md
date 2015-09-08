@@ -13,13 +13,11 @@ Installation
 
 1. Add Assetify to your Gemfile:
 
-    ```
-    group :assets do
-      gem 'assetify', github: 'bitaculous/assetify'
-    end
+    ```ruby
+    gem 'bitaculous-assetify', github: 'bitaculous/assetify'
     ```
 
-2. Run `bundle install`
+2. Run `bundle install` to install all dependencies with [Bundler].
 
 Usage
 -----
@@ -176,13 +174,9 @@ and you're ready to [roll].
 Development
 -----------
 
-### Run Specs
+### Run specs with [RSpec]
 
-Use the `rspec` command to run the specs:
-
-```
-$ rspec
-```
+Run `rspec`.
 
 or via [Guard]:
 
@@ -190,11 +184,28 @@ or via [Guard]:
 $ guard -g spec
 ```
 
+### See Test Coverage
+
+Run `COVERAGE=true rspec`.
+
 ### Run [RuboCop]
 
 Run `rubocop`.
 
-To run Specs and RuboCop altogether, run `rake`.
+To run all specs and RuboCop altogether, run `rake`.
+
+Bug Reports
+-----------
+
+Github Issues are used for managing bug reports and feature requests. If you run into issues, please search the issues
+and submit new problems [here].
+
+Versioning
+----------
+
+This library aims to adhere to [Semantic Versioning 2.0.0]. Violations of this scheme should be reported as bugs.
+Specifically, if a minor or patch version is released that breaks backward compatibility, that version should be
+immediately yanked and / or a new version should be immediately released that restores compatibility.
 
 Credits
 -------
@@ -235,19 +246,6 @@ Credits
 * [Sassy Maps]
 * [Sprockets]
 
-Bug Reports
------------
-
-Github Issues are used for managing bug reports and feature requests. If you run into issues, please search the issues
-and submit new problems [here].
-
-Versioning
-----------
-
-This library aims to adhere to [Semantic Versioning 2.0.0]. Violations of this scheme should be reported as bugs.
-Specifically, if a minor or patch version is released that breaks backward compatibility, that version should be
-immediately yanked and / or a new version should be immediately released that restores compatibility.
-
 License
 -------
 
@@ -255,6 +253,7 @@ Assetify is released under the [MIT License (MIT)], see [LICENSE].
 
 [Assetify]: https://bitaculous.github.io/assetify/ "“All your assets are belong to us”"
 [Bitaculous]: https://bitaculous.com "It's all about the bits, baby!"
+[Bundler]: http://bundler.io "The best way to manage a Ruby application's gems"
 [Bourbon]: http://bourbon.io "A simple and lightweight mixin library for Sass"
 [Breakpoint]: https://github.com/Team-Sass/breakpoint "Really Simple Media Queries with Sass"
 [Console]: https://github.com/h5bp/html5-boilerplate/blob/master/src/js/plugins.js "Avoid `console` errors in browsers that lack a console"
@@ -273,6 +272,7 @@ Assetify is released under the [MIT License (MIT)], see [LICENSE].
 [normalize.css]: http://necolas.github.io/normalize.css "A modern, HTML5-ready alternative to CSS resets"
 [reset.css]: http://meyerweb.com/eric/tools/css/reset "Reset CSS"
 [roll]: http://paranoida.github.io/sass-mediaqueries "Sass Media Queries"
+[RSpec]: http://rspec.info "Behaviour Driven Development for Ruby"
 [RuboCop]: https://github.com/bbatsov/rubocop "A Ruby static code analyzer, based on the community Ruby style guide."
 [Salvattore]: http://salvattore.com "A jQuery Masonry alternative with CSS-driven configuration"
 [Sass]: http://sass-lang.com "Syntactically Awesome Style Sheets"

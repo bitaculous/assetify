@@ -7,56 +7,55 @@
 // @package vendor
 // @version 2.0
 
-@mixin reset
-  html, body,
-  main, header, footer, nav, aside, section, article, h1, h2, h3, h4, h5, h6, address,
-  div, p, hr, pre, blockquote, ol, ul, li, dl, dt, dd, figure, figcaption,
-  a, em, strong, small, s, cite, q, dfn, abbr, data, time, code, var, samp, kbd, sub, i, b, u, mark, ruby, rt, rp, bdi, bdo, span, br, wbr,
-  ins, del,
-  img, iframe, embed, object, param, video, audio, source, track, canvas, map, area, svg, math,
-  table, caption, colgroup, col, tbody, thead, tfoot, th, tr, td,
-  form, fieldset, legend, label,
-  details, summary, menuitem, menu
-    border: 0
-    font-size: 100%
-    font: inherit
-    margin: 0
-    padding: 0
-    vertical-align: baseline
+html, body,
+main, header, footer, nav, aside, section, article, h1, h2, h3, h4, h5, h6, address,
+div, p, hr, pre, blockquote, ol, ul, li, dl, dt, dd, figure, figcaption,
+a, em, strong, small, s, cite, q, dfn, abbr, data, time, code, var, samp, kbd, sub, i, b, u, mark, ruby, rt, rp, bdi, bdo, span, br, wbr,
+ins, del,
+img, iframe, embed, object, param, video, audio, source, track, canvas, map, area, svg, math,
+table, caption, colgroup, col, tbody, thead, tfoot, th, tr, td,
+form, fieldset, legend, label,
+details, summary, menuitem, menu
+  border: 0
+  font-size: 100%
+  font: inherit
+  margin: 0
+  padding: 0
+  vertical-align: baseline
 
-  body
-    line-height: 1
+body
+  line-height: 1
 
-  // HTML5 display-role reset for older browsers
-  article,
-  aside,
-  details,
-  figcaption,
-  figure,
-  footer,
-  header,
-  hgroup,
-  main,
-  nav,
-  section,
-  summary
-    display: block
+// HTML5 display-role reset for older browsers
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary
+  display: block
 
-  ol,
-  ul
-    list-style: none
+ol,
+ul
+  list-style: none
 
-  blockquote,
-  q
-    quotes: none
+blockquote,
+q
+  quotes: none
 
-  blockquote,
-  q
-    &:before,
-    &:after
-      content: ''
-      content: none
+blockquote,
+q
+  &:before,
+  &:after
+    content: ''
+    content: none
 
-  table
-    border-collapse: collapse
-    border-spacing: 0
+table
+  border-collapse: collapse
+  border-spacing: 0

@@ -26,45 +26,33 @@ Usage
 
 #### [normalize.css]
 
-First, import normalize:
+The most basic option is simply:
 
 ```sass
 @import normalize
 ```
 
-The most basic option is simply:
-
-```sass
-@include normalize
-```
-
 which includes the “full package”.
 
-Or include only specific parts:
+Or import only specific parts:
 
 ```sass
-@include base
-@include html5-display-definitions
-@include links
-@include text-level-semantics
-@include embedded-content
-@include grouping-content
-@include forms
-@include tables
+@import normalize/base
+@import normalize/html5_display_definitions
+@import normalize/links
+@import normalize/text_level_semantics
+@import normalize/embedded_content
+@import normalize/grouping_content
+@import normalize/forms
+@import normalize/tables
 ```
 
 #### [reset.css]
 
-First, import reset:
+Import reset:
 
 ```sass
 @import reset
-```
-
-Second, include it:
-
-```sass
-@include reset
 ```
 
 #### [Sass Media Queries]

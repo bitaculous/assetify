@@ -15,7 +15,7 @@ Gem::Specification.new 'bitaculous-assetify', Bitaculous::Assetify::VERSION do |
   spec.required_rubygems_version = '~> 2.4'
 
   spec.add_runtime_dependency 'sprockets',     '>= 2.12.4'
-  spec.add_runtime_dependency 'bourbon',       '~> 4.2.4'
+  spec.add_runtime_dependency 'bourbon',       '~> 4.2.5'
   spec.add_runtime_dependency 'breakpoint',    '~> 2.5.0'
   spec.add_runtime_dependency 'modular-scale', '~> 2.1.1'
   spec.add_runtime_dependency 'sassy-maps',    '~> 0.4.0'

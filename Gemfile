@@ -7,6 +7,8 @@ source 'https://rubygems.org'
 gemspec
 
 group :development do
+  # --- Guard ---
+
   gem 'guard-rspec', '~> 4.6.4', require: false
 end
 

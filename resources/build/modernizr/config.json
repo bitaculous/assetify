@@ -1,0 +1,12 @@
+{
+  "minify": false,
+  "options": [
+    "setClasses"
+  ],
+  "feature-detects": [
+    "test/canvas",
+    "test/webgl",
+    "test/websockets",
+    "test/workers/webworkers"
+  ]
+}

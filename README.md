@@ -2,14 +2,27 @@
 ==========
 
 [![Travis CI Status][Travis CI Status]][Travis CI]
+[![Code Climate Status][Code Climate Status]][Code Climate]
+[![Test Coverage Status][Test Coverage Status]][Test Coverage]
 [![Gemnasium Status][Gemnasium Status]][Gemnasium]
 
 **“All your assets are belong to us”**
 
-Assetify is our package for [Sass] and [Sprockets], with common libraries we need for our projects at [Bitaculous].
+Assetify is our package for [Bower], [npm], [Sass] and [Sprockets], with common libraries we need for our projects at
+[Bitaculous].
 
 Installation
 ------------
+
+### Bower
+
+Run `bower install bitaculous/assetify`.
+
+### npm
+
+Run `npm install bitaculous/assetify`.
+
+### Sprockets
 
 1. Add Assetify to your Gemfile:
 
@@ -22,7 +35,7 @@ Installation
 Usage
 -----
 
-### Sass / CSS
+### Sass / CSS via Sprockets
 
 #### [normalize.css]
 
@@ -65,7 +78,7 @@ Just import Sass Media Queries:
 
 and you're ready to [roll].
 
-### CoffeeScript / JavaScript
+### CoffeeScript / JavaScript via Sprockets
 
 #### [Detect.js]
 
@@ -159,6 +172,15 @@ and you're ready to [roll].
 #= require polyfills/fastclick
 ```
 
+Build
+-----
+
+### [Modernizr]
+
+```
+$ modernizr -c resources/build/modernizr/config.json
+```
+
 Development
 -----------
 
@@ -243,7 +265,10 @@ Assetify is released under the [MIT License (MIT)], see [LICENSE].
 [Bitaculous]: https://bitaculous.com "It's all about the bits, baby!"
 [Bundler]: http://bundler.io "The best way to manage a Ruby application's gems"
 [Bourbon]: http://bourbon.io "A simple and lightweight mixin library for Sass"
+[Bower]: http://bower.io "A package manager for the web"
 [Breakpoint]: https://github.com/Team-Sass/breakpoint "Really Simple Media Queries with Sass"
+[Code Climate]: https://codeclimate.com/github/bitaculous/assetify "Assetify at Code Climate"
+[Code Climate Status]: https://img.shields.io/codeclimate/github/bitaculous/assetify.svg?style=flat "Code Climate Status"
 [Console]: https://github.com/h5bp/html5-boilerplate/blob/master/src/js/plugins.js "Avoid `console` errors in browsers that lack a console"
 [Detect.js]: https://github.com/darcyclarke/Detect.js "JS Library to detect browser, os and device based on the UserAgent string"
 [FastClick]: https://github.com/ftlabs/fastclick "Polyfill to remove click delays on browsers with touch UIs"
@@ -258,6 +283,7 @@ Assetify is released under the [MIT License (MIT)], see [LICENSE].
 [Modernizr]: http://modernizr.com "A JavaScript library that detects HTML5 and CSS3 features in the user’s browser"
 [Modular Scale]: https://github.com/Team-Sass/modular-scale "Modular scale calculator built into your Sass"
 [normalize.css]: http://necolas.github.io/normalize.css "A modern, HTML5-ready alternative to CSS resets"
+[npm]: https://www.npmjs.com "A package manager for JavaScript"
 [reset.css]: http://meyerweb.com/eric/tools/css/reset "Reset CSS"
 [roll]: http://paranoida.github.io/sass-mediaqueries "Sass Media Queries"
 [RSpec]: http://rspec.info "Behaviour Driven Development for Ruby"
@@ -268,6 +294,8 @@ Assetify is released under the [MIT License (MIT)], see [LICENSE].
 [Sassy Maps]: https://github.com/Team-Sass/Sassy-Maps "Map helper functions for Sass 3.3 Maps including get-deep and set/set-deep"
 [Semantic Versioning 2.0.0]: http://semver.org "Semantic Versioning 2.0.0"
 [Sprockets]: https://github.com/sstephenson/sprockets "Rack-based asset packaging system"
+[Test Coverage]: https://codeclimate.com/github/bitaculous/assetify "Test Coverage (Code Climate)"
+[Test Coverage Status]: https://img.shields.io/codeclimate/coverage/github/bitaculous/assetify.svg?style=flat "Test Coverage Status"
 [Travis CI]: https://travis-ci.org/bitaculous/assetify "Assetify at Travis CI"
 [Travis CI Status]: https://img.shields.io/travis/bitaculous/assetify.svg?style=flat "Travis CI Status"
 [Velocity]: http://velocityjs.org "Accelerated JavaScript animation"

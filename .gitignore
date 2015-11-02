@@ -1,5 +1,9 @@
 /*.sublime-workspace
 /.bundle/
+/bower_components/
+/coverage/
 /Gemfile.lock
+/node_modules/
+/npm-debug.log
 /pkg/
 /tmp/

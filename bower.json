@@ -1,0 +1,33 @@
+{
+  "name": "bitaculous-assetify",
+  "description": "“All your assets are belong to us”",
+  "keywords": [
+    "Bitaculous",
+    "Assetify"
+  ],
+  "homepage": "https://bitaculous.github.io/assetify/",
+  "authors": [
+    "Maik Kempe <mkempe@bitaculous.com> (https://bitaculous.com)"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bitaculous/assetify.git"
+  },
+  "ignore": [
+    "**/.*",
+    "*.gemspec",
+    "*.sublime-project",
+    "Gemfile",
+    "Guardfile",
+    "lib",
+    "package.json",
+    "Rakefile",
+    "resources",
+    "spec"
+  ],
+  "main": [
+    "assets/javascripts/bitaculous/assetify.coffee",
+    "assets/stylesheets/bitaculous/assetify.sass"
+  ]
+}

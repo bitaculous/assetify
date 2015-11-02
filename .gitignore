@@ -1,7 +1,5 @@
 /*.sublime-workspace
 /.bundle/
-/.ruby-gemset
-/.ruby-version
 /Gemfile.lock
 /pkg/
 /tmp/

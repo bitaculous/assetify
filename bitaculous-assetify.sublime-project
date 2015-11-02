@@ -5,12 +5,15 @@
       "path": "./",
       "folder_exclude_patterns": [
         ".bundle",
+        "bower_components",
+        "coverage",
+        "node_modules",
         "pkg",
         "tmp"
       ],
       "file_exclude_patterns": [
         ".keep"
-      ]
+      ],
     }
   ]
 }

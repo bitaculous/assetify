@@ -177,7 +177,7 @@ Build
 
 ### [Modernizr]
 
-1. Update Modernizr through Bower
+1. Update Modernizr through npm
 
 2. Update / modify the Modernizr configuration
 

@@ -1,5 +1,4 @@
 {
-  "minify": false,
   "options": [
     "setClasses"
   ],
@@ -8,5 +7,9 @@
     "test/webgl",
     "test/websockets",
     "test/workers/webworkers"
-  ]
+  ],
+  "classPrefix": "",
+  "enableClasses": true,
+  "enableJSClass": true,
+  "minify": false
 }

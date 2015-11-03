@@ -177,9 +177,11 @@ Build
 
 ### [Modernizr]
 
-```
-$ modernizr -c resources/build/modernizr/config.json
-```
+1. Update Modernizr through Bower
+
+2. Update / modify the Modernizr configuration
+
+3. Run `rake build:modernizr` or `rake 'build:modernizr[true]'` (minifies the output) to build a new version
 
 Development
 -----------

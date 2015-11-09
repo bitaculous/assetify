@@ -1,5 +1,8 @@
 /*.sublime-workspace
 /.bundle/
+/.node-version
+/.ruby-gemset
+/.ruby-version
 /bower_components/
 /coverage/
 /Gemfile.lock

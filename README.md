@@ -262,7 +262,7 @@ License
 
 Assetify is released under the [MIT License (MIT)], see [LICENSE].
 
-[Assetify]: https://bitaculous.github.io/assetify/ "Assets used by Bitcoveries, packaged for Bower, npm, Sass, Sprockets and Thor."
+[Assetify]: https://bitaculous.github.io/assetify/ "Assets used by Bitaculous, packaged for Bower, npm, Sass, Sprockets and Thor."
 [Bitaculous]: https://bitaculous.com "It's all about the bits, baby!"
 [Bundler]: http://bundler.io "The best way to manage a Ruby application's gems"
 [Bourbon]: http://bourbon.io "A simple and lightweight mixin library for Sass"

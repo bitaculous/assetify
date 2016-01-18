@@ -3,7 +3,7 @@
 require_relative 'lib/bitaculous/assetify/version'
 
 Gem::Specification.new 'bitaculous-assetify', Bitaculous::Assetify::VERSION do |spec|
-  spec.summary          = '“All your assets are belong to us”'
+  spec.summary          = 'Assets used by Bitaculous, packaged for Sass, Sprockets and Thor.'
   spec.author           = 'Maik Kempe'
   spec.email            = 'mkempe@bitaculous.com'
   spec.homepage         = 'https://bitaculous.github.io/assetify/'

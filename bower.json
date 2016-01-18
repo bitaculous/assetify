@@ -1,6 +1,6 @@
 {
   "name": "bitaculous-assetify",
-  "description": "“All your assets are belong to us”",
+  "description": "Assets used by Bitaculous, packaged for Bower.",
   "keywords": [
     "Bitaculous",
     "Assetify"
@@ -29,5 +29,11 @@
   "main": [
     "assets/javascripts/bitaculous/assetify.coffee",
     "assets/stylesheets/bitaculous/assetify.sass"
-  ]
+  ],
+  "dependencies": {
+    "bourbon": "~4.2.6",
+    "compass-breakpoint": "~2.6.1",
+    "modular-scale": "~2.1.1",
+    "sassy-maps": "~0.4.0"
+  }
 }

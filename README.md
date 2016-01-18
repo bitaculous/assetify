@@ -8,7 +8,7 @@
 
 **Assets used by Bitaculous, packaged for [Bower], [npm], [Sass], [Sprockets] and [Thor].**
 
-Assetify is our package for Bower, npm, Sass, Sprockets and Thor, with common libraries we need for [Bitaculous].
+Assetify is our package for Bower, npm, Sass, Sprockets and Thor, with common libraries we use at [Bitaculous].
 
 Installation
 ------------

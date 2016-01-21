@@ -5,6 +5,16 @@ RSpec.describe Bitaculous::Assetify::Task do
 
   let(:pastel) { Pastel.new }
 
+  describe '#log' do
+    it 'logs a message' do
+      message  = 'Bitaculous Assetify'
+      color    = :white
+      expected = pastel.white message
+
+      expect(subject.log(message, color, false, false)).to eql expected
+    end
+  end
+
   describe '#colorize' do
     it 'colorizes a message' do
       message  = 'Bitaculous Assetify'

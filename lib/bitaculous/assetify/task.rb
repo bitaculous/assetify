@@ -8,13 +8,17 @@ module Bitaculous
     # The Task class, inherited from `Thor`.
     class Task < Thor
       no_commands do
-        def log(message, color = :white, symbol = false)
+        def log(message, color = :white, symbol = false, stdout = true)
           return unless message
 
           message = "#{symbol} #{message}" if symbol
           message = colorize(message, color)
 
-          puts message
+          if stdout
+            puts message
+          else
+            message
+          end
         end
 
         # rubocop:disable MethodLength

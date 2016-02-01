@@ -72,7 +72,7 @@ Import reset:
 Just import Sass Media Queries:
 
 ```sass
-@import media_queries
+@import media-queries
 ```
 
 and you're ready to [roll].

@@ -14,14 +14,11 @@ Gem::Specification.new 'bitaculous-assetify', Bitaculous::Assetify::VERSION do |
   spec.required_ruby_version     = '~> 2.2'
   spec.required_rubygems_version = '~> 2.4'
 
-  spec.add_runtime_dependency 'sprockets',     '>= 2.12.4', '< 4.0'
-  spec.add_runtime_dependency 'bourbon',       '~> 4.2',    '>= 4.2.6'
-  spec.add_runtime_dependency 'breakpoint',    '~> 2.5',    '>= 2.5.0'
-  spec.add_runtime_dependency 'modular-scale', '~> 2.1',    '>= 2.1.1'
-  spec.add_runtime_dependency 'sassy-maps',    '~> 0.4',    '>= 0.4.0'
+  spec.add_runtime_dependency 'sprockets', '>= 2.12.4', '< 4.0'
+  spec.add_runtime_dependency 'bourbon',   '~> 4.2',    '>= 4.2.6'
 
-  spec.add_runtime_dependency 'thor',          '~> 0.19',   '>= 0.19.1'
-  spec.add_runtime_dependency 'pastel',        '~> 0.6',    '>= 0.6.0'
+  spec.add_runtime_dependency 'thor',      '~> 0.19',   '>= 0.19.1'
+  spec.add_runtime_dependency 'pastel',    '~> 0.6',    '>= 0.6.0'
 
   spec.add_development_dependency 'rake',  '~> 10.5', '>= 10.5.0'
   spec.add_development_dependency 'rspec', '~> 3.4',  '>= 3.4.0'

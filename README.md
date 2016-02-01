@@ -223,11 +223,15 @@ Credits
 
 ### Assetify uses the following libraries:
 
-#### CSS
+#### Cascading Style Sheets
 
+* [Bourbon]
+* [Breakpoint]
+* [Modular Scale]
 * [normalize.css]
 * [reset.css]
 * [Sass Media Queries]
+* [Sassy Maps]
 
 #### JavaScript
 
@@ -248,14 +252,6 @@ Credits
 
 * [Console]
 * [FastClick]
-
-### Assetify uses the following gems:
-
-* [Bourbon]
-* [Breakpoint]
-* [Modular Scale]
-* [Sassy Maps]
-* [Sprockets]
 
 License
 -------
@@ -294,7 +290,7 @@ Assetify is released under the [MIT License (MIT)], see [LICENSE].
 [Sass Media Queries]: http://paranoida.github.io/sass-mediaqueries "A collection of useful media queries mixins (including iOS devices like iPhones and iPads) for Sass"
 [Sassy Maps]: https://github.com/Team-Sass/Sassy-Maps "Map helper functions for Sass 3.3 Maps including get-deep and set/set-deep"
 [Semantic Versioning 2.0.0]: http://semver.org "Semantic Versioning 2.0.0"
-[Sprockets]: https://github.com/sstephenson/sprockets "Rack-based asset packaging system"
+[Sprockets]: https://github.com/rails/sprockets "Rack-based asset packaging"
 [Test Coverage]: https://codeclimate.com/github/bitaculous/assetify "Test Coverage (Code Climate)"
 [Test Coverage Status]: https://img.shields.io/codeclimate/coverage/github/bitaculous/assetify.svg?style=flat "Test Coverage Status"
 [Thor]: http://whatisthor.com "A toolkit for building powerful command-line interfaces."

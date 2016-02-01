@@ -3,16 +3,14 @@ require 'sass'
 module Bitaculous
   module Assetify
     module Integrations # :nodoc:
-      # = SassIntegration
-      #
-      # The class for the Sass integration.
+      # The class for the Sass Integration.
       class SassIntegration
-        def self.setup(stylesheets_path:        Bitaculous::Assetify.stylesheets_path,
-                       vendor_stylesheets_path: Bitaculous::Assetify.vendor_stylesheets_path)
-          load_paths = Sass.load_paths
+        def self.append_paths(paths)
+          paths.each { |path| append_path path }
+        end
 
-          load_paths.push stylesheets_path        if File.directory? stylesheets_path
-          load_paths.push vendor_stylesheets_path if File.directory? vendor_stylesheets_path
+        def self.append_path(path)
+          Sass.load_paths.push path if File.directory? path
         end
       end
     end

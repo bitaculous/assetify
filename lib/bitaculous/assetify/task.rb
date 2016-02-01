@@ -3,8 +3,6 @@ require 'thor'
 
 module Bitaculous
   module Assetify
-    # = Task
-    #
     # The Task class, inherited from `Thor`.
     class Task < Thor
       no_commands do

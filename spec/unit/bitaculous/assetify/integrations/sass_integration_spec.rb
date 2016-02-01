@@ -3,43 +3,39 @@ RSpec.describe Bitaculous::Assetify::Integrations::SassIntegration do
 
   let(:load_paths) { Sass.load_paths }
 
-  describe 'stylesheets' do
-    context 'the stylesheets path exists' do
-      it 'expands the load path' do
-        described_class.setup stylesheets_path: stylesheets_path
+  context 'the path exists' do
+    let(:paths) { [stylesheets_path, vendor_stylesheets_path] }
+    let(:path)  { stylesheets_path }
 
-        expect(load_paths).to include stylesheets_path
-      end
+    it 'expands the load paths' do
+      described_class.append_paths paths
+
+      expect(load_paths).to include paths[0]
+      expect(load_paths).to include paths[1]
     end
 
-    context 'the stylesheets path does not exists' do
-      let(:stylesheets_path) { '/foo' }
+    it 'expands the load path' do
+      described_class.append_path path
 
-      it 'does not expands the load path' do
-        described_class.setup stylesheets_path: stylesheets_path
-
-        expect(load_paths).not_to include stylesheets_path
-      end
+      expect(load_paths).to include path
     end
   end
 
-  describe 'vendor stylesheets' do
-    context 'the vendor stylesheets path exists' do
-      it 'expands the load path' do
-        described_class.setup vendor_stylesheets_path: vendor_stylesheets_path
+  context 'the path does not exists' do
+    let(:paths) { ['/tmp/foo', '/tmp/bar'] }
+    let(:path)  { '/tmp/foo' }
 
-        expect(load_paths).to include vendor_stylesheets_path
-      end
+    it 'does not expands the load paths' do
+      described_class.append_paths paths
+
+      expect(load_paths).to_not include paths[0]
+      expect(load_paths).to_not include paths[1]
     end
 
-    context 'the vendor stylesheets path does not exists' do
-      let(:vendor_stylesheets_path) { '/foo' }
+    it 'does not expands the load path' do
+      described_class.append_path path
 
-      it 'does not expands the load path' do
-        described_class.setup vendor_stylesheets_path: vendor_stylesheets_path
-
-        expect(load_paths).not_to include vendor_stylesheets_path
-      end
+      expect(load_paths).not_to include path
     end
   end
 end

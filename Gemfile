@@ -22,7 +22,7 @@ group :test do
 
   # --- Code Coverage ---
 
-  gem 'simplecov', '~> 0.11.1', require: false
+  gem 'simplecov', '~> 0.11.2', require: false
 
   gem 'codeclimate-test-reporter', '~> 0.4.8', require: false
 end

@@ -29,8 +29,5 @@
   "main": [
     "assets/javascripts/bitaculous/assetify.coffee",
     "assets/stylesheets/bitaculous/assetify.sass"
-  ],
-  "dependencies": {
-    "bourbon": "~4.2.6"
-  }
+  ]
 }

@@ -22,10 +22,14 @@
     "node": ">= 0.10.0"
   },
   "devDependencies": {
+    "bourbon": "~4.2.6",
+    "breakpoint-sass": "~2.6.1",
     "fastclick": "~1.0.6",
     "jquery": "~2.2.0",
     "modernizr": "~3.3.1",
+    "modularscale-sass": "~2.1.1",
     "normalize.css": "~3.0.3",
+    "sassy-maps": "at-import/Sassy-Maps",
     "velocity-animate": "~1.2.3"
   }
 }

@@ -21,7 +21,7 @@
   "engines": {
     "node": ">= 0.10.0"
   },
-  "devDependencies": {
+  "dependencies": {
     "bourbon": "~4.2.6",
     "breakpoint-sass": "~2.6.1",
     "fastclick": "~1.0.6",

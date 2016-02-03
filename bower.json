@@ -24,7 +24,8 @@
     "package.json",
     "Rakefile",
     "resources",
-    "spec"
+    "spec",
+    "tasks"
   ],
   "main": [
     "assets/javascripts/bitaculous/assetify.coffee",

@@ -20,3 +20,8 @@ require 'spec_helper'
 support = File.expand_path 'spec/support', root
 
 Dir["#{support}/**/*.rb"].each { |file| require file }
+
+# Requires supporting Ruby files with shared examples, helpers, matchers, etc. in `spec/shared` and its subdirectories.
+shared = File.expand_path 'spec/shared', root
+
+Dir["#{shared}/**/*.rb"].each { |file| require file }

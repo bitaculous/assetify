@@ -15,27 +15,29 @@ module Sass
       # rubocop:disable Metrics/CyclomaticComplexity
       # rubocop:disable Metrics/PerceivedComplexity
       def ms_gem_func(value, bases, ratios)
-        # Convert to native ruby things
+        # Convert to native Ruby things
         rvalue = value.value.to_i
 
-        if bases.class == Sass::Script::Number
-          bases = [] << bases
-        else
-          bases = bases.value.to_a
-        end
-        if ratios.class == Sass::Script::Number
-          ratios = [] << ratios
-        else
-          ratios = ratios.value.to_a
-        end
+        bases = if bases.class == Sass::Script::Number
+                  [] << bases
+                else
+                  bases.value.to_a
+                end
+
+        ratios = if ratios.class == Sass::Script::Number
+                   [] << ratios
+                 else
+                   ratios.value.to_a
+                 end
 
         # Convert items in arrays to floating point numbers
-        rbases  = []
-        rratios = []
+        rbases = []
 
         bases.each do |num|
           rbases << num.value.to_f
         end
+
+        rratios = []
 
         ratios.each do |num|
           rratios << num.value.to_f

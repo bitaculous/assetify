@@ -28,8 +28,8 @@ RSpec.describe Bitaculous::Assetify::Integrations::SassIntegration do
     it 'does not expands the load paths' do
       described_class.append_paths paths
 
-      expect(load_paths).to_not include paths[0]
-      expect(load_paths).to_not include paths[1]
+      expect(load_paths).not_to include paths[0]
+      expect(load_paths).not_to include paths[1]
     end
 
     it 'does not expands the load path' do

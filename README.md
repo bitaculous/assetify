@@ -263,7 +263,7 @@ Assetify is released under the [MIT License (MIT)], see [LICENSE].
 [Bundler]: http://bundler.io "The best way to manage a Ruby application's gems"
 [Bourbon]: http://bourbon.io "A simple and lightweight mixin library for Sass"
 [Bower]: http://bower.io "A package manager for the web"
-[Breakpoint]: https://github.com/Team-Sass/breakpoint "Really Simple Media Queries with Sass"
+[Breakpoint]: https://github.com/at-import/breakpoint "Really Simple Media Queries with Sass"
 [Code Climate]: https://codeclimate.com/github/bitaculous/assetify "Assetify at Code Climate"
 [Code Climate Status]: https://img.shields.io/codeclimate/github/bitaculous/assetify.svg?style=flat "Code Climate Status"
 [Console]: https://github.com/h5bp/html5-boilerplate/blob/master/src/js/plugins.js "Avoid `console` errors in browsers that lack a console"

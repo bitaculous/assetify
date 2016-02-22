@@ -33,7 +33,7 @@
   ],
   "dependencies": {
     "bourbon": "~4.2.6",
-    "breakpoint-sass": "~2.6.1",
+    "breakpoint-sass": "~2.7.0",
     "fastclick": "~1.0.6",
     "jquery": "~2.2.0",
     "modernizr": "~3.3.1",

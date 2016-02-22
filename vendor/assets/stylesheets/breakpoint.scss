@@ -6,7 +6,7 @@
 // @license MIT License (MIT) (http://opensource.org/licenses/MIT)
 //          GPL2 License (GPL2) (http://www.gnu.org/licenses/gpl-2.0.html)
 // @package vendor
-// @version 2.6.1
+// @version 2.7.0
 
 //////////////////////////////
 // Default Variables
@@ -33,7 +33,7 @@ $breakpoint: () !default;
 //////////////////////////////
 // Imports
 //////////////////////////////
-@import "breakpoint/settings";
+@import 'breakpoint/settings';
 @import 'breakpoint/context';
 @import 'breakpoint/helpers';
 @import 'breakpoint/parsers';
@@ -41,7 +41,7 @@ $breakpoint: () !default;
 
 @import 'breakpoint/respond-to';
 
-@import "breakpoint/legacy-settings";
+@import 'breakpoint/legacy-settings';
 
 //////////////////////////////
 // Breakpoint Mixin
@@ -78,7 +78,6 @@ $breakpoint: () !default;
   }
 
   @if breakpoint-get('no query fallbacks') != false or breakpoint-get('no queries') == true {
-
     $type: type-of(breakpoint-get('no query fallbacks'));
     $print: false;
 
@@ -115,7 +114,6 @@ $breakpoint: () !default;
 
   @include private-breakpoint-reset-contexts();
 }
-
 
 @mixin mq($query, $no-query: false) {
   @include breakpoint($query, $no-query) {

@@ -44,9 +44,11 @@ The most basic option is simply:
 @import normalize
 ```
 
-which includes the “full package”.
+which includes the “Default package”.
 
 Or import only specific parts:
+
+##### Default package
 
 ```sass
 @import normalize/base
@@ -57,6 +59,12 @@ Or import only specific parts:
 @import normalize/grouping_content
 @import normalize/forms
 @import normalize/tables
+```
+
+##### Additional imports
+
+```sass
+@import normalize/box_sizing
 ```
 
 #### [reset.css]

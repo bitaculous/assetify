@@ -6,9 +6,9 @@
 [![Test Coverage Status][Test Coverage Status]][Test Coverage]
 [![Gemnasium Status][Gemnasium Status]][Gemnasium]
 
-**Assets used by Bitaculous, packaged for [Bower], [npm], [Sass], [Sprockets] and [Thor].**
+**Assets used by Bitaculous, packaged for [Bower], [npm], [Sass] and [Sprockets].**
 
-Assetify is our package for Bower, npm, Sass, Sprockets and Thor, with common libraries we use at [Bitaculous].
+Assetify is our package for Bower, npm, Sass and Sprockets, with common libraries we use at [Bitaculous].
 
 Installation
 ------------
@@ -21,7 +21,7 @@ Run `bower install bitaculous/assetify`.
 
 Run `npm install bitaculous/assetify`.
 
-### Sprockets and / or Thor
+### Sprockets
 
 1. Add Assetify to your Gemfile:
 
@@ -266,7 +266,7 @@ License
 
 Assetify is released under the [MIT License (MIT)], see [LICENSE].
 
-[Assetify]: https://bitaculous.github.io/assetify/ "Assets used by Bitaculous, packaged for Bower, npm, Sass, Sprockets and Thor."
+[Assetify]: https://bitaculous.github.io/assetify/ "Assets used by Bitaculous, packaged for Bower, npm, Sass and Sprockets."
 [Bitaculous]: https://bitaculous.com "It's all about the bits, baby!"
 [Bundler]: http://bundler.io "The best way to manage a Ruby application's gems"
 [Bourbon]: http://bourbon.io "A simple and lightweight mixin library for Sass"
@@ -301,7 +301,6 @@ Assetify is released under the [MIT License (MIT)], see [LICENSE].
 [Sprockets]: https://github.com/rails/sprockets "Rack-based asset packaging"
 [Test Coverage]: https://codeclimate.com/github/bitaculous/assetify "Test Coverage (Code Climate)"
 [Test Coverage Status]: https://img.shields.io/codeclimate/coverage/github/bitaculous/assetify.svg?style=flat "Test Coverage Status"
-[Thor]: http://whatisthor.com "A toolkit for building powerful command-line interfaces."
 [Travis CI]: https://travis-ci.org/bitaculous/assetify "Assetify at Travis CI"
 [Travis CI Status]: https://img.shields.io/travis/bitaculous/assetify.svg?style=flat "Travis CI Status"
 [Velocity]: http://velocityjs.org "Accelerated JavaScript animation"

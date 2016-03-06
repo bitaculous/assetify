@@ -3,7 +3,7 @@
 require_relative 'lib/bitaculous/assetify/version'
 
 Gem::Specification.new 'bitaculous-assetify', Bitaculous::Assetify::VERSION do |spec|
-  spec.summary          = 'Assets used by Bitaculous, packaged for Sass, Sprockets and Thor.'
+  spec.summary          = 'Assets used by Bitaculous, packaged for Sass and Sprockets.'
   spec.author           = 'Maik Kempe'
   spec.email            = 'mkempe@bitaculous.com'
   spec.homepage         = 'https://bitaculous.github.io/assetify/'
@@ -16,8 +16,6 @@ Gem::Specification.new 'bitaculous-assetify', Bitaculous::Assetify::VERSION do |
 
   spec.add_runtime_dependency 'sprockets', '>= 2.12.4', '< 4.0'
   spec.add_runtime_dependency 'bourbon',   '~> 4.2',    '>= 4.2.6'
-  spec.add_runtime_dependency 'thor',      '~> 0.19',   '>= 0.19.1'
-  spec.add_runtime_dependency 'pastel',    '~> 0.6',    '>= 0.6.0'
 
   spec.add_development_dependency 'rake',  '~> 10.5', '>= 10.5.0'
   spec.add_development_dependency 'rspec', '~> 3.4',  '>= 3.4.0'

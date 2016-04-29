@@ -58,13 +58,13 @@ Or import only specific parts:
 @import normalize/embedded_content
 @import normalize/grouping_content
 @import normalize/forms
-@import normalize/tables
 ```
 
 ##### Additional imports
 
 ```sass
 @import normalize/box_sizing
+@import normalize/tables
 ```
 
 #### [reset.css]

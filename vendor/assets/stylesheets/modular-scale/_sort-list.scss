@@ -2,7 +2,6 @@
 // http://en.wikipedia.org/wiki/Merge_sort
 
 @function ms-merge($A, $B) {
-
   $Return: ();
 
   // Some empty lists get passed through
@@ -16,6 +15,7 @@
   @if nth($A, length($A)) < nth($B, 1) {
     @return join($A, $B);
   }
+
   @if nth($B, length($B)) < nth($A, 1) {
     @return join($B, $A);
   }
@@ -26,7 +26,6 @@
 
   // Start looping through all numbers in array
   @while $A-counter <= length($A) and $B-counter <= length($B) {
-
     // Check if the A value is smaller
     // Uses or equal to avoid duplicate numbers
     @if nth($A, $A-counter) <= nth($B, $B-counter) {
@@ -49,6 +48,7 @@
     }
     $A-counter: $A-counter + 1;
   }
+
   @while $B-counter <= length($B) {
     $Current: nth($B, $B-counter);
     @if $Current != nth($Return, length($Return)) {
@@ -61,11 +61,8 @@
   @return $Return;
 }
 
-
-
 // Pull it all together
 @function ms-sort-list($Lists) {
-
   $Return: ();
 
   @each $List in $Lists {
@@ -77,17 +74,18 @@
     }
   }
 
-  // final cleanup of repeated items
+  // Final cleanup of repeated items
   $Last: null;
   $New-list: ();
+
   @each $Item in $Return {
     @if $Item != $Last {
       $New-list: join($New-list, $Item);
     }
     $Last: $Item;
   }
-  $Return: $New-list;
 
+  $Return: $New-list;
 
   @return $Return;
 }

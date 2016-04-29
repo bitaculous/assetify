@@ -30,7 +30,6 @@
   @if $ms-range == null {
     #{$property}: ms($value,$base,$ms-ratio);
   } @else {
-
     // Initial value
     #{$property}: ms($value,$base,ms-range(1,1,$range));
 

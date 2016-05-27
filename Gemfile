@@ -9,7 +9,7 @@ gemspec
 # === Development ===
 
 group :development do
-  gem 'guard-rspec', '~> 4.6.5', require: false
+  gem 'guard-rspec', '~> 4.7.0', require: false
 end
 
 # === Test ===
@@ -17,8 +17,8 @@ end
 group :test do
   # --- Code Analysis ---
 
-  gem 'rubocop',       '~> 0.39.0', require: false
-  gem 'rubocop-rspec', '~> 1.4.1',  require: false
+  gem 'rubocop',       '~> 0.40.0', require: false
+  gem 'rubocop-rspec', '~> 1.5.0',  require: false
 
   # --- Code Coverage ---
 

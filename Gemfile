@@ -9,7 +9,7 @@ gemspec
 # === Development ===
 
 group :development do
-  gem 'guard-rspec', '~> 4.7.0', require: false
+  gem 'guard-rspec', '~> 4.7.2', require: false
 end
 
 # === Test ===
@@ -24,7 +24,7 @@ group :test do
 
   gem 'simplecov', '~> 0.11.2', require: false
 
-  gem 'codeclimate-test-reporter', '~> 0.5.0', require: false
+  gem 'codeclimate-test-reporter', '~> 0.5.1', require: false
 end
 
 # === Misc ===

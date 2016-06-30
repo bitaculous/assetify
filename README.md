@@ -236,12 +236,13 @@ Credits
 * [Bourbon]
 * [Breakpoint]
 * [Modular Scale]
+* [Neat]
 * [normalize.css]
 * [reset.css]
 * [Sass Media Queries]
 * [Sassy Maps]
 
-#### JavaScript
+#### JavaScripts
 
 * [Detect.js]
 * [jQuery]
@@ -287,6 +288,7 @@ Assetify is released under the [MIT License (MIT)], see [LICENSE].
 [MIT License (MIT)]: http://opensource.org/licenses/MIT "The MIT License (MIT)"
 [Modernizr]: http://modernizr.com "A JavaScript library that detects HTML5 and CSS3 features in the user’s browser"
 [Modular Scale]: https://github.com/Team-Sass/modular-scale "Modular scale calculator built into your Sass"
+[Neat]: http://neat.bourbon.io "A lightweight semantic grid framework for Sass and Bourbon."
 [normalize.css]: http://necolas.github.io/normalize.css "A modern, HTML5-ready alternative to CSS resets"
 [npm]: https://www.npmjs.com "A package manager for JavaScript"
 [reset.css]: http://meyerweb.com/eric/tools/css/reset "Reset CSS"

@@ -24,7 +24,7 @@ group :test do
 
   gem 'simplecov', '~> 0.11.2', require: false
 
-  gem 'codeclimate-test-reporter', '~> 0.5.1', require: false
+  gem 'codeclimate-test-reporter', '~> 0.6.0', require: false
 end
 
 # === Misc ===

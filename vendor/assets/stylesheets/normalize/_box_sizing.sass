@@ -2,10 +2,11 @@
 //
 // @package vendor/normalize
 
-*,
-*:before,
-*:after
-  box-sizing: inherit
+*
+  &,
+  &::after,
+  &::before
+    box-sizing: inherit
 
 html
   box-sizing: border-box

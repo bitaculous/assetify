@@ -15,11 +15,11 @@ Installation
 
 ### Bower
 
-Run `bower install bitaculous/assetify`.
+Run `bower install bitaculous/assetify`
 
 ### npm
 
-Run `npm install bitaculous/assetify`.
+Run `npm install bitaculous/assetify`
 
 ### Sprockets
 

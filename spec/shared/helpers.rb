@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Helpers # :nodoc:
   def fixtures_path
     File.expand_path '../../fixtures', __FILE__

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 root = File.expand_path '../../', __FILE__
 
 # Require the test object.

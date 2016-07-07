@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe Bitaculous::Assetify::Integrations::SassIntegration do
   include Helpers
 

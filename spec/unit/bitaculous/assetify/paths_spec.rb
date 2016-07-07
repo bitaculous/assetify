@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe Bitaculous::Assetify::Paths do
   subject { Bitaculous::Assetify }
 

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Bitaculous
   module Assetify # :nodoc:
     require_relative 'assetify/vendor'

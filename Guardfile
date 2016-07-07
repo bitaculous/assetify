@@ -1,4 +1,5 @@
 #!/usr/bin/env guard
+# frozen_string_literal: true
 
 group :spec do
   guard :rspec, cmd: 'rspec', failed_mode: :focus, all_after_pass: true, all_on_start: true, notification: true do

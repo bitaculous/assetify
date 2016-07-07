@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Conventionally, all specs live under a `spec` directory, which RSpec adds to the `$LOAD_PATH`. The `.rspec` file
 # contains `--require bitaculous_assetify_helper` which will cause this file to always be loaded, without a need to
 # explicitly require it in any files.

@@ -1,4 +1,5 @@
 #!/usr/bin/env bundle
+# frozen_string_literal: true
 
 source 'https://rubygems.org'
 
@@ -17,7 +18,7 @@ end
 group :test do
   # --- Code Analysis ---
 
-  gem 'rubocop',       '~> 0.40.0', require: false
+  gem 'rubocop',       '~> 0.41.2', require: false
   gem 'rubocop-rspec', '~> 1.5.0',  require: false
 
   # --- Code Coverage ---

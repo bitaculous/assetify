@@ -3,8 +3,8 @@
   "version": "6.2.1",
   "description": "Assets used by Bitaculous, packaged for npm.",
   "keywords": [
-    "Bitaculous",
-    "Assetify"
+    "Assetify",
+    "Bitaculous"
   ],
   "homepage": "https://bitaculous.github.io/assetify/",
   "authors": [
@@ -19,13 +19,13 @@
     "url": "https://github.com/bitaculous/assetify/issues"
   },
   "engines": {
-    "node": ">= 4.4.0"
+    "node": ">= 4.6.1"
   },
   "dependencies": {
     "bourbon": "~4.2.7",
     "breakpoint-sass": "~2.7.0",
     "fastclick": "~1.0.6",
-    "jquery": "~3.0.0",
+    "jquery": "~3.1.1",
     "modernizr": "~3.3.1",
     "modularscale-sass": "git://github.com/modularscale/modularscale-sass.git#2.x",
     "sassy-maps": "at-import/Sassy-Maps",

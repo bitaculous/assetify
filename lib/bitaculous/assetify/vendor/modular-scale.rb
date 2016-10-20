@@ -20,16 +20,16 @@ module Sass
         rvalue = value.value.to_i
 
         bases = if bases.class == Sass::Script::Number
-                  [] << bases
-                else
-                  bases.value.to_a
-                end
+          [] << bases
+        else
+          bases.value.to_a
+        end
 
         ratios = if ratios.class == Sass::Script::Number
-                   [] << ratios
-                 else
-                   ratios.value.to_a
-                 end
+           [] << ratios
+         else
+           ratios.value.to_a
+         end
 
         # Convert items in arrays to floating point numbers
         rbases = []
@@ -96,7 +96,7 @@ module Sass
         r.sort!
         r.uniq!
 
-        if rvalue < 0
+        if rvalue.negative?
           r = r.keep_if { |a| a <= rbases[0] }
           # Final value
           r = r[(rvalue - 1)]

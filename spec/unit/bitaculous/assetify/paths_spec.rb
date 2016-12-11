@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 RSpec.describe Bitaculous::Assetify::Paths do
-  subject { Bitaculous::Assetify }
+  subject(:assetify) { Bitaculous::Assetify }
 
   let(:trail)                   { File.expand_path '../../../../../', __FILE__ }
   let(:assets_path)             { File.expand_path 'assets', trail }
@@ -18,46 +18,46 @@ RSpec.describe Bitaculous::Assetify::Paths do
   let(:vendor_stylesheets_path) { File.expand_path 'stylesheets', vendor_assets_path }
 
   it 'returns the assets path' do
-    expect(subject.assets_path).to eql assets_path
+    expect(assetify.assets_path).to eql assets_path
   end
 
   it 'returns the fonts path' do
-    expect(subject.fonts_path).to eql fonts_path
+    expect(assetify.fonts_path).to eql fonts_path
   end
 
   it 'returns the images path' do
-    expect(subject.images_path).to eql images_path
+    expect(assetify.images_path).to eql images_path
   end
 
   it 'returns the javascripts path' do
-    expect(subject.javascripts_path).to eql javascripts_path
+    expect(assetify.javascripts_path).to eql javascripts_path
   end
 
   it 'returns the stylesheets path' do
-    expect(subject.stylesheets_path).to eql stylesheets_path
+    expect(assetify.stylesheets_path).to eql stylesheets_path
   end
 
   it 'returns the vendor path' do
-    expect(subject.vendor_path).to eql vendor_path
+    expect(assetify.vendor_path).to eql vendor_path
   end
 
   it 'returns the vendor assets path' do
-    expect(subject.vendor_assets_path).to eql vendor_assets_path
+    expect(assetify.vendor_assets_path).to eql vendor_assets_path
   end
 
   it 'returns the vendor fonts path' do
-    expect(subject.vendor_fonts_path).to eql vendor_fonts_path
+    expect(assetify.vendor_fonts_path).to eql vendor_fonts_path
   end
 
   it 'returns the vendor images path' do
-    expect(subject.vendor_images_path).to eql vendor_images_path
+    expect(assetify.vendor_images_path).to eql vendor_images_path
   end
 
   it 'returns the vendor javascripts path' do
-    expect(subject.vendor_javascripts_path).to eql vendor_javascripts_path
+    expect(assetify.vendor_javascripts_path).to eql vendor_javascripts_path
   end
 
   it 'returns vendor stylesheets path' do
-    expect(subject.vendor_stylesheets_path).to eql vendor_stylesheets_path
+    expect(assetify.vendor_stylesheets_path).to eql vendor_stylesheets_path
   end
 end

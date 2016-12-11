@@ -39,3 +39,10 @@ Style/TrailingBlankLines:
   Description: 'Checks trailing blank lines and final newline.'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#newline-eof'
   Enabled: false
+
+# --- RSpec---
+
+RSpec/MultipleExpectations:
+  Description: 'Checks if examples contain too many `expect` calls.'
+  Enabled: true
+  Max: 4

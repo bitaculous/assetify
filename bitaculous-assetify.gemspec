@@ -18,6 +18,6 @@ Gem::Specification.new 'bitaculous-assetify', Bitaculous::Assetify::VERSION do |
   spec.add_runtime_dependency 'sprockets', '>= 2.12.4', '< 4.0'
   spec.add_runtime_dependency 'bourbon',   '~> 4.2',    '>= 4.2.7'
 
-  spec.add_development_dependency 'rake',  '~> 11.3', '>= 11.3.0'
+  spec.add_development_dependency 'rake',  '~> 12.0', '>= 12.0.0'
   spec.add_development_dependency 'rspec', '~> 3.5',  '>= 3.5.0'
 end

@@ -19,17 +19,19 @@ module Sass
         # Convert to native Ruby things
         rvalue = value.value.to_i
 
-        bases = if bases.class == Sass::Script::Number
-          [] << bases
-        else
-          bases.value.to_a
-        end
+        bases =
+          if bases.class == Sass::Script::Number
+            [] << bases
+          else
+            bases.value.to_a
+          end
 
-        ratios = if ratios.class == Sass::Script::Number
-           [] << ratios
-         else
-           ratios.value.to_a
-         end
+        ratios =
+          if ratios.class == Sass::Script::Number
+            [] << ratios
+          else
+            ratios.value.to_a
+          end
 
         # Convert items in arrays to floating point numbers
         rbases = []
@@ -50,6 +52,7 @@ module Sass
         # Loop through all possibilities
         # NOTE THIS IS NOT FULLY FUNCTIONAL YET
         # ONLY LOOPS THROUGH SOME/MOST OF THE POSSIBILITES
+        # rubocop:disable BlockLength
         rratios.each do |ratio|
           rbases.each do |base|
             # Seed list with an initial value

@@ -2,14 +2,12 @@
 //
 // @package vendor/normalize
 
-// 1. Correct the inheritance and scaling of font size in all browsers.
-// 2. Correct the odd `em` font sizing in all browsers.
-code,
-kbd,
-pre,
-samp
-  font-family: monospace, monospace // 1
-  font-size: 1em // 2
+// Add the correct display in IE 9-.
+// Add the correct display in IE (`main`).
+figcaption,
+figure,
+main
+  display: block
 
 // Add the correct margin in IE 8.
 figure
@@ -21,3 +19,9 @@ hr
   box-sizing: content-box // 1
   height: 0 // 1
   overflow: visible // 2
+
+// 1. Correct the inheritance and scaling of font size in all browsers.
+// 2. Correct the odd `em` font sizing in all browsers.
+pre
+  font-family: monospace, monospace // 1
+  font-size: 1em // 2

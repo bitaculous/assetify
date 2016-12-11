@@ -51,13 +51,15 @@ Or import only specific parts:
 ##### Default package
 
 ```sass
-@import normalize/base
-@import normalize/html5_display_definitions
-@import normalize/links
+@import normalize/document
+@import normalize/sections
+@import normalize/grouping_content
 @import normalize/text_level_semantics
 @import normalize/embedded_content
-@import normalize/grouping_content
 @import normalize/forms
+@import normalize/interactive
+@import normalize/scripting
+@import normalize/hidden
 ```
 
 ##### Additional imports

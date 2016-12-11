@@ -2,33 +2,31 @@
 //
 // @package vendor/normalize
 
-// 1. Change font properties to `inherit` in all browsers (opinionated).
+// 1. Change the font styles in all browsers (opinionated).
 // 2. Remove the margin in Firefox and Safari.
 button,
 input,
 optgroup,
 select,
 textarea
-  font: inherit // 1
+  font-family: sans-serif // 1
+  font-size: 100% // 1
+  line-height: 1.15 // 1
   margin: 0 // 2
 
-// Restore the font weight unset by the previous rule.
-optgroup
-  font-weight: bold
-
 // Show the overflow in IE.
-// 1. Show the overflow in Edge.
+// Show the overflow in Edge (`input`).
 button,
 input
-  overflow: visible // 1
+  overflow: visible
 
 // Remove the inheritance of text transform in Edge, Firefox, and IE.
-// 1. Remove the inheritance of text transform in Firefox.
+// Remove the inheritance of text transform in Firefox (`select`).
 button,
 select
-  text-transform: none // 1
+  text-transform: none
 
-// 1. Prevent a WebKit bug where (2) destroys native `audio` and `video` controls in Android 4 (`html [type='button']`).
+// 1. Prevent a WebKit bug where (2) destroys native `audio` and `video` controls in Android 4.
 // 2. Correct the inability to style clickable types in iOS and Safari.
 button,
 html [type='button'],
@@ -68,6 +66,12 @@ legend
   padding: 0 // 3
   white-space: normal // 1
 
+// 1. Add the correct display in IE 9-.
+// 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+progress
+  display: inline-block // 1
+  vertical-align: baseline // 2
+
 // Remove the default vertical scrollbar in IE.
 textarea
   overflow: auto
@@ -90,15 +94,10 @@ textarea
   -webkit-appearance: textfield // 1
   outline-offset: -2px // 2
 
-// Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
+// Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
 [type='search']::-webkit-search-cancel-button,
 [type='search']::-webkit-search-decoration
   -webkit-appearance: none
-
-// Correct the text style of placeholders in Chrome, Edge, and Safari.
-::-webkit-input-placeholder
-  color: inherit
-  opacity: 0.54
 
 // 1. Correct the inability to style clickable types in iOS and Safari.
 // 2. Change font properties to `inherit` in Safari.

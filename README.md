@@ -44,7 +44,7 @@ The most basic option is simply:
 @import normalize
 ```
 
-which includes the “Default package”.
+which includes the default package.
 
 Or import only specific parts:
 

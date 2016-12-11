@@ -36,12 +36,12 @@
 <h3>
 <a id="bower" class="anchor" href="#bower" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Bower</h3>
 
-<p>Run <code>bower install bitaculous/assetify</code>.</p>
+<p>Run <code>bower install bitaculous/assetify</code></p>
 
 <h3>
 <a id="npm" class="anchor" href="#npm" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>npm</h3>
 
-<p>Run <code>npm install bitaculous/assetify</code>.</p>
+<p>Run <code>npm install bitaculous/assetify</code></p>
 
 <h3>
 <a id="sprockets" class="anchor" href="#sprockets" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Sprockets</h3>
@@ -69,20 +69,22 @@
 
 <div class="highlight highlight-source-sass"><pre><span class="pl-k">@import</span> normalize</pre></div>
 
-<p>which includes the “Default package”.</p>
+<p>which includes the default package.</p>
 
 <p>Or import only specific parts:</p>
 
 <h5>
 <a id="default-package" class="anchor" href="#default-package" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Default package</h5>
 
-<div class="highlight highlight-source-sass"><pre><span class="pl-k">@import</span> normalize/<span class="pl-k">base</span>
-<span class="pl-k">@import</span> normalize/html<span class="pl-c1">5</span>_display_definitions
-<span class="pl-k">@import</span> normalize/links
+<div class="highlight highlight-source-sass"><pre><span class="pl-k">@import</span> normalize/document
+<span class="pl-k">@import</span> normalize/sections
+<span class="pl-k">@import</span> normalize/grouping_content
 <span class="pl-k">@import</span> normalize/text_level_semantics
 <span class="pl-k">@import</span> normalize/embedded_content
-<span class="pl-k">@import</span> normalize/grouping_content
-<span class="pl-k">@import</span> normalize/forms</pre></div>
+<span class="pl-k">@import</span> normalize/forms
+<span class="pl-k">@import</span> normalize/interactive
+<span class="pl-k">@import</span> normalize/scripting
+<span class="pl-k">@import</span> normalize/<span class="pl-c1">hidden</span></pre></div>
 
 <h5>
 <a id="additional-imports" class="anchor" href="#additional-imports" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Additional imports</h5>

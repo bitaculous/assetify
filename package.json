@@ -1,6 +1,6 @@
 {
   "name": "bitaculous-assetify",
-  "version": "7.0.0",
+  "version": "7.0.1",
   "description": "Assets used by Bitaculous, packaged for npm.",
   "keywords": [
     "Assetify",

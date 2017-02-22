@@ -27,17 +27,17 @@ RSpec.describe Bitaculous::Assetify::Integrations::SprocketsIntegration do
     let(:paths) { ['/tmp/foo', '/tmp/bar'] }
     let(:path)  { '/tmp/foo' }
 
-    it 'does not expands the load paths' do
+    it 'does not expand the load path' do
+      described_class.append_path path
+
+      expect(load_paths).not_to include path
+    end
+
+    it 'does not expand the load paths' do
       described_class.append_paths paths
 
       expect(load_paths).not_to include paths[0]
       expect(load_paths).not_to include paths[1]
-    end
-
-    it 'does not expands the load path' do
-      described_class.append_path path
-
-      expect(load_paths).not_to include path
     end
   end
 end

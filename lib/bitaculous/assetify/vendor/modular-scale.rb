@@ -53,6 +53,7 @@ module Sass
         # NOTE THIS IS NOT FULLY FUNCTIONAL YET
         # ONLY LOOPS THROUGH SOME/MOST OF THE POSSIBILITES
         # rubocop:disable BlockLength
+        # rubocop:disable Style/IdenticalConditionalBranches
         rratios.each do |ratio|
           rbases.each do |base|
             # Seed list with an initial value

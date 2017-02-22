@@ -4,10 +4,10 @@ module Bitaculous
   module Assetify
     module Integrations # :nodoc:
       require_relative 'integrations/sass_integration'
+
       Bitaculous::Assetify::Integrations::SassIntegration.append_paths [
         Bitaculous::Assetify.stylesheets_path,
         Bitaculous::Assetify.vendor_stylesheets_path
-
       ]
 
       require_relative 'integrations/sprockets_integration'

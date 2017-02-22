@@ -18,14 +18,14 @@ end
 group :test do
   # --- Code Analysis ---
 
-  gem 'rubocop',       '~> 0.46.0', require: false
-  gem 'rubocop-rspec', '~> 1.9.1',  require: false
+  gem 'rubocop',       '~> 0.47.1', require: false
+  gem 'rubocop-rspec', '~> 1.11.0', require: false
 
   # --- Code Coverage ---
 
-  gem 'simplecov', '~> 0.12.0', require: false
+  gem 'simplecov', '~> 0.13.0', require: false
 
-  gem 'codeclimate-test-reporter', '~> 1.0.4', require: false
+  gem 'codeclimate-test-reporter', '~> 1.0.5', require: false
 end
 
 # === Misc ===
@@ -35,9 +35,9 @@ group :misc do
 
   gem 'nyan-cat-formatter', '~> 0.11', require: false
 
-  # --- OS X ---
+  # --- macOS ---
 
   gem 'growl', '~> 1.0.3', require: RUBY_PLATFORM.include?('darwin') && 'growl'
 
-  gem 'rb-fsevent', '~> 0.9.7', require: RUBY_PLATFORM.include?('darwin') && 'rb-fsevent'
+  gem 'rb-fsevent', '~> 0.9.8', require: RUBY_PLATFORM.include?('darwin') && 'rb-fsevent'
 end

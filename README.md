@@ -66,6 +66,7 @@ Or import only specific parts:
 
 ```sass
 @import normalize/box_sizing
+@import normalize/opinionated
 @import normalize/tables
 ```
 

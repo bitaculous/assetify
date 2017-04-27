@@ -7,4 +7,4 @@ Dir.glob('tasks/*.rake').each { |task| load task }
 # === Configuration ===
 
 # Run all specs and RuboCop as default task.
-task default: [:spec, :rubocop]
+task default: %i[spec rubocop]

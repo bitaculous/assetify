@@ -18,14 +18,14 @@ end
 group :test do
   # --- Code Analysis ---
 
-  gem 'rubocop',       '~> 0.47.1', require: false
-  gem 'rubocop-rspec', '~> 1.11.0', require: false
+  gem 'rubocop',       '~> 0.48.1', require: false
+  gem 'rubocop-rspec', '~> 1.15.0', require: false
 
   # --- Code Coverage ---
 
   gem 'simplecov', '~> 0.13.0', require: false
 
-  gem 'codeclimate-test-reporter', '~> 1.0.5', require: false
+  gem 'codeclimate-test-reporter', '~> 1.0.8', require: false
 end
 
 # === Misc ===

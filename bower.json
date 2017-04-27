@@ -32,16 +32,16 @@
     "assets/stylesheets/bitaculous/assetify.sass"
   ],
   "dependencies": {
-    "bourbon": "~4.3.2",
+    "bourbon": "~4.3.4",
     "breakpoint-sass": "~2.7.1",
     "fastclick": "~1.0.6",
-    "jquery": "~3.1.1",
-    "modernizr": "~3.3.1",
+    "jquery": "~3.2.1",
+    "modernizr": "~3.5.0",
     "modular-scale": "git://github.com/modularscale/modularscale-sass.git#2.x",
     "sassy-maps": "at-import/Sassy-Maps",
-    "velocity": "~1.4.3"
+    "velocity": "~1.5.0"
   },
   "devDependencies": {
-    "normalize.css": "~5.0.0"
+    "normalize.css": "~6.0.0"
   }
 }

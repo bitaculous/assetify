@@ -19,5 +19,5 @@ Gem::Specification.new 'bitaculous-assetify', Bitaculous::Assetify::VERSION do |
   spec.add_runtime_dependency 'bourbon',   '~> 4.2',    '>= 4.3.4'
 
   spec.add_development_dependency 'rake',  '~> 12.0', '>= 12.0.0'
-  spec.add_development_dependency 'rspec', '~> 3.5',  '>= 3.5.0'
+  spec.add_development_dependency 'rspec', '~> 3.6',  '>= 3.6.0'
 end

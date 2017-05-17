@@ -33,7 +33,7 @@ end
 group :misc do
   # --- Formatter ---
 
-  gem 'nyan-cat-formatter', '~> 0.11', require: false
+  gem 'nyan-cat-formatter', '~> 0.12', require: false
 
   # --- macOS ---
 

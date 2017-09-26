@@ -8,6 +8,10 @@ require: rubocop-rspec
 
 # --- Linting ---
 
+Lint/ScriptPermission:
+  Description: 'Grant script file execute permission.'
+  Enabled: false
+
 Lint/UnusedBlockArgument:
   Description: 'Checks for unused block arguments.'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#underscore-unused-vars'

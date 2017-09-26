@@ -13,6 +13,22 @@ Lint/UnusedBlockArgument:
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#underscore-unused-vars'
   Enabled: false
 
+# --- Layout ---
+
+Layout/CommentIndentation:
+  Description: 'Indentation of comments.'
+  Enabled: false
+
+Layout/ExtraSpacing:
+  Description: 'This cop checks for extra/unnecessary whitespaces.'
+  Exclude:
+    - Guardfile
+
+Layout/TrailingBlankLines:
+  Description: 'Checks trailing blank lines and final newline.'
+  StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#newline-eof'
+  Enabled: false
+
 # --- Metrics ---
 
 Metrics/BlockLength:
@@ -31,20 +47,6 @@ Metrics/LineLength:
 Style/AsciiComments:
   Description: 'Use only ASCII symbols in comments.'
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#english-comments'
-  Enabled: false
-
-Style/CommentIndentation:
-  Description: 'Indentation of comments.'
-  Enabled: false
-
-Style/ExtraSpacing:
-  Description: 'This cop checks for extra/unnecessary whitespaces.'
-  Exclude:
-    - Guardfile
-
-Style/TrailingBlankLines:
-  Description: 'Checks trailing blank lines and final newline.'
-  StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#newline-eof'
   Enabled: false
 
 # --- RSpec---

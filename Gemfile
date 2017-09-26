@@ -18,8 +18,8 @@ end
 group :test do
   # --- Code Analysis ---
 
-  gem 'rubocop',       '~> 0.48.1', require: false
-  gem 'rubocop-rspec', '~> 1.15.0', require: false
+  gem 'rubocop',       '~> 0.50.0', require: false
+  gem 'rubocop-rspec', '~> 1.17.1', require: false
 
   # --- Code Coverage ---
 
@@ -39,5 +39,5 @@ group :misc do
 
   gem 'growl', '~> 1.0.3', require: RUBY_PLATFORM.include?('darwin') && 'growl'
 
-  gem 'rb-fsevent', '~> 0.9.8', require: RUBY_PLATFORM.include?('darwin') && 'rb-fsevent'
+  gem 'rb-fsevent', '~> 0.10.2', require: RUBY_PLATFORM.include?('darwin') && 'rb-fsevent'
 end

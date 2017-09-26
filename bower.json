@@ -42,6 +42,6 @@
     "velocity": "~1.5.0"
   },
   "devDependencies": {
-    "normalize.css": "~6.0.0"
+    "normalize.css": "~7.0.0"
   }
 }

@@ -2,13 +2,24 @@
 //
 // @package vendor/normalize
 
-// Remove the margin in Firefox and Safari.
+// 1. Change the font styles in all browsers (opinionated)
+// 2. Remove the margin in Firefox and Safari.
 button,
 input,
 optgroup,
 select,
 textarea
-  margin: 0
+  margin: 0 // 2
+  font-family: sans-serif // 1
+  font-size: 100% // 1
+  line-height: 1.15 // 1
+
+// Change the font styles in all browsers.
+button,
+input,
+optgroup,
+select,
+textarea
 
 // Show the overflow in IE.
 // Show the overflow in Edge (`input`).
@@ -44,6 +55,10 @@ button:-moz-focusring,
 [type='reset']:-moz-focusring,
 [type='submit']:-moz-focusring
   outline: 1px dotted ButtonText
+
+// Correct the padding in Firefox.
+fieldset
+  padding: 0.35em 0.75em 0.625em
 
 // 1. Correct the text wrapping in Edge and IE.
 // 2. Correct the color inheritance from `fieldset` elements in IE.

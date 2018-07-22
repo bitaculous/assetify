@@ -2,7 +2,7 @@
 
 module Helpers # :nodoc:
   def fixtures_path
-    File.expand_path '../../fixtures', __FILE__
+    File.expand_path '../fixtures', __dir__
   end
 
   def assets_path

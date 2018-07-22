@@ -16,8 +16,8 @@ Gem::Specification.new 'bitaculous-assetify', Bitaculous::Assetify::VERSION do |
   spec.required_rubygems_version = '~> 2.4'
 
   spec.add_runtime_dependency 'sprockets', '>= 2.12.4', '< 4.0'
-  spec.add_runtime_dependency 'bourbon',   '~> 4.2',    '>= 4.3.4'
+  spec.add_runtime_dependency 'sass',      '~> 3.5',    '>= 3.5.7'
 
-  spec.add_development_dependency 'rake',  '~> 12.0', '>= 12.0.0'
-  spec.add_development_dependency 'rspec', '~> 3.6',  '>= 3.6.0'
+  spec.add_development_dependency 'rake',  '~> 12.0', '>= 12.3.1'
+  spec.add_development_dependency 'rspec', '~> 3.7',  '>= 3.7.0'
 end

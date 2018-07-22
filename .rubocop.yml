@@ -6,6 +6,23 @@ require: rubocop-rspec
 
 # === Configuration ===
 
+# --- All Cops ---
+
+AllCops:
+  TargetRubyVersion: 2.3
+
+# -- Bundler ---
+
+Bundler/OrderedGems:
+  Description: Gems should be alphabetically sorted within groups.
+  Enabled: false
+
+# --- Gemspec ---
+
+Gemspec/OrderedDependencies:
+  Description: Dependencies in the gemspec should be alphabetically sorted.
+  Enabled: false
+
 # --- Linting ---
 
 Lint/ScriptPermission:
@@ -54,6 +71,10 @@ Style/AsciiComments:
   Enabled: false
 
 # --- RSpec---
+
+RSpec/EmptyLineAfterExampleGroup:
+  Description: 'Checks if there is an empty line after example group blocks.'
+  Enabled: false
 
 RSpec/MultipleExpectations:
   Description: 'Checks if examples contain too many `expect` calls.'

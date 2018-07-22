@@ -3,7 +3,7 @@
 RSpec.describe Bitaculous::Assetify::Paths do
   subject(:assetify) { Bitaculous::Assetify }
 
-  let(:trail)                   { File.expand_path '../../../../../', __FILE__ }
+  let(:trail)                   { File.expand_path '../../../..', __dir__ }
   let(:assets_path)             { File.expand_path 'assets', trail }
   let(:fonts_path)              { File.expand_path 'fonts', assets_path }
   let(:images_path)             { File.expand_path 'images', assets_path }

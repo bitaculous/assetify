@@ -1,10 +1,7 @@
 {
   "name": "bitaculous-assetify",
   "description": "Assets used by Bitaculous, packaged for Bower.",
-  "keywords": [
-    "Assetify",
-    "Bitaculous"
-  ],
+  "keywords": ["Assetify", "Bitaculous"],
   "homepage": "https://bitaculous.github.io/assetify/",
   "authors": [
     "Maik Kempe <mkempe@bitaculous.com> (https://bitaculous.com)"
@@ -28,20 +25,18 @@
     "tasks"
   ],
   "main": [
-    "assets/javascripts/bitaculous/assetify.coffee",
     "assets/stylesheets/bitaculous/assetify.sass"
   ],
   "dependencies": {
-    "bourbon": "~4.3.4",
+    "bourbon": "~5.1.0",
     "breakpoint-sass": "~2.7.1",
-    "fastclick": "~1.0.6",
-    "jquery": "~3.2.1",
-    "modernizr": "~3.5.0",
-    "modular-scale": "git://github.com/modularscale/modularscale-sass.git#2.x",
-    "sassy-maps": "at-import/Sassy-Maps",
-    "velocity": "~1.5.0"
+    "modularscale-sass": "~3.0.5",
+    "sass-mediaqueries": "~1.6.1",
+    "sass-rem": "~2.0.1",
+    "sassy-maps": "at-import/Sassy-Maps"
   },
   "devDependencies": {
-    "normalize.css": "~7.0.0"
+    "modernizr": "~3.6.0",
+    "normalize.css": "~7.0.1"
   }
 }

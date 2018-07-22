@@ -5,7 +5,7 @@ RSpec.describe Bitaculous::Assetify::Integrations::SassIntegration do
 
   let(:load_paths) { Sass.load_paths }
 
-  context 'the path exists' do
+  context 'when the path exists' do
     let(:paths) { [stylesheets_path, vendor_stylesheets_path] }
     let(:path)  { stylesheets_path }
 
@@ -23,7 +23,7 @@ RSpec.describe Bitaculous::Assetify::Integrations::SassIntegration do
     end
   end
 
-  context 'the path does not exists' do
+  context 'when the path does not exists' do
     let(:paths) { ['/tmp/foo', '/tmp/bar'] }
     let(:path)  { '/tmp/foo' }
 

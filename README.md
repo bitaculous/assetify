@@ -163,7 +163,7 @@ Assetify is released under the [MIT License (MIT)], see [LICENSE].
 [Guard]: http://guardgem.org "A command line tool to easily handle events on file system modifications."
 [here]: https://github.com/bitaculous/assetify/issues "Github Issues"
 [LICENSE]: https://raw.githubusercontent.com/bitaculous/assetify/master/LICENSE "License"
-[Media Queries]: http://paranoida.github.io/sass-mediaqueries "A collection of useful Media Queries mixins for Sass (including iOS devices, TVs and more)."
+[Media Queries]: https://github.com/rafalbromirski/sass-mediaqueries "A collection of useful Media Queries mixins for Sass (including iOS devices, TVs and more)."
 [MIT License (MIT)]: http://opensource.org/licenses/MIT "The MIT License (MIT)"
 [Modernizr]: http://modernizr.com "A JavaScript library that detects HTML5 and CSS3 features in the user’s browser"
 [Modular Scale]: https://github.com/Team-Sass/modular-scale "Modular scale calculator built into your Sass"

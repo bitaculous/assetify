@@ -158,7 +158,7 @@ Assetify is released under the [MIT License (MIT)], see [LICENSE].
 [Bower]: http://bower.io "A package manager for the web"
 [Breakpoint]: https://github.com/at-import/breakpoint "Really Simple Media Queries with Sass"
 [Bundler]: http://bundler.io "The best way to manage a Ruby application's gems"
-[Code Climate]: https://codeclimate.com/github/codeclimate/codeclimate/maintainability "Assetify at Code Climate"
+[Code Climate]: https://codeclimate.com/github/bitaculous/assetify/maintainability "Assetify at Code Climate"
 [Code Climate Status]: https://api.codeclimate.com/v1/badges/a23a4786463ec458e836/maintainability "Code Climate Maintainability"
 [Guard]: http://guardgem.org "A command line tool to easily handle events on file system modifications."
 [here]: https://github.com/bitaculous/assetify/issues "Github Issues"

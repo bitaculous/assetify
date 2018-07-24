@@ -2,12 +2,9 @@
 //
 // @package vendor/normalize
 
-// 1. Remove the gray background on active links in IE 10.
-// 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
-
+// Remove the gray background on active links in IE 10.
 a
-  background-color: transparent // 1
-  -webkit-text-decoration-skip: objects // 2
+  background-color: transparent
 
 // 1. Remove the bottom border in Chrome 57- and Firefox 39-.
 // 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
@@ -16,12 +13,10 @@ abbr[title]
   text-decoration: underline // 2
   text-decoration: underline dotted // 2
 
-// 1. Prevent the duplicate application of `bolder` by the next rule in Safari 6.
-// 2. Add the correct font weight in Chrome, Edge, and Safari.
+// Add the correct font weight in Chrome, Edge, and Safari.
 b,
 strong
-  font-weight: inherit // 1
-  font-weight: bolder // 2
+  font-weight: bolder
 
 // 1. Correct the inheritance and scaling of font size in all browsers.
 // 2. Correct the odd `em` font sizing in all browsers.
@@ -30,15 +25,6 @@ kbd,
 samp
   font-family: monospace, monospace // 1
   font-size: 1em // 2
-
-// Add the correct font style in Android 4.3-.
-dfn
-  font-style: italic
-
-// Add the correct background and color in IE 9-.
-mark
-  background-color: #FF0
-  color: #000
 
 // Add the correct font size in all browsers
 small
@@ -54,4 +40,6 @@ sup
 
 sub
   bottom: -0.25em
+
+sup
   top: -0.5em

@@ -63,14 +63,14 @@ Or import only specific parts:
 @import normalize/embedded_content
 @import normalize/forms
 @import normalize/interactive
-@import normalize/scripting
-@import normalize/hidden
+@import normalize/misc
 ```
 
 ##### Additional imports
 
 ```sass
 @import normalize/box_sizing
+@import normalize/legacy
 @import normalize/opinionated
 @import normalize/tables
 ```

@@ -3,7 +3,6 @@
 
 [![Travis CI Status][Travis CI Status]][Travis CI]
 [![Code Climate Status][Code Climate Status]][Code Climate]
-[![Test Coverage Status][Test Coverage Status]][Test Coverage]
 
 **Assets used by Bitaculous, packaged for [Bower], [npm], [Sass] and [Sprockets].**
 
@@ -159,8 +158,8 @@ Assetify is released under the [MIT License (MIT)], see [LICENSE].
 [Bower]: http://bower.io "A package manager for the web"
 [Breakpoint]: https://github.com/at-import/breakpoint "Really Simple Media Queries with Sass"
 [Bundler]: http://bundler.io "The best way to manage a Ruby application's gems"
-[Code Climate]: https://codeclimate.com/github/bitaculous/assetify "Assetify at Code Climate"
-[Code Climate Status]: https://img.shields.io/codeclimate/github/bitaculous/assetify.svg?style=flat "Code Climate Status"
+[Code Climate]: https://codeclimate.com/github/codeclimate/codeclimate/maintainability "Assetify at Code Climate"
+[Code Climate Status]: https://api.codeclimate.com/v1/badges/a23a4786463ec458e836/maintainability "Code Climate Maintainability"
 [Guard]: http://guardgem.org "A command line tool to easily handle events on file system modifications."
 [here]: https://github.com/bitaculous/assetify/issues "Github Issues"
 [LICENSE]: https://raw.githubusercontent.com/bitaculous/assetify/master/LICENSE "License"
@@ -178,8 +177,8 @@ Assetify is released under the [MIT License (MIT)], see [LICENSE].
 [Sassy Maps]: https://github.com/Team-Sass/Sassy-Maps "Map helper functions for Sass 3.3 Maps including get-deep and set/set-deep"
 [Semantic Versioning 2.0.0]: http://semver.org "Semantic Versioning 2.0.0"
 [Sprockets]: https://github.com/rails/sprockets "Rack-based asset packaging"
-[Test Coverage Status]: https://img.shields.io/codeclimate/coverage/github/bitaculous/assetify.svg?style=flat "Test Coverage Status"
-[Test Coverage]: https://codeclimate.com/github/bitaculous/assetify "Test Coverage (Code Climate)"
+[Test Coverage]: https://codeclimate.com/github/bitaculous/assetify/test_coverage "Test Coverage"
+[Test Coverage Status]: https://api.codeclimate.com/v1/badges/a23a4786463ec458e836/test_coverage "Code Climate Test Coverage"
 [Travis CI]: https://travis-ci.org/bitaculous/assetify "Assetify at Travis CI"
 [Travis CI Status]: https://img.shields.io/travis/bitaculous/assetify.svg?style=flat "Travis CI Status"
 [Waypoints]: http://imakewebthings.com/waypoints "A library that makes it easy to execute a function whenever you scroll to an element."

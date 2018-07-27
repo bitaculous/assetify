@@ -2,18 +2,21 @@
 //
 // @package bitaculous/assetify/utilities
 
-// Return a Bourbon setting.
+// Returns a Bourbon setting.
 //
-// @argument {string} $setting
+// @argument {string} $setting The setting
 //
 // @return {boolean | color | list | number | string}
 //
-// @example scss
+// @example sass
+//   _fetch-bourbon-setting(global-font-file-formats)
 //   _fetch-bourbon-setting(rails-asset-pipeline)
 //
 // @access private
 @function _fetch-bourbon-setting($setting)
-  @if $setting == 'rails-asset-pipeline'
+  @if $setting == 'global-font-file-formats'
+    @return map-get(map-merge($_bourbon-defaults, $bourbon), 'font-file-formats')
+  @else if $setting == 'rails-asset-pipeline'
     @return map-get(map-merge($_bourbon-defaults, $bourbon), 'asset-pipeline')
   @else
     @return map-get(map-merge($_bourbon-defaults, $bourbon), $setting)

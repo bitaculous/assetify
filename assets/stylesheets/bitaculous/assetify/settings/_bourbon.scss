@@ -6,6 +6,9 @@
 //
 // @type map
 //
+// @property {boolean} asset-pipeline [true]
+//   Set this to `true` when using an Asset Pipeline and Bourbon will write asset paths using asset helpers.
+//
 // @property {color} contrast-switch-dark-color [#000]
 //   Global dark color for the `contrast-switch` function.
 //
@@ -21,15 +24,12 @@
 // @property {number (unitless)} modular-scale-ratio [$major-third (1.25)]
 //   Global base ratio for the `modular-scale` function.
 //
-// @property {boolean} asset-pipeline [true]
-//   Set this to `true` when using an Asset Pipeline and Bourbon will write asset paths using asset helpers.
-//
 // @access private
 $_bourbon-defaults: (
   'asset-pipeline': true,
   'contrast-switch-dark-color': #000,
   'contrast-switch-light-color': #FFF,
-  'global-font-file-formats': ('ttf', 'woff2', 'woff'),
+  'font-file-formats': ('ttf', 'woff2', 'woff'),
   'modular-scale-base': 1em,
   'modular-scale-ratio': $major-third
 );

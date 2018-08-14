@@ -2,11 +2,21 @@
 //
 // @package vendor/normalize
 
+// === Text level semantics ===
+
 // Remove the outline on focused links when they are also active or hovered in all browsers.
 a
   &:hover,
   &:active
     outline-width: 0
+
+// === Embedded content ===
+
+// Remove the border on Iframes.
+iframe
+  border-style: none
+
+// === Forms ===
 
 // Change the border and margin in all browsers.
 fieldset

@@ -1,6 +1,8 @@
-// _font-normalization.sass
+// _fonts.sass
 //
-// @package bitaculous/assetify/library
+// @package bitaculous/assetify/library/assets
+
+// === Font Normalization ===
 
 @mixin font-normalization($font-family: map-get($defaults, font-family), $font-size: map-get($defaults, font-size), $font-style: map-get($defaults, font-style), $font-weight: map-get($defaults, font-weight), $color: map-get($defaults, color), $line-height: map-get($defaults, line-height))
   html,
@@ -13,3 +15,13 @@
     font-style: $font-style
     font-weight: $font-weight
     line-height: $line-height
+
+// === Font Smoothing ===
+
+@mixin font-smoothing($value: on)
+  @if $value == on
+    -moz-osx-font-smoothing: grayscale
+    -webkit-font-smoothing: antialiased
+  @else
+    -moz-osx-font-smoothing: auto
+    -webkit-font-smoothing: subpixel-antialiased

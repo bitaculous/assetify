@@ -1,5 +1,5 @@
 {
-  "name": "bitaculous-assetify",
+  "name": "@bitaculous/assetify",
   "description": "Assets used by Bitaculous, packaged for npm.",
   "keywords": ["Assetify", "Bitaculous"],
   "homepage": "https://bitaculous.github.io/assetify/",

@@ -2,7 +2,7 @@
 //
 // @package bitaculous/assetify/library/assets
 
-// === Retina Image ===
+// === HiDPI ===
 
 @mixin retina-image($filename, $background-size, $extension: 'png', $retina-filename: null, $retina-suffix: '@2x', $asset-pipeline: _fetch-bourbon-setting('asset-pipeline'))
   @if $asset-pipeline
@@ -23,3 +23,7 @@
         background-image: url("#{$filename}#{$retina-suffix}.#{$extension}")
 
     background-size: $background-size
+
+// === Imports ===
+
+@import images/svg

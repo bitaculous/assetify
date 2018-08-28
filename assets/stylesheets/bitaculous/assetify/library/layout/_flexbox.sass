@@ -1,0 +1,27 @@
+// _flexbox.sass
+//
+// @package bitaculous/assetify/library/layout
+
+// === Misc ===
+
+// Flexbox clearfix and pseudo elements
+//
+// @see <http://danisadesigner.com/blog/flexbox-clear-fix-pseudo-elements>
+@mixin flexbox-clearfix
+  &::before,
+  &::after
+    content: ''
+    display: table
+    flex-basis: 0
+    order: 1
+
+  &::after
+    clear: both
+
+// Align the last row to the grid
+//
+// @see <https://codepen.io/DanAndreasson/pen/ZQXLXj>
+@mixin flexbox-align-last-row-to-grid
+  &::after
+    content: ''
+    flex: auto

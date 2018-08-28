@@ -1,0 +1,158 @@
+// _svg.scss
+//
+// @package bitaculous/assetify/library/assets/images
+
+// === Functions ===
+
+@function svg-icon-properties($icon) {
+  @return map-get($svg-sprite-icons, $icon);
+}
+
+@function svg-icon-property($icon, $property) {
+  @if map-has_key($svg-sprite-icons, $icon) == false {
+    @warn "Icon `#{$icon}` does not exist.";
+
+    @return false;
+  }
+
+  @return map-get(svg-icon-properties($icon), $property);
+}
+
+// === Mixins ===
+
+@mixin svg-sprite-base($icon) {
+  @include svg-sprite-image;
+  @include svg-sprite-size;
+
+  @include svg-sprite-icon-position($icon);
+  @include svg-sprite-icon-height($icon);
+  @include svg-sprite-icon-width($icon);
+
+  background-repeat: no-repeat;
+}
+
+@mixin svg-sprite-image { background-image: asset-url($svg-sprite-path) }
+
+@mixin svg-sprite-size { background-size: #{$svg-sprite-width} #{$svg-sprite-height} }
+
+@mixin svg-sprite-icon-position($icon) {
+  $x: svg-icon-property($icon, x);
+  $y: svg-icon-property($icon, y);
+
+  background-position: #{$x}px #{$y}px;
+}
+
+@mixin svg-sprite-icon-height($icon) {
+  $height: svg-icon-property($icon, height);
+
+  height: #{$height}px;
+}
+
+@mixin svg-sprite-icon-width($icon) {
+  $width: svg-icon-property($icon, width);
+
+  width: #{$width}px;
+}
+
+@mixin svg-sprite($icon, $top: 0, $right: auto, $bottom: 0, $left: 0, $position: relative, $margin: auto, $pseudo: before) {
+  position: $position;
+
+  &::#{$pseudo} {
+    @include svg-sprite-base($icon);
+
+    bottom: $bottom;
+    content: '';
+    display: block;
+    left: $left;
+    margin: $margin;
+    position: absolute;
+    right: $right;
+    top: $top;
+
+    @content;
+  }
+}
+
+@mixin svg-icon($icon, $gap: 10, $top: 0, $right: auto, $bottom: 0, $left: 0, $position: relative, $margin: auto, $padding: true, $pseudo: before) {
+  @include svg-sprite($icon, $top, $right, $bottom, $left, $position, $margin, $pseudo) {
+    @content;
+  }
+
+  @if $padding {
+    $icon-width: svg-icon-property($icon, width);
+
+    @if $icon-width {
+      $overall-width-in-px: ($icon-width + $gap) * 1px;
+
+      @if $pseudo == after {
+        padding-right: rem($overall-width-in-px);
+      } @else {
+        padding-left: rem($overall-width-in-px);
+      }
+    }
+  }
+}
+
+@mixin svg-icon-inline($icon, $vertical-align: middle, $position: static, $margin: null, $pseudo: before) {
+  &::#{$pseudo} {
+    @include svg-sprite-base($icon);
+
+    content: '';
+    display: inline-block;
+    vertical-align: $vertical-align;
+
+    @if $position != static {
+      position: $position;
+    }
+
+    @if $margin != null {
+      margin: $margin;
+    }
+
+    @content;
+  }
+}
+
+@mixin svg-icon-position-top($top, $pseudo: before) {
+  &::#{$pseudo} { top: $top }
+}
+
+@mixin svg-icon-position-right($right, $pseudo: before) {
+  &::#{$pseudo} { right: $right }
+}
+
+@mixin svg-icon-position-bottom($bottom, $pseudo: before) {
+  &::#{$pseudo} { bottom: $bottom }
+}
+
+@mixin svg-icon-position-left($left, $pseudo: before) {
+  &::#{$pseudo} { left: $left }
+}
+
+@mixin hide-svg-icon($padding: true, $pseudo: before) {
+  &::#{$pseudo} { display: none }
+
+  @if $padding {
+    @if $pseudo == after {
+      padding-right: 0;
+    } @else {
+      padding-left: 0;
+    }
+  }
+}
+
+@mixin reset-svg-icon($padding: true, $pseudo: before) {
+  &::#{$pseudo} {
+    background-image: none;
+    height: auto;
+    width: auto;
+  }
+
+  @if $padding {
+    @if $pseudo == after {
+      padding-right: 0;
+    } @else {
+      padding-left: 0;
+    }
+  }
+}

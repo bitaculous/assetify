@@ -1,0 +1,66 @@
+// _visibility.sass
+//
+// @package bitaculous/assetify/library
+
+// === Hidden / Not Hidden ===
+
+// Hide from both Screenreaders and Browsers
+@mixin hidden
+  display: none
+  visibility: hidden
+
+// Reset for `hidden` mixin
+@mixin not-hidden($display: block)
+  display: $display
+  visibility: visible
+
+// === Invisible / Visible ===
+
+// Hide visually and from Screenreaders, but maintain layout
+@mixin invisible
+  visibility: hidden
+
+// Reset for `invisible` mixin
+@mixin visible
+  visibility: visible
+
+// === Visually Hidden / Not Visually Hidden ===
+
+// Hide only visually, but have it available for Screenreaders
+@mixin visually-hidden
+  border: 0
+  clip: rect(0 0 0 0)
+  height: 1px
+  margin: -1px
+  overflow: hidden
+  padding: 0
+  position: absolute
+  width: 1px
+
+// Reset for `visually-hidden` mixin
+@mixin not-visually-hidden
+  clip: auto
+  height: auto
+  margin: auto
+  overflow: visible
+  position: static
+  width: auto
+
+// === Misc ===
+
+// Hide content
+@mixin hide-content
+  overflow: hidden
+  text-indent: 100%
+  white-space: nowrap
+
+// Hide text
+@mixin hide-text
+  color: transparent
+  font-size: 0
+  line-height: 0
+
+// Hide the element if it has no content or is empty
+@mixin hide-if-empty
+  &:empty
+    display: none !important

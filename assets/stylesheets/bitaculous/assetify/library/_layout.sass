@@ -2,10 +2,18 @@
 //
 // @package bitaculous/assetify/library
 
-// === Vertical Align ===
+// === Equal Height / Vertical Align ===
+
+@mixin equal-height
+  height: 100%
+  overflow-y: hidden
 
 @mixin vertical-align($top: 50%)
   position: relative
   top: $top
 
   @include transform(translateY(-$top))
+
+// === Imports ===
+
+@import layout/flexbox

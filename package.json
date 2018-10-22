@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "modernizr": "~3.6.0",
-    "normalize.css": "~7.0.1"
+    "normalize.css": "~8.0.0"
   },
  "engines": {
     "node": ">= 8.12.0"

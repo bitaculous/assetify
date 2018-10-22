@@ -18,8 +18,8 @@ end
 group :test do
   # --- Code Analysis ---
 
-  gem 'rubocop',       '~> 0.58.2', require: false
-  gem 'rubocop-rspec', '~> 1.29.0', require: false
+  gem 'rubocop',       '~> 0.59.2', require: false
+  gem 'rubocop-rspec', '~> 1.30.0', require: false
 
   # --- Code Coverage ---
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 SimpleCov.start do
-  # Exclude `spec/shared` and `spec/support` from code coverage.
+  # Exclude `spec/shared` and `spec/support` from Code Coverage.
   add_filter 'spec/shared'
   add_filter 'spec/support'
 

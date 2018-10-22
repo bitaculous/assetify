@@ -2,9 +2,6 @@ addons:
   code_climate:
     repo_token: 9ba16536b271f2b04959d793df1fdf0cafd090966bc3967105e2c049b1e1d485
 
-after_success:
-  - bundle exec codeclimate-test-reporter
-
 branches:
   except:
     - gh-pages
@@ -21,7 +18,7 @@ notifications:
     - dev@bitaculous.com
 
 rvm:
-  - 2.5.1
-  - 2.4.4
+  - 2.5.3
+  - 2.4.5
 
 sudo: false

@@ -14,13 +14,13 @@ AllCops:
 # -- Bundler ---
 
 Bundler/OrderedGems:
-  Description: Gems should be alphabetically sorted within groups.
+  Description: 'Gems should be alphabetically sorted within groups.'
   Enabled: false
 
 # --- Gemspec ---
 
 Gemspec/OrderedDependencies:
-  Description: Dependencies in the gemspec should be alphabetically sorted.
+  Description: 'Dependencies in the gemspec should be alphabetically sorted.'
   Enabled: false
 
 # --- Linting ---

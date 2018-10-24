@@ -11,13 +11,9 @@ Assetify is our package for Bower, npm, Sass and Sprockets, with common librarie
 Installation
 ------------
 
-### Bower
+### npm / Yarn
 
-Run `bower install bitaculous/assetify`
-
-### npm
-
-Run `npm install bitaculous/assetify`
+Run `npm install bitaculous/assetify` or `yarn add @bitaculous/assetify`
 
 ### Sprockets
 

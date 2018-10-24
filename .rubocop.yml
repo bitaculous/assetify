@@ -4,12 +4,12 @@
 
 require: rubocop-rspec
 
-# === Configuration ===
+# === Overrides ===
 
 # --- All Cops ---
 
 AllCops:
-  TargetRubyVersion: 2.3
+  TargetRubyVersion: 2.4
 
 # -- Bundler ---
 

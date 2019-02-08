@@ -5,6 +5,7 @@
       "path": "./",
       "folder_exclude_patterns": [
         ".bundle",
+        ".idea",
         "bower_components",
         "coverage",
         "node_modules",

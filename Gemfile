@@ -3,7 +3,7 @@
 
 source 'https://rubygems.org'
 
-# Declare the gem's dependencies in `bitaculous-assetify.gemspec`. Bundler will treat runtime dependencies like base
+# Declare the dependencies in `bitaculous-assetify.gemspec`. Bundler will treat runtime dependencies like base
 # dependencies, and development dependencies will be added by default to the `:development` group.
 gemspec
 
@@ -16,10 +16,10 @@ end
 # === Test ===
 
 group :test do
-  # --- Code Analysis ---
+  # --- Code Style ---
 
-  gem 'rubocop',       '~> 0.59.2', require: false
-  gem 'rubocop-rspec', '~> 1.30.0', require: false
+  gem 'rubocop',       '~> 0.63.1', require: false
+  gem 'rubocop-rspec', '~> 1.32', require: false
 
   # --- Code Coverage ---
 

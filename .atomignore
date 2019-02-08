@@ -1,0 +1,8 @@
+*.sublime-workspace
+/.bundle/
+/.idea/
+/bower_components/
+/coverage/
+/node_modules/
+/pkg/
+/tmp/

@@ -9,7 +9,7 @@ require: rubocop-rspec
 # --- All Cops ---
 
 AllCops:
-  TargetRubyVersion: 2.4
+  TargetRubyVersion: 2.5
 
 # -- Bundler ---
 
@@ -44,11 +44,6 @@ Layout/ExtraSpacing:
   Description: 'This cop checks for extra/unnecessary whitespaces.'
   Exclude:
     - Guardfile
-
-Layout/TrailingBlankLines:
-  Description: 'Checks trailing blank lines and final newline.'
-  StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#newline-eof'
-  Enabled: false
 
 # --- Metrics ---
 

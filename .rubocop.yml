@@ -1,4 +1,6 @@
 # This is the configuration used to check the `Bitaculous::Assetify` source code.
+#
+# See <https://github.com/rubocop-hq/rubocop/blob/master/config/default.yml> for more details.
 
 # === Custom Cops ===
 
@@ -23,27 +25,27 @@ Gemspec/OrderedDependencies:
   Description: 'Dependencies in the gemspec should be alphabetically sorted.'
   Enabled: false
 
-# --- Linting ---
-
-Lint/ScriptPermission:
-  Description: 'Grant script file execute permission.'
-  Enabled: false
-
-Lint/UnusedBlockArgument:
-  Description: 'Checks for unused block arguments.'
-  StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#underscore-unused-vars'
-  Enabled: false
-
 # --- Layout ---
+
+Layout/AlignHash:
+  Description: 'Align the elements of a hash literal if they span more than one line.'
+  EnforcedColonStyle: key
+  EnforcedHashRocketStyle: table
 
 Layout/CommentIndentation:
   Description: 'Indentation of comments.'
   Enabled: false
 
 Layout/ExtraSpacing:
-  Description: 'This cop checks for extra/unnecessary whitespaces.'
+  Description: 'Do not use unnecessary spacing.'
   Exclude:
     - Guardfile
+
+# --- Linting ---
+
+Lint/ScriptPermission:
+  Description: 'Grant script file execute permission.'
+  Enabled: false
 
 # --- Metrics ---
 
@@ -62,7 +64,6 @@ Metrics/LineLength:
 
 Style/AsciiComments:
   Description: 'Use only ASCII symbols in comments.'
-  StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#english-comments'
   Enabled: false
 
 # --- RSpec---

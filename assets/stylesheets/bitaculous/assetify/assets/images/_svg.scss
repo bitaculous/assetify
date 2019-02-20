@@ -113,19 +113,28 @@
   }
 }
 
-@mixin svg-icon-position-top($top, $pseudo: before) {
+@mixin svg-icon-position($top: 0, $right: auto, $bottom: 0, $left: 0, $pseudo: before) {
+  &::#{$pseudo} {
+    bottom: $bottom;
+    left: $left;
+    right: $right;
+    top: $top;
+  }
+}
+
+@mixin svg-icon-position-top($top: 0, $pseudo: before) {
   &::#{$pseudo} { top: $top }
 }
 
-@mixin svg-icon-position-right($right, $pseudo: before) {
+@mixin svg-icon-position-right($right: auto, $pseudo: before) {
   &::#{$pseudo} { right: $right }
 }
 
-@mixin svg-icon-position-bottom($bottom, $pseudo: before) {
+@mixin svg-icon-position-bottom($bottom: 0, $pseudo: before) {
   &::#{$pseudo} { bottom: $bottom }
 }
 
-@mixin svg-icon-position-left($left, $pseudo: before) {
+@mixin svg-icon-position-left($left: 0, $pseudo: before) {
   &::#{$pseudo} { left: $left }
 }
 

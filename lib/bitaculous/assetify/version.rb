@@ -2,6 +2,6 @@
 
 module Bitaculous
   module Assetify # :nodoc:
-    VERSION = '10.6.0'
+    VERSION = '10.7.0'
   end
 end

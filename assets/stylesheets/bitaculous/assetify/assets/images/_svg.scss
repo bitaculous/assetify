@@ -81,6 +81,12 @@
   }
 }
 
+@mixin svg-icon-replace($icon, $pseudo: before) {
+  &::#{$pseudo} {
+    @include svg-sprite-background-position($icon);
+  }
+}
+
 @mixin svg-icon-position($top: 0, $right: auto, $bottom: 0, $left: 0, $pseudo: before) {
   &::#{$pseudo} {
     bottom: $bottom;
@@ -140,9 +146,9 @@
   @include svg-sprite-image;
   @include svg-sprite-size;
 
-  @include svg-sprite-icon-position($icon);
-  @include svg-sprite-icon-height($icon);
-  @include svg-sprite-icon-width($icon);
+  @include svg-sprite-background-position($icon);
+  @include svg-sprite-height($icon);
+  @include svg-sprite-width($icon);
 
   background-repeat: no-repeat;
 }
@@ -151,20 +157,20 @@
 
 @mixin svg-sprite-size { background-size: #{$svg-sprite-width} #{$svg-sprite-height} }
 
-@mixin svg-sprite-icon-position($icon) {
+@mixin svg-sprite-background-position($icon) {
   $x: svg-icon-property($icon, x);
   $y: svg-icon-property($icon, y);
 
   background-position: #{$x}px #{$y}px;
 }
 
-@mixin svg-sprite-icon-height($icon) {
+@mixin svg-sprite-height($icon) {
   $height: svg-icon-property($icon, height);
 
   height: #{$height}px;
 }
 
-@mixin svg-sprite-icon-width($icon) {
+@mixin svg-sprite-width($icon) {
   $width: svg-icon-property($icon, width);
 
   width: #{$width}px;

@@ -18,8 +18,8 @@ end
 group :test do
   # --- Code Style ---
 
-  gem 'rubocop',       '~> 0.63.1', require: false
-  gem 'rubocop-rspec', '~> 1.32', require: false
+  gem 'rubocop',       '~> 0.70', require: false
+  gem 'rubocop-rspec', '~> 1.33', require: false
 
   # --- Code Coverage ---
 

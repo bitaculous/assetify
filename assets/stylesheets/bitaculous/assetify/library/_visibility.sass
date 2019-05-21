@@ -4,29 +4,29 @@
 
 // === Hidden / Not Hidden ===
 
-// Hide from both Screenreaders and Browsers
+// Hides content from both Screen Readers and Browsers.
 @mixin hidden
   display: none
   visibility: hidden
 
-// Reset for `hidden` mixin
+// Reset for `hidden`.
 @mixin not-hidden($display: block)
   display: $display
   visibility: visible
 
 // === Invisible / Visible ===
 
-// Hide visually and from Screenreaders, but maintain layout
+// Hides content visually and maintains layout.
 @mixin invisible
   visibility: hidden
 
-// Reset for `invisible` mixin
+// Reset for `invisible`.
 @mixin visible
   visibility: visible
 
 // === Visually Hidden / Not Visually Hidden ===
 
-// Hide only visually, but have it available for Screenreaders
+// Hides only visually but have it available for Screen Readers.
 @mixin visually-hidden
   border: 0
   clip: rect(0 0 0 0)
@@ -37,7 +37,7 @@
   position: absolute
   width: 1px
 
-// Reset for `visually-hidden` mixin
+// Reset for `visually-hidden`.
 @mixin not-visually-hidden
   clip: auto
   height: auto
@@ -48,19 +48,19 @@
 
 // === Misc ===
 
-// Hide content
+// Hides content.
 @mixin hide-content
   overflow: hidden
   text-indent: 100%
   white-space: nowrap
 
-// Hide text
+// Hides text.
 @mixin hide-text
   color: transparent
   font-size: 0
   line-height: 0
 
-// Hide the element if it has no content or is empty
+// Hides the element if it has no content or is empty.
 @mixin hide-if-empty
   &:empty
     display: none !important

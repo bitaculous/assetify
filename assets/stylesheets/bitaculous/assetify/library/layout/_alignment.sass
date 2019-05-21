@@ -1,0 +1,17 @@
+// _alignment.sass
+//
+// @package bitaculous/assetify/library/layout
+
+// === Equal Height ===
+
+@mixin equal-height
+  height: 100%
+  overflow-y: hidden
+
+// === Vertical Align ===
+
+@mixin vertical-align($top: 50%)
+  position: relative
+  top: $top
+
+  @include transform(translateY(-$top))

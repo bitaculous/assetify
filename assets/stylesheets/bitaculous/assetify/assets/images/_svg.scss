@@ -20,39 +20,7 @@
 
 // === Mixins ===
 
-@mixin svg-sprite-base($icon) {
-  @include svg-sprite-image;
-  @include svg-sprite-size;
-
-  @include svg-sprite-icon-position($icon);
-  @include svg-sprite-icon-height($icon);
-  @include svg-sprite-icon-width($icon);
-
-  background-repeat: no-repeat;
-}
-
-@mixin svg-sprite-image { background-image: asset-url($svg-sprite-path) }
-
-@mixin svg-sprite-size { background-size: #{$svg-sprite-width} #{$svg-sprite-height} }
-
-@mixin svg-sprite-icon-position($icon) {
-  $x: svg-icon-property($icon, x);
-  $y: svg-icon-property($icon, y);
-
-  background-position: #{$x}px #{$y}px;
-}
-
-@mixin svg-sprite-icon-height($icon) {
-  $height: svg-icon-property($icon, height);
-
-  height: #{$height}px;
-}
-
-@mixin svg-sprite-icon-width($icon) {
-  $width: svg-icon-property($icon, width);
-
-  width: #{$width}px;
-}
+// --- Public ---
 
 @mixin svg-sprite($icon, $top: 0, $right: auto, $bottom: 0, $left: 0, $position: relative, $margin: auto, $pseudo: before) {
   position: $position;
@@ -164,4 +132,40 @@
       padding-left: 0;
     }
   }
+}
+
+// --- Private ---
+
+@mixin svg-sprite-base($icon) {
+  @include svg-sprite-image;
+  @include svg-sprite-size;
+
+  @include svg-sprite-icon-position($icon);
+  @include svg-sprite-icon-height($icon);
+  @include svg-sprite-icon-width($icon);
+
+  background-repeat: no-repeat;
+}
+
+@mixin svg-sprite-image { background-image: asset-url($svg-sprite-path) }
+
+@mixin svg-sprite-size { background-size: #{$svg-sprite-width} #{$svg-sprite-height} }
+
+@mixin svg-sprite-icon-position($icon) {
+  $x: svg-icon-property($icon, x);
+  $y: svg-icon-property($icon, y);
+
+  background-position: #{$x}px #{$y}px;
+}
+
+@mixin svg-sprite-icon-height($icon) {
+  $height: svg-icon-property($icon, height);
+
+  height: #{$height}px;
+}
+
+@mixin svg-sprite-icon-width($icon) {
+  $width: svg-icon-property($icon, width);
+
+  width: #{$width}px;
 }

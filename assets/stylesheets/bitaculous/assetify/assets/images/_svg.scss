@@ -109,6 +109,10 @@
   }
 }
 
+@mixin svg-icon-update($icon, $height: false, $width: false, $position: null, $top: null, $right: null, $bottom: null, $left: null, $margin: null, $pseudo: before) {
+  @include svg-icon-change(icon: $icon, height: $height, width: $width, position: $position, top: $top, right: $right, bottom: $bottom, left: $left, margin: $margin, pseudo: $pseudo);
+}
+
 @mixin svg-icon-replace($icon, $height: false, $width: false, $pseudo: before) {
   &::#{$pseudo} {
     @include svg-icon-background-position($icon);

@@ -71,13 +71,21 @@
   }
 }
 
-@mixin svg-icon-change($icon, $position: null, $top: null, $right: null, $bottom: null, $left: null, $margin: null, $pseudo: before) {
+@mixin svg-icon-change($icon, $height: false, $width: false, $position: null, $top: null, $right: null, $bottom: null, $left: null, $margin: null, $pseudo: before) {
   @if $position != null {
     position: $position;
   }
 
   &::#{$pseudo} {
     @include svg-icon-background-position($icon);
+
+    @if $height {
+      @include svg-icon-height($icon);
+    }
+
+    @if $width {
+      @include svg-icon-width($icon);
+    }
 
     @if $top != null {
       top: $top;
@@ -101,9 +109,17 @@
   }
 }
 
-@mixin svg-icon-replace($icon, $pseudo: before) {
+@mixin svg-icon-replace($icon, $height: false, $width: false, $pseudo: before) {
   &::#{$pseudo} {
     @include svg-icon-background-position($icon);
+
+    @if $height {
+      @include svg-icon-height($icon);
+    }
+
+    @if $width {
+      @include svg-icon-width($icon);
+    }
   }
 }
 

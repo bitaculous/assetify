@@ -18,12 +18,12 @@ end
 group :test do
   # --- Code Style ---
 
-  gem 'rubocop',       '~> 0.70', require: false
+  gem 'rubocop',       '~> 0.72', require: false
   gem 'rubocop-rspec', '~> 1.33', require: false
 
   # --- Code Coverage ---
 
-  gem 'simplecov', '~> 0.16.1', require: false
+  gem 'simplecov', '~> 0.17', require: false
 end
 
 # === Misc ===

@@ -60,6 +60,12 @@
   font-size: 0
   line-height: 0
 
+// Unhides text.
+@mixin unhide-text
+  color: inherit
+  font-size: inherit
+  line-height: inherit
+
 // Hides the element if it has no content or is empty.
 @mixin hide-if-empty
   &:empty

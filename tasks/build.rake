@@ -24,11 +24,7 @@ namespace :build do
     private
 
     def config
-      foo = File.expand_path 'resources/build/modernizr/config.json', root
-
-      puts foo
-
-      foo
+      File.expand_path 'resources/build/modernizr/config.json', root
     end
 
     def label

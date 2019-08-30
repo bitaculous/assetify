@@ -13,7 +13,7 @@ Installation
 
 ### npm / Yarn
 
-Run `npm install bitaculous/assetify` or `yarn add @bitaculous/assetify`
+Run `npm install @bitaculous/assetify` or `yarn add @bitaculous/assetify`
 
 ### Sprockets
 

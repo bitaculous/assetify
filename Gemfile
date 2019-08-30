@@ -16,20 +16,14 @@ end
 # === Test ===
 
 group :test do
-  # --- Code Style ---
+  gem 'rubocop',       '~> 0.74.0', require: false
+  gem 'rubocop-rspec', '~> 1.35.0', require: false
 
-  gem 'rubocop',       '~> 0.72', require: false
-  gem 'rubocop-rspec', '~> 1.33', require: false
-
-  # --- Code Coverage ---
-
-  gem 'simplecov', '~> 0.17', require: false
+  gem 'simplecov', '~> 0.17.0', require: false
 end
 
 # === Misc ===
 
 group :misc do
-  # --- Formatter ---
-
-  gem 'nyan-cat-formatter', '~> 0.12', require: false
+  gem 'nyan-cat-formatter', '~> 0.12.0', require: false
 end

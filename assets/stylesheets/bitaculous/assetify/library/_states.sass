@@ -17,3 +17,11 @@
 @mixin no-text-decoration-at-hover
   &:hover
     text-decoration: none
+
+@mixin text-decoration-at-active
+  &[data-state='active']
+    text-decoration: underline
+
+@mixin no-text-decoration-at-active
+  &[data-state='active']
+    text-decoration: none

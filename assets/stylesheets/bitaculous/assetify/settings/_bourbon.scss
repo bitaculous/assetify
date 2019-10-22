@@ -29,7 +29,7 @@ $_bourbon-defaults: (
   'asset-pipeline': true,
   'contrast-switch-dark-color': #000,
   'contrast-switch-light-color': #FFF,
-  'font-file-formats': ('ttf', 'woff2', 'woff'),
+  'font-file-formats': ('woff2', 'woff', 'ttf'),
   'modular-scale-base': 1em,
   'modular-scale-ratio': $major-third
 );

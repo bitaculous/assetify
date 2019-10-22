@@ -16,10 +16,9 @@ end
 # === Test ===
 
 group :test do
-  gem 'rubocop',       '~> 0.74.0', require: false
-  gem 'rubocop-rspec', '~> 1.35.0', require: false
-
-  gem 'simplecov', '~> 0.17.0', require: false
+  gem 'rubocop',       '~> 0.75.1', require: false
+  gem 'rubocop-rspec', '~> 1.36.0', require: false
+  gem 'simplecov',     '~> 0.17.1', require: false
 end
 
 # === Misc ===

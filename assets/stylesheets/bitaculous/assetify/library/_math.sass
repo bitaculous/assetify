@@ -7,13 +7,42 @@
 @function half($value)
   @return $value / 2
 
+@function a-half($value)
+  @return half($value)
+
 @function third($value)
   @return $value / 3
+
+@function one-third($value)
+  @return third($value)
+
+@function quarter($value)
+  @return $value / 4
+
+@function a-quarter($value)
+  @return quarter($value)
 
 // === Multiplication ===
 
 @function double($value)
   @return $value * 2
 
+@function two-times($value)
+  @return double($value)
+
 @function triple($value)
   @return $value * 3
+
+@function three-times($value)
+  @return triple($value)
+
+@function fourfold($value)
+  @return $value * 4
+
+@function four-times($value)
+  @return fourfold($value)
+
+// === Misc ===
+
+@function negative($value)
+  @return -#{$value}

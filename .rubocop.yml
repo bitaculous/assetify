@@ -9,6 +9,7 @@ require: rubocop-rspec
 # === Overrides ===
 
 AllCops:
+  NewCops: enable
   TargetRubyVersion: 2.5
 
 Bundler/OrderedGems:
@@ -19,7 +20,7 @@ Gemspec/OrderedDependencies:
   Description: 'Dependencies in the gemspec should be alphabetically sorted.'
   Enabled: false
 
-Layout/AlignHash:
+Layout/HashAlignment:
   Description: 'Align the elements of a hash literal if they span more than one line.'
   EnforcedColonStyle: key
   EnforcedHashRocketStyle: table
@@ -60,3 +61,8 @@ RSpec/MultipleExpectations:
   Description: 'Checks if examples contain too many `expect` calls.'
   Enabled: true
   Max: 4
+
+RSpec/MultipleMemoizedHelpers:
+  Description: 'Checks if example groups contain too many `let` and `subject` calls.'
+  Exclude:
+    - 'spec/**/*.rb'

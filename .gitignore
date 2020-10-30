@@ -8,6 +8,7 @@
 /Gemfile.lock
 /node_modules/
 /npm-debug.log
+/package-lock.json
 /pkg/
 /tmp/
 /yarn.lock
